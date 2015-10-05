@@ -1,0 +1,858 @@
+.store {
+	margin-top:0;
+	font-size:12px;
+	font-family:Ubuntu, sans-serif;
+	background:#e6e6e6;
+	-webkit-text-stroke:.2px
+}
+.store #header {
+	padding:15px 0
+}
+.store #header .container {
+	margin:0 auto;
+	overflow:visible;
+	position:relative;
+	width:1000px;
+	z-index:2;
+	color:#FFD1E6
+}
+.store #header .logo {
+	margin:0;
+	padding:0;
+	top:0;
+	text-align:center;
+	width:100%;
+	display:block
+}
+.store #header .logo img {
+	display:inline-block
+}
+.store fieldset.search {
+	background:#fff;
+	border:1px solid #979797!important;
+	z-index:2;
+	clear:both;
+	width:383px;
+	margin:15px auto
+}
+.store fieldset.search label, .store fieldset.search legend {
+	display:none
+}
+.store fieldset.search input.searchbox {
+	background:#fff;
+	border:0;
+	color:#787878;
+	float:left;
+	font-family:arial;
+	font-size:14px;
+	width:350px;
+	padding:3.5px
+}
+.store fieldset.search a.do-search {
+	float:right;
+	display:block;
+	background:url(http://resources.rakuten.com.br/Assets/rakutentemplates.loja.rakuten.com.br/images/layout/blocktheme/icon-search.png) center no-repeat;
+	width:14px;
+	height:14px;
+	padding:2px 5px;
+	border-left:1px solid #a7a7a7;
+	margin:2px 0
+}
+.store div.nav-horizontal {
+	background:#262626;
+	height:46px;
+	margin-bottom:0;
+	width:100%
+}
+.store div.nav-horizontal>ul {
+	position:relative;
+	text-align:center;
+	padding-left:0;
+	margin:0;
+	font-size:0
+}
+.store div.nav-horizontal>ul>li {
+	display:inline-block;
+	font-family:'Open Sans', Arial;
+	position:relative;
+	line-height:46px;
+	vertical-align:top;
+	border-left:1px solid #161616;
+	float:none;
+	zoom:1;
+*display:inline;
+	font-size:15px
+}
+.store div.nav-horizontal>ul>li:first-child {
+	border-left:0
+}
+.store div.nav-horizontal>ul>li:hover {
+-webkit-transition:background .5s ease-out 0s;
+transition:background .5s ease-out 0s;
+	background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMwMzAzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzFhMWExYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODA4MDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background:-moz-linear-gradient(top, #303030 0, #1a1a1a 50%, #080808 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #303030), color-stop(50%, #1a1a1a), color-stop(100%, #080808));
+	background:-webkit-linear-gradient(top, #303030 0, #1a1a1a 50%, #080808 100%);
+	background:-o-linear-gradient(top, #303030 0, #1a1a1a 50%, #080808 100%);
+	background:-ms-linear-gradient(top, #303030 0, #1a1a1a 50%, #080808 100%);
+	background:linear-gradient(to bottom, #303030 0, #1a1a1a 50%, #080808 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#080808', GradientType=0);
+	opacity:1;
+	filter:alpha(opacity=100)
+}
+.store div.nav-horizontal>ul>li>a {
+	color:#fff;
+	display:inline-block;
+	font-size:15px;
+	font-family:'Open Sans', Arial;
+	text-transform:uppercase;
+	padding:0 25px;
+	position:relative;
+	text-decoration:none;
+	vertical-align:top
+}
+.store div.nav-horizontal>ul ul {
+	position:absolute;
+	top:46px!important;
+	left:0;
+	padding:10px;
+	width:260px!important;
+	text-align:left;
+	background:0 0;
+	background:rgba(150, 150, 150, .7);
+	zoom:1
+}
+.store div.nav-horizontal>ul ul li:first-child {
+	margin-top:0
+}
+.store div.nav-horizontal>ul ul li {
+	font-weight:400;
+	line-height:12px;
+	padding:0 5px 15px 0;
+	width:50%;
+	float:left;
+	box-sizing:border-box
+}
+.store div.nav-horizontal>ul ul li a {
+	text-decoration:none;
+	color:#fff;
+	font-size:12px;
+	opacity:1;
+	text-transform:uppercase
+}
+.store div.nav-horizontal>ul ul li .last-nivel {
+	display:none!important
+}
+.store #main-store {
+	width:1000px
+}
+.store #main-store .container > div > .nav-vertical {
+	display:none;
+}
+.store #main-store .container {
+	width:100%
+}
+.store #main-store .banner {
+	margin-bottom:0!important
+}
+.store #main-store .banner a {
+	margin-top:0!important
+}
+.store #main-store #mini-banner {
+	overflow:hidden
+}
+.store #main-store #mini-banner .banner a {
+	padding:19px 0!important
+}
+.store #main-store #banner-categoria .banner a {
+	padding-bottom:15px
+}
+.store #main-store .banner-horizontal div a {
+	margin-left:19px
+}
+.store #main-store .banner-horizontal div a:first-child {
+	margin-left:0!important
+}
+.store #main-store #banner-inferior {
+	margin-top:15px
+}
+.store .pagination.bottom {
+	border-top:0;
+	padding:0
+}
+.store .pagination.bottom a {
+	color:#9d9d9d
+}
+.store .breadcrumb {
+	padding-top:0;
+	padding-bottom:15px;
+	font-family:Ubuntu, sans-serif;
+	font-size:12px;
+	margin-bottom:0
+}
+.store .breadcrumb a {
+	text-decoration:none;
+	margin-right:3px
+}
+.store .breadcrumb a:last-child {
+	text-decoration:underline
+}
+.store .conteudo-categoria {
+	overflow:hidden;
+	margin-bottom:20px
+}
+.store .product {
+	background:#fff;
+	font-family:Ubuntu, sans-serif!important
+}
+.store .product #details, .store .product .box {
+	background:0 0!important
+}
+.store .product #details>div {
+	background:0 0
+}
+.store #info-product .box-superpoint {
+	background:#F4F4F4!important
+}
+.store .searchResult {
+	width:100%;
+	box-sizing:border-box
+}
+.store .product-aside {
+	margin-right:10px!important
+}
+.store div.product-aside+.product #info-product .name {
+	clear:both;
+	padding:0;
+	width:100%
+}
+.store .container .product {
+	float:right;
+	width:787px;
+	overflow:hidden;
+	padding-bottom:10px
+}
+.store .container .product #info-product {
+	display:block;
+	float:none;
+	z-index:3;
+	margin:0;
+	padding:10px;
+	width:auto;
+	font-weight:400
+}
+.store .container .product #info-product .collum.details {
+	display:block;
+	overflow:hidden;
+	padding:0;
+	min-height:450px;
+	width:auto
+}
+.store .container .product #info-product .details {
+	font-size:13px;
+	position:relative
+}
+.store .container .product #info-product .description, .store .container .product #info-product .details, .store .container .product #info-product .name, .store .container .product #info-product .offers, .store .container .product #info-product .parcel, .store .container .product #info-product .regular, .store .container .product #info-product .see-more, .store .container .product #info-product .share, .store .container .product #info-product .stamp {
+	display:block;
+	overflow:hidden;
+	padding:5px 0
+}
+.store .container .product #info-product .box {
+	background-color:#fff;
+	border:1px solid #CECECE;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	position:relative
+}
+.store .container .product #info-product #image {
+	float:left;
+	overflow:visible;
+	margin-right:16px;
+	margin-bottom:18px;
+	width:402px
+}
+.store .container .product #info-product .photo {
+	position:relative;
+	min-height:400px;
+	width:400px;
+	border:1px solid #dfdede
+}
+.store .container .product #info-product .box-superpoint {
+	float:right!important;
+	padding:2px;
+	background:#F4F4F4
+}
+.store .container .product #info-product div.superpoints-stamp {
+	float:left
+}
+.store .container .product #info-product .superpoints-stamp {
+	font-size:12px;
+	font-family:Arial;
+	color:#363636;
+	background:url(http://resources.rakuten.com.br/images/ico_sp.png) no-repeat;
+	padding:12px 0 9px 34px
+}
+.store .container .product #info-product .superpoints-link {
+	float:left;
+	margin-top:12px;
+	margin-left:5px;
+	color:#0055ac;
+	text-decoration:underline;
+	font-size:9px;
+	font-family:Arial
+}
+.store .container .product #info-product .name {
+	position:relative!important;
+	top:auto!important;
+	left:auto!important;
+	margin:0;
+	padding-top:0;
+	padding-right:15px;
+	width:auto;
+	height:auto;
+	background:0 0;
+	color:#333;
+	font:21px Arial, Helvetica, sans-serif;
+	cursor:text
+}
+.store .container .product #info-product .stamp {
+	position:static;
+	overflow:hidden;
+	margin:10px 0;
+	padding:8px 3px;
+	width:auto;
+	border-top:1px solid #efefef;
+	clear:left;
+	z-index:9
+}
+.store .container .product #info-product .stamp .free-shipping {
+	background-position:0 -219px;
+	font-size:12px;
+	padding-left:20px;
+	width:70px
+}
+.store .container .product #info-product .stamp img {
+	display:inline-block;
+	margin-right:5px
+}
+.store .container .product #info-product .price {
+	font-size:15px
+}
+.store .container .product #info-product .sale {
+	color:#C73A40;
+	font-size:15px;
+	font-weight:700;
+	overflow:visible;
+	padding:0 0 3px
+}
+.store .container .product #info-product .action {
+	float:right;
+	width:240px;
+	margin-top:0
+}
+.store .container .product #info-product .action .quantity {
+	display:block;
+	float:left;
+	margin-right:5px
+}
+.store .container .product #info-product .action .quantity span {
+	display:block;
+	margin-bottom:5px;
+	color:#535353;
+	font-weight:700;
+	font-size:10px
+}
+.store .container .product #info-product .action .quantity select {
+	margin-right:5px;
+	color:#505050;
+	text-align:center;
+	font-size:18px;
+	border:1px solid #bbb;
+	padding:2px;
+	vertical-align:middle
+}
+.store .container .product #info-product .btn.buy {
+	position:relative;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background:url(http://resources.rakuten.com.br/images/global/heroes/buy-btn.png) center no-repeat #bc0000
+}
+.store .container .product #info-product .buy {
+	float:left;
+	overflow:visible;
+	margin-top:20px;
+	margin-left:0;
+	padding-bottom:0;
+	width:165px;
+	height:48px;
+	background-position:right -231px
+}
+.store .container .product #info-product .btn {
+	background:url(http://resources.rakuten.com.br/images/global/sprites/sprite_button_new.png) no-repeat;
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px
+}
+.store .container .product .product-payment .sale {
+	color:#BC0000;
+	font-size:18px
+}
+.store .container .product .fab-cod {
+	clear:right;
+	overflow:hidden;
+	margin-bottom:7px;
+	padding:5px 0!important;
+	font-size:11px
+}
+.store .container .product .fab-cod li:first-child {
+	margin-left:0;
+	padding-left:0;
+	border-left:none
+}
+.store .container .product .fab-cod li {
+	display:inline;
+	float:left;
+	margin-left:10px;
+	padding-left:8px;
+	border-left:1px solid #333;
+	color:#888
+}
+.store .container .product .product-payment, .store .container .product .product-shipping {
+	overflow:hidden;
+	border-top:3px solid #323232!important
+}
+.store .container .product #product-option, .store .container .product #product-personalization-option, .store .container .product .product #opinion, .store .container .product .product #opinion .hreview, .store .container .product .product-opinion, .store .container .product .product-description, .store .container .product .product-payment, .store .container .product .product-review, .store .container .product .product-shipping, .store .container .product .product-specification {
+	background:linear-gradient(to bottom, #eaeaea 0, #fff 30%)!important
+}
+.store .container .product .product-shipping {
+	margin-top:10px
+}
+.store .container .product .product-shipping .ico-shipping {
+	margin-right:10px;
+	width:45px;
+	height:53px;
+	border-right:1px solid #b0b0b0;
+	background-position:5px -963px;
+	text-indent:-9999px
+}
+.store .container .product .ico {
+	background:url(http://resources.rakuten.com.br/images/global/sprites/sprite_ico2.png) no-repeat
+}
+.store .container .product .pull-left {
+	float:left
+}
+.store .container .product .product-shipping .shipping-actions>strong {
+	display:block;
+	margin-bottom:10px;
+	font-size:12px
+}
+.store .container .product .product-shipping .shipping-actions>label {
+	font-size:11px
+}
+.store .container .product .product-shipping .shipping-actions .cepy.prefix {
+	width:15%
+}
+.store .container .product input, .store .container .product textarea {
+	border:1px solid #bbb;
+	padding:5px
+}
+.store .container .product input, .store .container .product select, .store .container .product textarea {
+	color:#505050
+}
+.store .container .product .product-shipping .shipping-actions .cepy.sufix {
+	width:7%
+}
+.store .container .product .product-shipping .shipping-actions .cepy {
+	padding:5px
+}
+.store .container .product .product-shipping .shipping-actions .shipping-ok {
+	display:inline-block!important;
+	width:39px;
+	height:26px;
+	background:url(http://resources.rakuten.com.br/images/global/sprites/sprite_button_new.png) 0 -1676px no-repeat!important;
+	vertical-align:middle
+}
+.store .container .product #pnlDescription {
+	padding:0;
+	border-right:none;
+	border-left:none;
+	border-bottom:none
+}
+.store .container .product .about.description {
+	display:block
+}
+.store .container .product .product-description, .store .container .product .product-review, .store .container .product .product-specification {
+	border-top:3px solid #323232!important
+}
+.store .container .product #product-option, .store .container .product #product-personalization-option, .store .container .product .product #opinion, .store .container .product .product #opinion .hreview, .store .container .product .product-opinion, .store .container .product .product-description, .store .container .product .product-payment, .store .container .product .product-review, .store .container .product .product-shipping, .store .container .product .product-specification {
+	padding:16px 18px!important;
+	border:1px solid #e1e1e1;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0
+}
+.store .container .product .about, .store .container .product .hreview {
+	position:relative;
+	color:#010101;
+	font-size:13px;
+	line-height:18px
+}
+.store .container .product .section {
+	clear:left;
+	margin-top:10px;
+	padding:0;
+	background:#fff
+}
+.store .container .product #pnlDescription h2 {
+	padding:10px 0 0
+}
+.store .container .product .section .header .title {
+	margin-bottom:10px;
+	color:#333;
+	padding-left:0
+}
+.store .container .product .page-product #productpage #info-product #ctl00_body_pnlRakutenCommunity .section {
+	padding-right:0;
+	overflow:visible
+}
+.store .container .product .page-product #productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control {
+	min-height:initial;
+	padding:0;
+	border:none;
+	display:inline-block;
+	width:100%
+}
+.store .container .product .store .article, .store .container .product .store .post-control {
+	border-right:none
+}
+.store .container .product .add-comment, .store .container .product .post-control {
+	background:#efeef2;
+	border-bottom:1px solid #ccc;
+	padding:19px 10px 5px;
+	min-height:110px;
+	position:relative;
+	border-top:1px solid #ddd
+}
+.store .container .product .page-product #productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control .post-panel {
+	height:122px;
+	padding:10px
+}
+.store .container .product .post-control .textarea {
+	background:#fff;
+	border:1px solid #ccc;
+	height:60px;
+	width:660px;
+	padding:7px;
+	margin-top:-3px;
+	margin-bottom:3px
+}
+.store .container .product .textarea {
+	border:1px solid gray;
+	overflow:auto;
+	padding:2px;
+	width:525px;
+	height:90px;
+	font-size:13px
+}
+.store .container .product .post-panel p.replay {
+	margin:10px 0 0
+}
+.store .container .product .page-product #productpage #info-product .post-control .post-tools {
+	margin-top:3px
+}
+.store .container .product .post-tools {
+	margin-top:3px;
+	position:relative
+}
+.store .container .product .add-comment .post-tools li, .store .container .product .post-tools li {
+	float:left;
+	position:relative
+}
+.store .container .product .cm-ico-photo a {
+	background-position:10px -381px
+}
+.store .container .product .cm-ico>a {
+	opacity:.6
+}
+.store .container .product .cm-ico a {
+	overflow:hidden;
+	text-indent:-9999px;
+	background:url(http://resources.rakuten.com.br/community/images/community-icons.png) no-repeat;
+	padding:4px 6px;
+	display:block;
+	height:17px;
+	width:25px;
+	background-size:25px
+}
+.store .container .product .page-product #productpage #info-product .post-control .post-tools>li {
+	float:left
+}
+.store .container .product .page-product #productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control .post-tools .cm-ico a {
+	color:#000;
+	text-decoration:none
+}
+.store .container .product .post-panel .post-tools li a {
+	padding-top:8px;
+	margin:0
+}
+.store .container .product .post-tools>li>a {
+	display:block;
+	float:left;
+	font-size:11px;
+	margin-right:8%;
+	color:#000;
+	padding:10px 10px 8px 45px;
+	text-indent:0;
+	width:60px;
+	background-size:auto;
+	border-radius:2px;
+	line-height:16px
+}
+.store .container .product .cm-ico-adhesive a {
+	background-position:12px -440px
+}
+.store .container .product .post-panel p.replay a {
+	text-decoration:none;
+	float:right
+}
+.store .container .product .btn-green {
+	background:#78a224
+}
+.store .container .product [class^=btn-] {
+border-radius:2px;
+padding:5px 20px!important;
+color:#fff!important;
+font-weight:700!important;
+border:1px solid transparent;
+box-shadow:1px 1px 2px -1px #999
+}
+.store #image .social, .store .social {
+	top:10px;
+	left:420px;
+	z-index:4;
+	margin-top:10px;
+	padding:8px;
+	height:60px;
+	border:1px solid #E1E1E1
+}
+.store form, .store h1, .store h2, .store h3, .store h4, .store html, .store p, .store span {
+	margin:0;
+	padding:0;
+	font-family:Arial;
+	font-size:100%
+}
+.store .social-itens {
+	margin-top:15px
+}
+.store div.store-aside {
+	float:left;
+	width:203px;
+	margin-right:48px
+}
+.store div.store-aside .tit {
+	background-image:-moz-linear-gradient(top, #262626 0, #595959 100%);
+	background-image:-webkit-linear-gradient(top, #262626 0, #595959 100%);
+	background-image:linear-gradient(to bottom, #262626 0, #595959 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#595959', GradientType=0);
+	color:#fff;
+	text-align:center;
+	display:block;
+	font-size:12pt;
+	height:27px
+}
+.store div.store-aside .nav-vertical {
+	background:#262626;
+	padding:13px
+}
+.store div.store-aside .nav-vertical>ul>li {
+	font-family:Ubuntu, sans-serif
+}
+.store div.store-aside .nav-vertical>ul>li>a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	position:relative;
+	line-height:22px;
+	text-transform:uppercase;
+	font-size:15px;
+	border-bottom:1px solid #000;
+	padding:10px 0
+}
+.store div.store-aside .nav-vertical>ul>li:last-child a {
+	border-bottom:0!important;
+	padding-bottom:0!important
+}
+.store div.store-aside .nav-vertical>ul>li:nth-of-type(1) a {
+padding-top:0!important
+}
+.store div.store-aside .nav-vertical>ul>li>ul {
+	padding-left:10px;
+	padding-top:20px;
+	background:0 0
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li {
+	margin-bottom:5px
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li>a {
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	font-weight:400
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li>a:hover {
+	text-decoration:underline
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li ul {
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom:5px;
+	background:0 0
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li ul li {
+	margin-bottom:5px
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li ul li>a {
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	font-weight:400
+}
+.store div.store-aside .nav-vertical>ul>li>ul>li ul li>a:hover {
+	text-decoration:underline
+}
+.store div.container-product div.title {
+	background:#262626;
+	text-align:center;
+	padding:10px 0;
+	margin-bottom:15px
+}
+.store div.container-product div.title span {
+	color:#fff;
+	font-size:21px;
+	font-family:Ubuntu, sans-serif;
+	font-weight:400;
+	line-height:18px
+}
+.store div.container-product ul.list-products.product-image400 .hproductseo {
+	width: 230px !important;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0
+}
+.store div.container-product.product-grid-3 ul.list-products.product-image400 .hproductseo {
+	width: 220px !important;
+}
+.store div.container-product ul.list-products.product-image400 .hproductseo .figure {
+	width: 100%;
+	height: auto;
+}
+
+.store div.container-product ul.list-products.product-image400 .hproductseo .figure img {
+	border: 0 !important
+}
+
+.store div.container-product ul.list-products.product-image400 .hproductseo .figure img.photo {
+	width: 100%;
+	height: auto;
+	border: 0
+}
+.store div.container-product ul.list-products .figure>a {
+	border:1px solid #ccc;
+	display:block
+}
+.store div.container-product ul.list-products .figure>a:hover {
+	border:2px solid #969696;
+-webkit-transition:.3s ease-out 0s;
+transition:.3s ease-out 0s
+}
+.store div.container-product ul.list-products span.name {
+	color:#6e6e6e;
+	font-size:15px;
+	font-weight:400;
+	font-family:Ubuntu, sans-serif;
+	padding-bottom:10px
+}
+.store div.container-product ul.list-products .box-price {
+	border:0;
+	padding:0
+}
+.store div.container-product ul.list-products .details {
+	float:none;
+	width:100%
+}
+.store div.container-product ul.list-products .details .offers {
+	text-align:left;
+	padding-bottom:5px
+}
+.store div.container-product ul.list-products .details span {
+	float:none;
+	display:block;
+	margin:0
+}
+.store div.container-product ul.list-products .details span.regular {
+	font-size:13px;
+	color:#6e6e6e!important
+}
+.store div.container-product ul.list-products .details span.regular del {
+	text-decoration:none
+}
+.store div.container-product ul.list-products .details span.price {
+	font-size:20px;
+	color:#000!important;
+	font-weight:700
+}
+.store div.container-product ul.list-products .details span.price strong {
+	color:#000!important
+}
+.store div.container-product ul.list-products .details span.parcel {
+	font-size:12px;
+	font-weight:400;
+	color:#6e6e6e!important
+}
+.store div.container-product ul.list-products .details span.parcel strong {
+	font-size:12px;
+	font-weight:400
+}
+.store div.container-product ul.list-products .details span.unavailable {
+	text-align:center;
+	color:#9c0000!important
+}
+.store div.container-product ul.list-products .details span.stamp img {
+	width:auto;
+	max-width:210px;
+	margin:0 auto 5px
+}
+.store div.container-product ul.list-products .details span.promo-stamp:empty {
+	display:none
+}
+.store .product-grid-4 li {
+	width:25%;
+}
+.store .product-grid-3 li .hproductseo {
+	width:100%;
+	box-sizing:border-box;
+	padding:0!important
+}
+.store #footer {
+	padding-bottom:10px;
+	background:#000
+}
+.store #footer .container {
+	margin:0 auto;
+	overflow:visible;
+	width:1000px;
+	z-index:2
+}
+.store #footer .copy-right {
+	font-size:14px;
+	color:#fff;
+	overflow:hidden;
+	clear:both;
+	padding-top:10px
+}
+.store #footer .copy-right p {
+	text-align:center;
+	font-family:Ubuntu, sans-serif
+}

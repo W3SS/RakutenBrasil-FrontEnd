@@ -1,0 +1,137 @@
+/* inicio - Header */
+	#header {
+		height: 146px;
+		margin: 0 0 5px;
+		.header {
+			margin: 0 auto;
+			width: 1000px;
+			height: 100px;
+			position: relative;
+		}
+		.select-button,
+		.rk-select-category {
+			display: none !important;
+		}
+		.container-full {
+			background: none;
+		}
+		.logo {
+			float: left;
+			margin: 18px 0 0;
+			width: 200px;
+			a {
+				background: url("#{$resources-urls}/sprite-home.png") no-repeat 0 -8px;
+				display: block;
+				float: left;
+				height: 45px;
+				text-indent: -9999px;
+				width: 207px;
+			}
+		}
+		nav.main-links {
+			position: absolute;
+			top: 70px;
+			left: 0;
+			ul {
+				float: left;
+				li {
+					float: left;
+					margin-right: 5px;
+					border-top: 2px solid #ff9c60;
+					border-left: 1px solid #cfcfcf;
+					border-right: 1px solid #cfcfcf;
+					line-height: 28px;
+					font-size: 12px;
+					font-weight: bold;
+					text-align: center;
+					&:hover {
+						line-height: 33px;
+						height: 33px;
+						margin-top: -5px;
+					}
+					a {
+						text-decoration: none;
+						padding: 0 10px;
+						display: block;
+						min-width: 50px;
+					}
+				}
+			}
+		}
+		nav.quick-nav {
+			position: absolute;
+			top: 0;
+			right: 0;
+			ul.first {
+				float: left;
+				background: #f7f7f7;
+				border: 1px solid #d4d4d4;
+				border-bottom-left-radius: (5px);
+				border-bottom-right-radius: (5px);
+				li {
+					float: left;
+					line-height: 27px;
+					border-left: 1px solid #ccc;
+					&:first-child { border-left: 0;}
+					a {
+						display: block;
+						padding: 0 16px;
+						text-decoration: none;
+						&:hover {
+							color: #be0000;
+						}
+					}
+				}
+				.ico {
+					background: url("#{$resources-urls}/sprite-home.png") no-repeat;
+					display: inline-block;
+					width: 14px;
+					height: 14px;
+					margin-right: 6px;
+					position: relative;
+					top: 2px;
+					&.order { background-position: -61px -166px;}
+					&.helpdesk { background-position: -78px -166px;}
+					&.sp { background-position: -95px -166px;}
+				}
+			}
+			.ritGlobalCnt {
+				margin: 8px 8px 0;
+			}
+		}
+		nav.social {
+			position: absolute;
+			top: 51px;
+			right: 0;
+			.title {
+				float: left;
+				font-family: "rakuten_globalb";
+				font-size: 1.1em;
+				color: #353535;
+				margin: 7px 11px 0 0;
+			}
+			ul {
+				float: left;
+				li {
+					float: left;
+					margin-right: 7px;
+					a {
+						text-indent: -9000px;
+						display: block;
+						background: url("#{$resources-urls}/sprite-home.png") no-repeat;
+						height: 28px;
+						width: 27px;
+						&:hover {
+							@include opacity(0.8);
+						}
+					}
+					&.face a { background-position: -2px -93px;}
+					&.twitter a { background-position: -35px -93px;}
+					&.youtube a { background-position: -67px -93px;}
+					&.pinterest a { background-position: -99px -93px;}
+					&.viber a { background-position: -133px -93px;}
+				}
+			}
+		}
+	}
+/* fim    - Header */

@@ -1,0 +1,184 @@
+/* inicio - Footer */
+	#footer {
+		background: #f7f7f7;
+		padding: 32px 0 0;
+		overflow: hidden;
+		clear: both;
+		.container-full {
+			background: none;
+		}
+		a {
+			&:hover {
+				color: #be0000;
+			}
+		}
+		.container {
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.collum {
+			float: left;
+			&.institucional {
+				width: 330px;
+				margin: 0 40px 0;
+				p {
+					a {
+						color: #bf0000;
+						text-decoration: underline;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			&.others {
+				width: 220px;
+			}
+			h4 {
+				margin: 10px 0;
+				font-size: 15px;
+			}
+			&.footer-cats {
+				width: 368px;
+				li {
+					float: left;
+					width: 180px;
+					margin-bottom: 5px;
+					font-size: 11px;
+					line-height: 12px;
+					&:nth-child(2n+1) {
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+		.footer-news {
+			.base-title {
+				margin: 0 0 5px;
+			}
+		}
+		.tel {
+			color: #2b2b2b;
+			margin-bottom: 5px;
+			display: block;
+			i {
+				font-size: 23px;
+				margin-right: 10px;
+				position: relative;
+				top: 2px;
+			}
+			strong {
+				font-size: 20px;
+			}
+		}
+		.inst {
+			margin: 20px 0 0;
+			ul {
+				float: left;
+				&.fst{
+					margin-right: 8px;
+				}
+				li {
+					margin-bottom: 5px;
+					margin-right: 15px;
+					font-size: 11px;
+				}
+			}
+		}
+		.security {
+			float: right !important;
+			span {
+				display: inline-block;
+				vertical-align: top;
+				&.comodo {
+					margin-right: 15px;
+					a {
+						background: url("#{$resources-urls}/sprite-home.png") 0 -332px;
+						width: 183px;
+						height: 41px;
+						display: block;
+					}
+				}
+				&.logo-rakuten {
+					margin-left: 55px;
+				}
+			}
+		}
+		p {
+			line-height: 22px;
+		}
+		.base-title {
+			color: #bf0000;
+			font-family: "rakuten_globalb";
+			font-size: 12pt;
+			font-weight: normal;
+			margin-bottom: 20px;
+		}
+		.social {
+			li {
+				float: left;
+				font-size: 28px;
+				margin-right: 10px;
+			}
+		}
+		.world {
+			margin: 30px 0 0;
+			ul {
+				li {
+					float: left;
+					width: 100px;
+					margin-bottom: 5px;
+					font-size: 11px;
+					&:nth-child(2n+1) {
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+		address {
+			clear: both;
+			width: 100%;
+			text-align: center;
+			color: #2b2b2b;
+			font-size: 11px;
+			font-style: normal;
+			padding: 0 0 25px;
+		}
+		.footer-botom {
+			width: 100%;
+			overflow: hidden;
+			clear: both;
+			margin: 40px 0 0;
+			float: left;
+			.cards {
+				display: block;
+				background: url("#{$resources-urls}/sprite-home.png") 0 -290px;
+				width: 347px;
+				height: 45px;
+			}
+		}
+		.footer-content {
+			float: left;
+		}
+		.block-inline {
+			display: inline-block;
+			margin: 0 15px;
+		}
+		.txt-default,
+		.ft-address-txt {
+			line-height: 16px;
+		}
+		.ft-address-txt {
+			padding-top: 60px ;
+		}
+		.logo-rakuten {
+			a {
+				background: url("#{$resources-urls}/sprite-home.png") no-repeat;
+				width: 220px;
+				height: 46px;
+				display: block;
+				text-indent: -9000px;
+			}
+		}
+	}
+/* fim    - Footer */

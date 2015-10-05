@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "rakuten_globalr";
+    src: url('#{$font-urls}/rakutenglobal/rakutenglobal-r.eot'); /* IE9 Compat Modes */
+    src: url('#{$font-urls}/rakutenglobal/rakutenglobal-r.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('#{$font-urls}/rakutenglobal/rakutenglobal-r.woff') format('woff'), /* Pretty Modern Browsers */
+         url('#{$font-urls}/rakutenglobal/rakutenGlobal-r.otf')  format('opentype'), /* Safari, Android, iOS */
+         url('#{$font-urls}/rakutenglobal/rakutenglobal-r.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: "rakuten_globalb";
+    src: url('#{$font-urls}/rakutenglobal/rakutenglobal-b.eot'); /* IE9 Compat Modes */
+    src: url('#{$font-urls}/rakutenglobal/rakutenglobal-b.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('#{$font-urls}/rakutenglobal/rakutenglobal-b.woff') format('woff'), /* Pretty Modern Browsers */
+         url('#{$font-urls}/rakutenglobal/rakutenGlobal-b.otf')  format('opentype'), /* Safari, Android, iOS */
+         url('#{$font-urls}/rakutenglobal/rakutenglobal-b.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");

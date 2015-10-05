@@ -1,0 +1,133 @@
+.ritGlobalCnt {
+	width: 34px;
+	font-size: 12px;
+	position: relative;
+	float: right;
+	border: none;
+	z-index: 9999;
+	line-height: 1.3;
+	font-family: sans-serif;
+	background: url("#{$resources-urls}/icon_country.png") no-repeat 14px -398px;
+	display: block !important;
+}
+
+.ritGlobalCnt:hover {
+	background-position: 14px -381px;
+	display: block;
+}
+
+.ritGlobalFrame {
+	width: 430px;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 18px;
+	background: #ffffff;
+	border: solid 1px #686868 !important;
+	overflow: hidden;
+}
+
+.ritGlobalList {
+	width: 410px;
+	padding: 10px !important;
+	overflow: hidden;
+}
+
+.ritGlobalList dl {
+	float: left;
+	width: 136px;
+	text-align: left;
+}
+
+.ritGlobalList dl dt {
+	font-size: 110%;
+	margin-bottom: 1px;
+}
+
+.ritGlobalList dl dd a {
+	width: 116px;
+	padding: 7px 0 7px 24px;
+	display: block;
+	background: url("#{$resources-urls}/icon_country.png") no-repeat 0 0;
+}
+
+.ritGlobalPopup {
+	background: url("#{$resources-urls}/icon_country.png") no-repeat -9px -355px;
+	display: block;
+	width: 34px;
+	height: 14px;
+	padding-bottom: 6px;
+	margin-bottom: -6px;
+}
+
+.ritGlobalPopup:hover {
+	background-position: -2px -355px;
+	display: block;
+	width: 34px;
+	height: 14px;
+	cursor: pointer
+}
+
+.country_jp { background-position: -9px -355px; }
+.country_tw { background-position: -9px -123px; }
+.country_id { background-position: -9px -93px; }
+.country_sg { background-position: -9px -64px; }
+.country_tr { background-position: -9px -35px; }
+.country_my { background-position: -9px -6px; }
+.country_uk { background-position: -9px -326px; }
+.country_at { background-position: -9px -239px; }
+.country_es { background-position: -9px -210px; }
+.country_de { background-position: -9px -180px; }
+.country_pm { background-position: -9px -152px; }
+.country_us { background-position: -9px -297px; }
+.country_br { background-position: -9px -268px; }
+.country_jp:hover { background-position: -9px -355px; }
+.country_tw:hover { background-position: -9px -541px; }
+.country_id:hover { background-position: -9px -511px; }
+.country_sg:hover { background-position: -9px -482px; }
+.country_tr:hover { background-position: -9px -453px; }
+.country_my:hover { background-position: -9px -424px; }
+.country_uk:hover { background-position: -9px -744px; }
+.country_at:hover { background-position: -9px -657px; }
+.country_es:hover { background-position: -9px -628px; }
+.country_de:hover { background-position: -9px -598px; }
+.country_pm:hover { background-position: -9px -570px; }
+.country_us:hover { background-position: -9px -715px; }
+.country_br:hover { background-position: -9px -686px; }
+.ritGlobalPopup > * { display: none; }
+.ritGlobalPopup:hover > * { display: block; }
+.ritGlobalList dl .jp a { background-position: -10px -350px; }
+.ritGlobalList dl .tw a { background-position: -10px -118px; }
+.ritGlobalList dl .id a { background-position: -10px -88px; }
+.ritGlobalList dl .sg a { background-position: -10px -60px; }
+.ritGlobalList dl .tr a { background-position: -10px -31px; }
+.ritGlobalList dl .my a { background-position: -10px -2px; }
+.ritGlobalList dl .uk a { background-position: -10px -320px; }
+.ritGlobalList dl .at a { background-position: -10px -232px; }
+.ritGlobalList dl .es a { background-position: -10px -204px; }
+.ritGlobalList dl .de a { background-position: -10px -175px; }
+.ritGlobalList dl .pm a { background-position: -10px -146px; }
+.ritGlobalList dl .us a { background-position: -10px -292px; }
+.ritGlobalList dl .br a { background-position: -10px -263px; }
+
+.ritGlobalLink {
+	text-align: right;
+	float: right;
+	padding-bottom: 10px !important;
+}
+
+.ritGlobalLink li {
+	float: left;
+	border-right: 1px solid #000000;
+	margin-right: -1px !important;
+	padding: 0 6px 0 7px !important;
+}
+
+.store .midias {
+	right: 29px !important;
+	top: -1px;
+}
+
+.small-header .ritGlobalCnt {
+	display: none !important;
+}

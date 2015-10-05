@@ -1,0 +1,5881 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+strong {
+	font-weight: bold
+}
+img {
+	border: none;
+	display: block
+}
+legend {
+	display: none
+}
+input, select, textarea {
+	color: #505050
+}
+input[type="radio"], input[type="checkbox"] {
+	background: none;
+	margin: 0;
+	padding: 0
+}
+input[type="radio"] {
+	height: 13px;
+	width: 13px
+}
+input[type="checkbox"] {
+	height: 14px;
+	width: 14px
+}
+*:focus {
+	outline: none
+}
+.modal-store, .iframe {
+	cursor: wait;
+	position: relative;
+	z-index: -1
+}
+.no-js .modal-store, .no-js .iframe {
+	cursor: pointer;
+	position: relative;
+	z-index: 1
+}
+html, body, #aspnetForm, #form1, #frmStore {
+	height: 100%;
+}
+body {
+	font: 12px Arial, Helvetica, Tahoma, sans-serif;
+	min-width: 980px;
+}
+body a, body a:hover {
+	color: #333;
+}
+.box {
+	background-color: #fff;
+	border: 1px solid #CECECE;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+.box .header {
+	background: none;
+	z-index: 1;
+}
+.box .header .title {
+	color: #2E5676;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 12px;
+}
+.box .header .title, .basket th span {
+	color: #2E5676;
+	display: block;
+}
+.gradient {
+	background-image: url("http://resources.rakuten.com.br/images/bg_box_gradient.png");
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+.box-shadow {
+	border: 1px solid #CECECE;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 2px 2px 5px #333333, -1px -1px 5px #333333;
+	-webkit-box-shadow: 2px 2px 5px #333333, -1px -1px 5px #333333;
+	box-shadow: 2px 2px 5px #333333, -1px -1px 5px #333333;
+}
+.dn {
+	display: none;
+}
+.rk-hide {
+	display: none !important;
+}
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -517px;
+}
+.push {
+	height: 517px;
+}
+.container {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 960px;
+	z-index: 1;
+}
+.container-full {
+	margin: 0;
+	min-width: 960px;
+	position: relative;
+	width: 100%;
+}
+#header {
+	background: none;
+	position: relative;
+	margin-bottom: 20px;
+	z-index: 300;
+}
+#store > img[width="1"] {
+	position: absolute;
+	z-index: -1;
+}
+div.small-header {
+	background: #fff;
+	border-bottom: 1px solid #d4d4d4;
+	border-top: 1px solid #bf0000;
+	height: 47px;
+	min-width: 1024px;
+}
+div.small-header *, div.small-header ::after, div.small-header ::before {
+	box-sizing: border-box;
+}
+div.small-header .mobile-tag, div.small-header #rk-area-logo-01, div.small-header .quick-nav, div.small-header nav, div.small-header .col.midias {
+	display: none;
+}
+div.small-header .logo, div.small-header .col_busca, div.small-header .helpers, div.small-header .user-basket {
+	display: table-cell !important;
+	vertical-align: top;
+	float: none !important;
+	position: static !important;
+}
+div.small-header .header.center {
+	display: table;
+	width: 100%;
+}
+div.small-header .field-input {
+	width: 100%;
+}
+div.small-header .logo > span {
+	margin-bottom: -5px;
+	border: 1px solid #d4d4d4;
+	border-top: none;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 -1px 2px 0 rgba(0, 0, 0, 0.03), 1px 0 2px 0 rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 -1px 2px 0 rgba(0, 0, 0, 0.03), 1px 0 2px 0 rgba(0, 0, 0, 0.03);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 -1px 2px 0 rgba(0, 0, 0, 0.03), 1px 0 2px 0 rgba(0, 0, 0, 0.03);
+	float: left;
+	padding: 10px 7px 14px;
+	margin-left: 5px;
+}
+div.small-header .logo a {
+	background: url("../images/rakuten_logo_small.gif") no-repeat;
+	text-indent: -99999px;
+	width: 131px;
+	height: 28px;
+	display: block;
+	float: left;
+}
+div.small-header .user-info {
+	position: static;
+	background: transparent;
+	border: 0;
+	height: auto;
+	width: auto;
+	margin: 7px 0 0 2px;
+}
+div.small-header .user-info #container-community-login {
+	right: 17px;
+	top: 10px;
+}
+div.small-header .user-info .small-help {
+	float: left;
+	margin-top: 12px;
+	margin-left: 10px;
+	display: block;
+}
+div.small-header .user-info .small-help a {
+	text-indent: -9000px;
+	display: block;
+	background: url("../images/sprite-mall-migration.png") no-repeat -60px -20px;
+	width: 24px;
+	height: 24px;
+}
+div.small-header .user-info .community-controls {
+	float: none;
+	position: static;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+div.small-header .user-info .community-controls li {
+	display: table-cell;
+	vertical-align: middle;
+	float: none!important;
+}
+div.small-header .user-info .community-controls li a {
+	margin: 0 2px;
+}
+div.small-header .user-info .identification {
+	padding-right: 0;
+	width: auto;
+	float: none;
+	vertical-align: top;
+	display: table-cell;
+	padding-top: 3px;
+}
+div.small-header .user-info .identification p.user-offline {
+	display: none;
+}
+div.small-header .user-info .identification > a {
+	color: #555;
+	text-decoration: none;
+	padding: 5px 0;
+}
+div.small-header .user-info .identification #ctl00_hypLogin {
+	margin-left: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+div.small-header .user-info .identification #ctl00_hypSingnup {
+	border-left: 1px solid #5b5b5b;
+	padding-left: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	white-space: nowrap;
+}
+div.small-header .user-info .identification > .superpoints-total {
+	position: relative;
+	cursor: pointer;
+	display: table-cell;
+	float: none;
+	color: #555;
+	text-decoration: none;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
+	width: auto;
+}
+div.small-header .user-info .identification > .superpoints-total::before {
+	background: url("../images/sprite-mall-migration.png") no-repeat -30px 0;
+	content: " ";
+	display: block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -8px;
+}
+div.small-header .user-info .identification > .superpoints-total i {
+	display: none;
+}
+div.small-header .user-info .identification > .superpoints-total b {
+	margin-right: 5px;
+	line-height: 12px;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+	color: #bf0000;
+	padding-top: 19px;
+	float: none;
+}
+div.small-header .user-info .identification #hypLogOut, div.small-header .user-info .identification .photo-customer {
+	display: none;
+}
+div.small-header .user-info .identification .user-name {
+	display: table-cell;
+	vertical-align: top;
+}
+div.small-header .user-info .identification .user-name.active {
+	position: relative;
+}
+div.small-header .user-info .identification .user-name.active ul.uluser {
+	display: block !important;
+}
+div.small-header .user-info .identification .user-name.active ul.uluser li {
+	color: #555555;
+}
+div.small-header .user-info .identification .user-name > a {
+	height: 31px;
+	max-width: 116px;
+	overflow: hidden;
+	padding: 0 20px 0 0;
+	position: relative;
+	color: #555;
+	border-right: 1px solid #d4d4d4;
+	margin: 2px 10px 0 0;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+}
+div.small-header .user-info .identification .user-name > a:hover {
+	color: #bf0000;
+}
+div.small-header .user-info .identification .user-name .b-caret {
+	height: 6px;
+	width: 8px;
+	background: url("../images/sprite-mall-migration.png") no-repeat;
+	position: absolute;
+	top: 10px;
+	right: 7px;
+}
+div.small-header .user-info .identification ul.uluser {
+	display: none;
+	position: absolute;
+	width: 308px;
+	height: 120px;
+	padding: 10px 0 0 163px;
+	z-index: 999;
+	top: 39px;
+	right: 10px;
+	background: #fff;
+	border: 1px solid #d4d4d4;
+}
+div.small-header .user-info .identification ul.uluser .my-points {
+	position: absolute;
+	right: 146px;
+	top: 0;
+	width: 130px;
+}
+div.small-header .user-info .identification ul.uluser .superpoints {
+	border-right: 1px dotted #999;
+	height: 100px;
+	margin-right: 0 !important;
+	margin-top: 5px;
+	width: 140px;
+}
+div.small-header .user-info .identification ul.uluser .wpr-member-seal {
+	background: url("http://resources.rakuten.com.br/images/rk-new-icons2.png") no-repeat scroll 0px 0px transparent;
+	height: 60px;
+	margin-top: 5px;
+	padding: 0 0 0 36px;
+}
+div.small-header .user-info .identification ul.uluser .label-rank {
+	background-color: #282828;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	width: 93px;
+}
+div.small-header .user-info .identification ul.uluser .superpoints-total {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #bf2026;
+	display: block;
+	line-height: 16px;
+	margin-top: 0;
+	padding: 3px 0 0;
+	float: left;
+}
+div.small-header .user-info .identification ul.uluser .superpoints-total b {
+	float: left;
+	font-size: 16px;
+	text-align: left;
+	margin: 0;
+}
+div.small-header .user-info .identification ul.uluser .superpoints-total i {
+	color: #000;
+	float: left;
+	font-weight: normal;
+	margin: 0;
+	text-decoration: none;
+}
+div.small-header .user-info .identification ul.uluser .exclamation {
+	display: block;
+	position: absolute;
+	top: 80px;
+	left: -22px;
+	font-weight: normal;
+	width: 122px;
+	padding: 2px 0 9px 35px;
+	vertical-align: middle;
+	line-height: 12px;
+	font-size: 10px;
+	background: url("http://resources.rakuten.com.br/images/rk-new-icons1.png") no-repeat scroll 0px -67px transparent !important;
+	color: #bf2026;
+}
+div.small-header .colhelp {
+	display: none !important;
+}
+div.small-header .col_busca {
+	width: 100%;
+}
+div.small-header .col_busca a.rk-select-category {
+	display: none;
+}
+div.small-header .col_busca .search {
+	height: auto;
+	margin: 0 0 0 5px;
+	padding: 11px 0 0;
+	position: static;
+}
+div.small-header .col_busca .search select {
+	display: none !important;
+}
+div.small-header .col_busca .search a.btn-search {
+	top: 3px;
+	right: 5px;
+	z-index: 999;
+	border-left: 1px solid #bbbbbb;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-image: -moz-linear-gradient(center top, #ffffff, #f6f6f6);
+	border-left: 1px solid #bbb !important;
+	width: 22px;
+	height: 22px;
+}
+div.small-header .col_busca .search a.btn-search {
+	background: none;
+}
+div.small-header .col_busca .search a.btn-search .b-icon-search {
+	background: url("../images/sprite-mall-migration.png") no-repeat -64px 0;
+	width: 15px;
+	height: 18px;
+	display: block;
+	float: right;
+}
+div.small-header .col_busca .field-input {
+	border: 1px solid #bbbbbb;
+	padding-bottom: 0;
+	padding-left: 0 !important;
+	padding-right: 0;
+	padding-top: 0;
+	width: 100%;
+}
+div.small-header .col_busca .field-input > div {
+	background: none;
+	padding: 4px 4px 0;
+}
+div.small-header .col_busca .field-input input[type="text"]#txtGlobalSearch {
+	border: 0 none;
+	border-radius: 0;
+	box-sizing: content-box;
+	color: #444;
+	font: 14px Arial;
+	height: 20px;
+	padding: 0;
+	text-transform: lowercase;
+	background: none repeat scroll 0 0 transparent;
+	box-shadow: none;
+	margin: 0;
+	width: 100%;
+}
+div.small-header #simple-user-basket {
+	background: none;
+	position: static;
+}
+div.small-header #simple-user-basket > a {
+	background: url("../images/sprite-mall-migration.png") no-repeat 0px -18px !important;
+	cursor: default;
+	margin: 9px 10px 0 10px;
+	height: 30px;
+	width: 29px;
+	padding: 0;
+	position: relative;
+	float: left;
+}
+div.small-header #simple-user-basket > a span {
+	position: absolute;
+	background-color: #bf0000;
+	border-radius: 8px;
+	font-weight: normal;
+	margin-top: 2px;
+	padding: 2px 4px;
+	right: 0;
+	top: 0px;
+	color: #fff;
+	line-height: 11px;
+	font-size: 11px;
+}
+div.small-header #simple-user-basket > a b {
+	width: auto;
+	height: auto;
+	font-weight: normal;
+	color: #fff;
+}
+.own-domain {
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+.own-domain header {
+	height: 75px;
+	padding-top: 0;
+}
+.own-domain .rk-logo {
+	top: 0px;
+}
+.own-domain .search {
+	margin-left: 430px;
+	margin-right: 10px;
+	top: 22px;
+}
+#header .user-offline {
+	float: left;
+	margin-right: 5px;
+}
+header .container {
+	height: 129px;
+	overflow: visible;
+}
+header .container-full {
+	height: 143px;
+	overflow: visible;
+}
+#header .rk-logo {
+	background: url("http://resources.rakuten.com.br/images/rakuten_logo_new_slogan-shopping.png") no-repeat scroll 0 0;
+	width: 346px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 21px;
+}
+header .user-info {
+	width: 100%;
+	z-index: 200;
+}
+.rk-top-userinfo {
+	position: relative;
+}
+header .identification {
+	color: #535353;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+}
+header .identification > span {
+	display: none;
+}
+header .identification a {
+	color: #333;
+	text-decoration: underline;
+}
+header .identification a:hover {
+	text-decoration: none !important;
+}
+header .user-info .superpoints {
+	position: absolute;
+	margin-right: 472px;
+	right: 0;
+	top: 2px;
+	line-height: 23px;
+	text-decoration: none;
+	border-right: 1px dotted #d7d7d7;
+	padding-right: 10px;
+}
+header .user-info .superpoints a {
+	text-decoration: none;
+}
+header .user-info .superpoints a b {
+	font-weight: bold;
+}
+header .user-info ._accont {
+	height: 110px;
+	position: absolute;
+	right: 195px;
+	top: 3px;
+	width: 140px;
+	z-index: 99;
+}
+header .user-info ._accont ul {
+	background: #FFF;
+	border: 1px solid #CCC;
+	-moz-border-radius: 0 8px 8px 8px;
+	-webkit-border-radius: 0 8px 8px 8px;
+	border-radius: 0 8px 8px 8px;
+	padding: 2px;
+	margin-top: -2px;
+}
+header .user-info ._accont ul .help {
+	background: none;
+}
+header .user-info li {
+	height: 20px;
+	line-height: 20px;
+	padding-left: 8px;
+}
+header .user-info li:first-child {
+	border-left: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+header .user-info li a {
+	color: #333;
+	padding: 4px 20px 2px 5px;
+	text-decoration: none;
+	border: 1px solid transparent;
+}
+header .user-info .user-offline span, header .superpoints .label-rank, header .superpoints .icon.exclamation, header .user-info .about-superpoints {
+	display: none;
+}
+header .superpoints-total i {
+	font-style: normal;
+}
+header .superpoints-total b {
+	float: right;
+	margin-left: 5px;
+}
+header .user-info .superpoints a {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat scroll 0 -1548px;
+	color: #C1272D;
+	display: inline-block;
+	font-weight: bold;
+	height: 23px;
+	padding-left: 30px;
+}
+header .user-info .treatment {
+	padding-right: 25px;
+	position: relative;
+	z-index: 5;
+}
+header .user-info .treatment span {
+	background-position: 0 -584px;
+	cursor: pointer;
+	display: inline-block;
+	height: 17px;
+	position: absolute;
+	right: 0;
+	text-indent: -9999px;
+	top: 2px;
+	width: 17px;
+}
+header .user-info .treatment div {
+	background: #3A3A3A;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+	display: none;
+	line-height: 17px;
+	padding: 5px 10px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 25px;
+}
+header .search {
+	margin: 0 102px 0 359px;
+	border: none;
+	top: 22px;
+	height: 41px;
+	position: relative;
+	z-index: 21;
+	padding: 0px;
+}
+header .field {
+	padding: 0 96px 0 0;
+}
+#search-autocomplete .field {
+	border: 0 none;
+	position: relative;
+	z-index: 100;
+	overflow: visible;
+	padding: 0;
+}
+.rk-home #search-autocomplete .field {
+	padding: 0;
+}
+header .search .field-input {
+	padding: 0 89px 0 144px;
+}
+header .search .field-input div {
+	position: relative;
+	z-index: 200;
+	background: #e7e7e7;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	top: -3px;
+}
+header .search #txtGlobalSearch {
+	background: none;
+	height: 20px;
+	color: #444;
+	padding: 0;
+	width: 100%;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	line-height: 31px;
+	font: normal 14px Arial;
+	border: 0 none;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	width: 350px;
+	margin: 7px 0 0 31px;
+}
+.ie7 header .search #txtGlobalSearch {
+	height: 11px;
+}
+.ie7 header .search #txtGlobalSearch, .ie7 header .search #txtGlobalSearchLabel, .ie8 header .search #txtGlobalSearch, .ie8 header .search #txtGlobalSearchLabel {
+	text-transform: lowercase;
+}
+header .search select {
+	cursor: pointer;
+	height: 35px;
+	left: 4px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 0;
+	z-index: 4;
+}
+.select-text {
+	display: none;
+}
+
+@media screen and (max-width: 1190px) {
+.jq-infiedllabel.focus label {
+	display: none !important;
+}
+}
+header .search .rk-select-category {
+	-moz-box-shadow: inset -1px -1px 0px #d2d2d2, inset 1px 1px 0px #d2d2d2;
+	-webkit-box-shadow: inset -1px -1px 0px #d2d2d2, inset 1px 1px 0px #d2d2d2;
+	box-shadow: inset -1px -1px 0px #d2d2d2, inset 1px 1px 0px #d2d2d2;
+	background: white;
+	border: 4px solid #e7e7e7;
+	color: #444444;
+	top: -3px;
+	height: 33px;
+	left: 3px;
+	line-height: 33px;
+	position: absolute;
+	display: block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0 25px 0 8px;
+	text-decoration: none;
+}
+header .search .rk-select-category:hover {
+	text-decoration: none;
+}
+header .search .rk-select-category {
+	width: 94px;
+}
+header .search .rk-select-category:hover {
+	text-decoration: none;
+}
+header .search .rk-select-category .departament {
+	display: block;
+}
+header .search .rk-select-category .departament {
+	width: 98px;
+	overflow: hidden;
+}
+header .search .rk-select-category .btn {
+	background: url("http://resources.rakuten.com.br/images/rk_icons.png") no-repeat scroll 0 0;
+	height: 5px;
+	position: absolute;
+	right: 8px;
+	top: 15px;
+	width: 5px;
+}
+.oldie header .search input {
+	height: 20px;
+	padding: 8px 0 5px 35px;
+}
+header .search label {
+	left: 35px;
+	z-index: 2;
+	font: normal 12px/38px Arial;
+	text-transform: lowercase;
+	top: 2px;
+	width: 98%;
+}
+@-moz-document url-prefix() {
+header .search label {
+left: 36px;
+}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+header .search label {
+	top: 2px;
+}
+}
+.oldie header .search label {
+	display: none !important;
+}
+header .search .btn-search {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_important.png") no-repeat scroll 0 -48px;
+	width: 79px;
+	height: 40px;
+	border: none !important;
+	text-indent: -9999px;
+	top: -3px;
+	right: 0;
+	line-height: 30px;
+	position: absolute;
+	margin: 0;
+}
+header .search .btn-search:hover {
+	background-position: -81px -48px;
+}
+.store .rk-search-keywords-wrapper {
+	margin: 39px 190px 0 420px;
+	background: white;
+	padding: 4px 0 2px;
+	font-size: 9px;
+	padding: 5px;
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	top: 68px;
+	left: 357px;
+	width: 340px;
+	z-index: 15;
+}
+.store .rk-search-keywords-wrapper .links {
+	position: static;
+}
+.store .rk-search-keywords-wrapper .links > span {
+	color: #4e4e4e;
+	text-transform: capitalize;
+	font-size: 11px;
+	float: left;
+	margin-right: 5px;
+}
+.store .rk-search-keywords-wrapper li {
+	padding: 0 2px;
+	border: none;
+}
+.store .rk-search-keywords-wrapper a {
+	color: #4874b8;
+	text-transform: capitalize;
+	text-decoration: underline;
+	font-size: 9px;
+	line-height: 15px;
+	height: auto;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.store .rk-search-keywords-wrapper a:hover {
+	text-decoration: underline;
+}
+.rk-store-front .rk-search-keywords-wrapper, .storefront .rk-search-keywords-wrapper, .page-product .rk-search-keywords-wrapper, #cssStoreBody .rk-search-keywords-wrapper, .store #store .rk-search-keywords-wrapper, #store .rk-search-keywords-wrapper {
+	display: none;
+}
+
+@media screen and (max-width: 1190px) {
+.rk-search-keywords-wrapper a:nth-child(n+7) {
+	display: none;
+}
+}
+.store header #categories .main-nav {
+	display: none;
+	border: 1px solid #c9c9c9;
+	border-width: 0 1px 1px 1px;
+	padding-bottom: 0;
+	overflow: visible;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	-moz-box-shadow: 1px 3px 5px #CCC;
+	-webkit-box-shadow: 1px 3px 5px #CCC;
+	box-shadow: 1px 3px 5px #CCC;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.store .rk-home header .open-nav #categories .main-nav {
+	display: block;
+}
+.store header nav {
+	z-index: 102;
+	top: auto;
+	bottom: 3px;
+	left: 0;
+	position: absolute;
+}
+.store .rk-home header #categories, .store .rk-home #search-stores {
+	bottom: -4px;
+	top: auto;
+}
+.store .rk-home #categories .btn {
+	display: block !important;
+}
+.store .rk-home #categories .bg-outfocus-gray > a {
+	background-position: -133px -311px !important;
+	color: #505050 !important;
+}
+.store #search-stores > .btn {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_buttons.png") no-repeat -133px -343px;
+	padding-left: 41px;
+	color: #5a5a5a;
+	width: 65px;
+	font: normal 1.2222em/32px "dinBold";
+	text-indent: 0;
+	text-decoration: none;
+}
+.store #search-stores > .btn:hover {
+	text-decoration: none;
+}
+.store #search-stores.selected > .btn {
+	background-position: -2px -343px;
+	color: white;
+}
+.store header nav li.unselected .btn, .store .rk-home #categories li.unselected .btn {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_buttons.png") no-repeat -133px -375px;
+	color: #505050 !important;
+}
+.store header nav li.selected > .btn, .store .rk-home #categories .btn {
+	background-position: 0 -311px;
+	color: white;
+}
+.store header nav li > .btn {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_buttons.png") no-repeat -132px -311px;
+	width: 116px;
+	height: 31px;
+	display: block;
+	padding-left: 8px;
+	color: #505050;
+	font: normal 1.2222em "dinBold";
+	line-height: 31px;
+	text-indent: 0;
+	text-decoration: none;
+}
+.store header nav li > .btn:hover, .store header nav li > .main-nav a:hover {
+	text-decoration: none;
+}
+.store #search-stores {
+	left: 80px;
+	top: auto;
+	bottom: 3px;
+	width: 107px;
+}
+.store #search-stores.selected {
+	z-index: 130;
+}
+.store #search-stores .search {
+	background: #FFF;
+	border: none;
+	display: none;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 15px;
+	position: absolute;
+	left: -79px;
+	top: 31px;
+	width: 931px;
+	border: 4px solid #dfdfdf;
+	-moz-box-shadow: 0 1px 5px #CCC;
+	-webkit-box-shadow: 0 1px 5px #CCC;
+	box-shadow: 0 1px 5px #CCC;
+	height: 175px !important;
+	overflow: visible !important;
+}
+.store #search-stores .search fieldset {
+	background: #bb0d0d;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	width: 900px;
+	padding: 14px 20px;
+}
+.store #search-stores .rk-autocomplete {
+	width: 422px;
+	border-width: 3px;
+	top: 46px;
+	left: 267px;
+}
+.ie8 #search-stores .rk-autocomplete {
+	left: 267px;
+}
+.store #search-stores .letters {
+	margin-bottom: 15px;
+	position: absolute;
+	top: 69px;
+	left: 16px;
+}
+.store #search-stores .inner {
+	background: none;
+	position: relative;
+}
+.store #search-stores .inner span {
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 0;
+	float: left;
+	line-height: 35px;
+	margin-right: 10px;
+}
+.store #search-stores .field {
+	border: 4px solid #b12525;
+	float: left;
+	padding: 0;
+	width: 422px;
+	overflow: visible;
+}
+.store #search-stores .field input {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat scroll 10px -63px #ffffff;
+	border: 1px solid #d2d2d2;
+	color: #6d6c6c;
+	float: left;
+	height: 16px;
+	margin: 0;
+	font: normal 12px Arial;
+	padding: 6px 0 7px 31px;
+	width: 389px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: inset -1px -1px 0px #d2d2d2, inset 1px 1px 0px #d2d2d2;
+	-webkit-box-shadow: inset -1px -1px 0px #d2d2d2, inset 1px 1px 0px #d2d2d2;
+	box-shadow: inset -1px -1px 0px #d2d2d2, inset 1px 1px 0px #d2d2d2;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+.store #search-stores .field .btn {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_important.png") no-repeat scroll 0px -89px;
+	color: #FFF;
+	float: left;
+	height: 34px;
+	width: 79px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0;
+	position: absolute;
+	right: -87px;
+	text-indent: -9999px;
+	top: -1px;
+	font: bold 12px/29px "Arial";
+}
+.store #search-stores .field .btn:hover {
+	background-position: -81px -89px;
+}
+.store #search-stores .letters > span {
+	color: #000;
+	display: block;
+	float: none;
+}
+.store #search-stores .letters li {
+	padding: 0;
+	border: 0 none;
+}
+.store #search-stores .letters li a {
+	border: 1px solid #e7e7e7;
+	float: left;
+	height: auto;
+	line-height: normal;
+	padding: 6px 8px;
+	margin-right: 7px;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-ms-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	transition: 0.3s all;
+}
+.store #search-stores .letters li a:hover {
+	-moz-box-shadow: 1px 1px 1px #CCC;
+	-webkit-box-shadow: 1px 1px 1px #CCC;
+	box-shadow: 1px 1px 1px #CCC;
+}
+.store #search-stores .letters, .store #search-stores .letters ul {
+	overflow: visible;
+}
+.store header nav li > div {
+	background: none;
+	padding-bottom: 9px;
+	position: absolute;
+	left: 0px;
+	top: 31px;
+	width: 186px;
+}
+.store header nav li .sub-nav {
+	border: 5px solid #dfdfdf;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0 0 8px #999;
+	-webkit-box-shadow: 0 0 8px #999;
+	box-shadow: 0 0 8px #999;
+	background: #fff;
+	display: none;
+	overflow: visible;
+	padding: 3px 11px 5px;
+	position: absolute;
+	left: 181px;
+	top: -8px;
+	width: auto;
+	z-index: 100;
+}
+.store header nav li .sub-nav li a, .store header nav li .sub-nav li:last-child a {
+	background-position: right -726px !important;
+}
+.store header nav li .sub-nav li a:hover {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat right -726px #f6f6f6 !important;
+	border-left: 0 !important;
+}
+.store header nav ul ul {
+	background: white;
+	padding: 0;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+.store header .sub-nav li.selected > a:hover {
+	background-image: none;
+	background-color: #e9e9e9;
+	border-left: 0;
+}
+.store header nav li .main-nav > ul > li.selected::after {
+	right: -2px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.store header nav li .main-nav > ul > li.selected::after {
+	border-color: rgba(223, 223, 223, 0);
+	border-right-color: #ffffff;
+	border-width: 11px;
+	top: 73%;
+	margin-top: -20px;
+	z-index: 101;
+}
+.store header nav li li a {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat 149px -726px;
+	border-bottom: 0;
+	border-top: 1px solid #eeeeee;
+	border-left: 0;
+	color: #323232;
+	display: block;
+	font-weight: bold;
+	height: auto;
+	min-height: 18px;
+	line-height: 18px;
+	padding: 6px 35px 6px 5px;
+	text-decoration: none;
+	color: #2b5fad;
+}
+.store header nav li li a:hover {
+	background-color: #f6f6f6;
+}
+.store header nav li ul > li:last-child > a {
+	color: #2b5fad;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat 149px -726px;
+	border-bottom: 0;
+}
+header nav .sub-nav ul {
+	background: none;
+	float: left;
+	padding: 0 0 0 10px;
+	width: 215px;
+}
+header nav .sub-nav li {
+	height: auto;
+}
+header nav li li {
+	font-size: 12px;
+	height: auto;
+	position: relative;
+}
+header nav .sub-nav li:first-child a {
+	border-top: none;
+}
+#search-stores {
+	height: 31px;
+	position: absolute;
+	left: 125px;
+	top: 111px;
+	z-index: 2;
+	width: 87px;
+	z-index: 101;
+}
+#search-stores > .btn {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_buttons.png") no-repeat -133px -343px;
+	padding-left: 41px;
+	color: #5a5a5a;
+	width: 65px;
+	font: normal 1.2222em/32px "dinBold";
+}
+#search-stores > .btn:hover, #search-stores.selected > .btn {
+	background-position: -2px -343px;
+	color: white;
+}
+header .links, header .highlights {
+	left: 215px;
+	position: absolute;
+	right: auto;
+	top: 110px;
+}
+header .links li, header .highlights li {
+	border-left: 1px dotted #ADADAD;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0 20px;
+	overflow: hidden;
+}
+header .links li:first-child, header .highlights li:first-child {
+	border-left: none;
+}
+header .links a, header .highlights a {
+	background-repeat: no-repeat;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+	text-decoration: none;
+	position: relative;
+	z-index: 3;
+}
+header .links a:hover, header .highlights a:hover {
+	color: #418EC9;
+}
+header .links img, header .highlights img {
+	float: left;
+	margin-right: 6px;
+	width: auto;
+}
+.top-open-store {
+	position: relative;
+	top: 105px;
+	position: absolute;
+	right: 5px;
+}
+.top-open-store-img {
+	text-indent: -9999px;
+	background: url("http://resources.rakuten.com.br/images/Banner-Home-Abra-Sua-Loja.png") no-repeat scroll 0 0;
+	width: 193px;
+	height: 30px;
+	display: block;
+}
+#cssStoreBody .top-open-store, #store .top-open-store, .storefront .top-open-store, .rk-store-front .top-open-store, .page-product.storefront .top-open-store {
+	display: none;
+}
+#search-stores .search {
+	background: url("http://resources.rakuten.com.br/images/bg_store_bottom.png") no-repeat 0 bottom;
+	border: none;
+	display: none;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 15px;
+	position: absolute;
+	left: -4px;
+	top: 31px;
+	width: 703px;
+}
+#search-stores .inner {
+	background: url("http://resources.rakuten.com.br/images/bg_store_middle.png") repeat-y 0 0;
+	padding: 15px 20px;
+}
+#search-stores .inner span {
+	color: #c73a40;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+#search-stores .letters, #search-stores .letters ul {
+	overflow: hidden;
+}
+#search-stores .letters {
+	margin-bottom: 15px;
+}
+#search-stores .letters li {
+	border-left: 1px solid #e7e7e7;
+	float: left;
+	height: auto;
+	line-height: normal;
+	padding: 0 8px;
+}
+#search-stores .letters li:first-child {
+	border-left: none;
+}
+#search-stores .letters a {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	height: 21px;
+	line-height: 21px;
+	text-decoration: none;
+}
+#search-stores .letters a:hover {
+	color: #418EC9;
+}
+#search-stores .field {
+	border: 4px solid #EBEBEB;
+	float: left;
+	padding: 0;
+	width: 422px;
+}
+#search-stores .field input {
+	border: 1px solid #B9272D;
+	background-color: #fff;
+	background-position: 11px -300px;
+	color: #6d6c6c;
+	float: left;
+	height: 16px;
+	font-size: 13px;
+	margin: 0;
+	padding-bottom: 7px;
+	padding-top: 6px;
+	width: 314px;
+}
+#search-stores .field .btn {
+	background-position: 0 -231px;
+	color: #FFF;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 31px;
+	line-height: 29px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0;
+	width: 69px;
+}
+#search-stores label {
+	left: 32px;
+	top: -3px;
+}
+@-moz-document url-prefix() {
+#search-stores label {
+left: 32px;
+top: -4px;
+}
+}
+#search-stores .rk-links {
+	position: absolute;
+	bottom: -148px;
+	left: 16px;
+}
+#search-stores .rk-links a {
+	background-position: 0 -652px;
+	color: #418EC9;
+	display: inline-block;
+	font-weight: bold;
+	height: 18px;
+	margin-left: 20px;
+	line-height: 18px;
+	padding-left: 23px;
+	text-decoration: none;
+}
+#search-stores .rk-links a:first-child {
+	margin-left: 0;
+}
+#search-stores .rk-links a:hover {
+	text-decoration: underline;
+}
+.storefront .main {
+	width: auto;
+}
+.main {
+	width: 980px;
+	margin: 0 auto;
+}
+#store .main {
+	padding: 0;
+}
+.main .container {
+	padding-top: 8px;
+}
+.main .container-full {
+	padding: 8px 5px 0;
+	min-width: 960px;
+	overflow: hidden;
+	width: auto;
+}
+.main .content {
+	clear: right;
+	overflow: hidden;
+}
+.main .content .txt4us {
+	position: absolute;
+	display: none;
+}
+footer {
+	margin-top: 24px;
+	padding-bottom: 20px;
+	clear: both;
+}
+.store footer .footer2012 {
+	margin: 0 auto;
+	font-family: Arial, 'Trebuchet MS';
+}
+footer .institutional-nav ul, footer .institutional-nav li, .rakuten-world ul, .rakuten-world li {
+	display: inline-block;
+}
+footer .institutional-nav > ul > li:first-child, .rakuten-world > ul > li:first-child {
+	margin-top: 0;
+}
+footer .institutional-nav > ul > li, .rakuten-world > ul > li {
+	background: none;
+	display: block;
+	margin-top: 3px;
+	padding: 0;
+}
+footer a:link, footer a:visited {
+	color: #418ec9;
+	text-decoration: none;
+}
+footer .institutional-nav ul, footer .institutional-nav li, .rakuten-world ul, .rakuten-world li {
+	display: inline-block;
+}
+footer .institutional-nav li, .rakuten-world li {
+	background: url("https://seguro.rakuten.com.br/resourceshttp://resources.rakuten.com.br/images/bg_footer_list_div.png") no-repeat 0 8px;
+	padding: 6px 6px 0 8px;
+}
+footer nav ul li li {
+	float: left;
+	width: 222px;
+	margin: 0 10px 5px 0;
+}
+footer .institutional-nav, .rakuten-world {
+	background: none;
+	border-top: 1px solid #d1d7da;
+	height: auto;
+	padding: 17px 0;
+	text-align: center;
+}
+.store footer .footer2012 .footer-title {
+	display: block;
+	margin: 0 0 20px 0;
+	color: #C73A40;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+.store footer .footer2012 .bottom-stroke {
+	border-bottom: 1px solid #d3d3d3;
+}
+.store footer .footer2012 .institucional-nav {
+	margin: 0 0 25px 0;
+	padding: 20px 0 9px 0;
+	border-bottom: 1px solid #D1D7DA;
+	font-size: 12px;
+}
+.store footer .footer2012 .institutional-nav ul li a:hover {
+	color: #c73a40;
+}
+.store footer .footer2012 .category-contact-social {
+	width: 100%;
+	height: 380px;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav {
+	float: left;
+	width: 380px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat right -951px transparent;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel {
+	width: 360px;
+	font-size: 11px;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel a.btn {
+	display: none !important;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel .main-nav ul {
+	width: 360px;
+	margin: 20px 0 0 0;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel .main-nav ul li {
+	width: 173px;
+	margin: 0 0px 6px 0;
+	padding: 0 0 0 7px;
+	font-size: 11px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat scroll -997px 4px transparent;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel .main-nav ul li:hover {
+	background-position: -997px -36px;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel .main-nav ul li a {
+	color: #4e4e4e;
+}
+.store footer .footer2012 .category-contact-social .categorias-nav #categories .first-nivel .main-nav ul li a:hover {
+	color: #c73a40;
+}
+.store footer .footer2012 .category-contact-social .contact-social {
+	float: right;
+	width: 550px;
+	height: 390px;
+}
+.store footer .footer2012 .category-contact-social .contact {
+	float: left;
+	width: 295px;
+	margin: 0 30px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat right -951px transparent;
+	font-size: 11px;
+	color: #4e4e4e;
+}
+footer .footer2012 .category-contact-social .contact .by-phone, footer .footer2012 .category-contact-social .contact .by-mail, .store footer .footer2012 .category-contact-social .contact .by-chat {
+	width: 280px;
+	margin: 0 0 20px 0;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat left top transparent;
+}
+.store footer .footer2012 .category-contact-social .contact .by-phone {
+	background-position: 0 7px;
+}
+.store footer .footer2012 .category-contact-social .contact .by-mail {
+	background-position: 0 -90px;
+}
+.store footer .footer2012 .category-contact-social .contact .by-chat {
+	background-position: 0 -210px;
+}
+footer .footer2012 .category-contact-social .contact .by-phone .container, footer .footer2012 .category-contact-social .contact .by-mail .container, .store footer .footer2012 .category-contact-social .contact .by-chat .container {
+	min-width: 190px;
+	width: 190px;
+	padding: 0 0 0 10px;
+	margin: 0 0 0 70px;
+	border-left: 1px solid #dadada;
+}
+footer .footer2012 .category-contact-social .contact .by-phone .footer-title, footer .footer2012 .category-contact-social .contact .by-mail .footer-title, .store footer .footer2012 .category-contact-social .contact .by-chat .footer-title {
+	margin: 0;
+}
+.store footer .footer2012 .category-contact-social .contact .working-hour {
+	display: block;
+	padding: 0 0 0 7px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat scroll -997px 5px transparent;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #4e4e4e;
+}
+.store footer .footer2012 .category-contact-social .contact .by-phone .number {
+	display: block;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: bold;
+	color: #4e4e4e;
+}
+.store footer .footer2012 .category-contact-social .contact .by-mail .send-mail {
+	width: 120px;
+	height: 27px;
+	margin: 4px 0 0 0;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat -396px 0 transparent;
+}
+.store footer .footer2012 .category-contact-social .contact .by-mail .send-mail a {
+	display: block;
+	height: 27px;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .category-contact-social .contact .by-mail .send-mail:hover {
+	background-position: -556px 0;
+	cursor: pointer;
+}
+.store footer .footer2012 .category-contact-social .contact .by-chat .send-mail {
+	width: 120px;
+	height: 27px;
+	margin: 4px 0 0 0;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat -396px -54px transparent;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .category-contact-social .contact .by-chat .send-mail a {
+	display: block;
+	height: 27px;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .category-contact-social .contact .by-chat .send-mail:hover {
+	background-position: -556px -54px;
+	cursor: pointer;
+}
+.store footer .footer2012 .category-contact-social .social {
+	float: right;
+	width: 205px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat right -951px transparent;
+}
+.store footer .footer2012 .category-contact-social .social ul {
+	height: 25px;
+	margin: 0 0 20px 0;
+}
+.store footer .footer2012 .category-contact-social .social ul li {
+	float: left;
+	width: 25px;
+	height: 26px;
+	margin: 0 9px 0 0;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat 0 0 transparent;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .category-contact-social .social ul li.twitter {
+	background-position: -396px -135px;
+}
+.store footer .footer2012 .category-contact-social .social ul li.facebook {
+	background-position: -431px -135px;
+}
+.store footer .footer2012 .category-contact-social .social ul li.blog {
+	background-position: -465px -135px;
+}
+.store footer .footer2012 .category-contact-social .social ul li.youtube {
+	background-position: -499px -135px;
+}
+.store footer .footer2012 .category-contact-social .social ul li.pinterest {
+	background-position: -533px -135px;
+}
+.store footer .footer2012 .category-contact-social .social ul li a {
+	display: block;
+	height: 26px;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .category-contact-social .social #facebook header {
+	display: none;
+}
+.store footer .footer2012 .category-contact-social .social #facebook #faces {
+	padding: 0 !important;
+}
+.store footer .footer2012 .miscellaneous {
+	clear: both;
+	padding: 20px 0 0 0;
+	margin: 20px 0 0 0;
+	border-top: 1px solid #D3D3D3;
+}
+.store footer .footer2012 .payment-security-logo {
+	height: 120px;
+}
+.store footer .footer2012 .payment-security-logo .payment {
+	float: left;
+	width: 380px;
+	margin: 0 35px 0 0;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat right -951px transparent;
+}
+.store footer .footer2012 .payment-security-logo .payment .creditcards {
+	width: 360px;
+	height: 60px;
+	margin: 0 0 0 15px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat 0 -326px transparent;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .payment-security-logo .security-certify {
+	float: left;
+	width: 250px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat right -951px transparent;
+}
+.store footer .footer2012 .payment-security-logo .security-certify .stamps {
+	width: 160px;
+	height: 60px;
+	margin: 0 0 0 15px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat -393px -207px transparent;
+	text-indent: -9999px;
+	display: block;
+}
+.store footer .footer2012 .payment-security-logo .rk-logo {
+	float: right;
+	width: 230px;
+	height: 53px;
+	margin: 20px 31px 0 0;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite-footer2012.png") no-repeat 0 -430px transparent;
+}
+.store footer .footer2012 .payment-security-logo .rk-logo a {
+	display: block;
+	height: 53px;
+	text-indent: -9999px;
+}
+.store footer .footer2012 .miscellaneous .disclaimer {
+	margin: 20px 0 0 0;
+	font-size: 11px;
+	color: #4e4e4e;
+	text-align: center;
+}
+.store footer .footer2012 .rk-worldwide {
+	padding: 0 0 12px 0;
+	font-size: 12px;
+	text-align: center;
+}
+.store footer .footer2012 .rk-worldwide span {
+	display: block;
+	margin: 0 0 8px 0;
+	padding: 3px;
+	background: #c00003;
+	font-weight: bold;
+	color: #fff;
+}
+.store footer .footer2012 .rk-worldwide ul {
+	display: inline-block;
+}
+.store footer .footer2012 .rk-worldwide ul li {
+	float: left;
+	display: inline-block;
+}
+.store footer .footer2012 .rk-worldwide ul li a:hover {
+	color: #c73a40;
+}
+.store footer .footer2012 .rk-worldwide ul li > ul li {
+	margin: 5px 0;
+	padding: 0 10px;
+	border-left: 1px solid #6b6b6b;
+}
+.store footer .footer2012 .rk-worldwide ul li > ul li:first-child {
+	border-left: none;
+}
+.btn {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sprite_button_new.png") no-repeat 0 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+.ico {
+	background: url("../images/sprite_ico2.png") no-repeat 0 0;
+}
+.field {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.form .field {
+	margin-top: 10px;
+}
+.field label {
+	display: block;
+}
+.form .radio span, .form .radio input, .form .checkbox span, .form .checkbox input {
+	display: inline;
+	float: left;
+}
+.form .radio span {
+	margin-bottom: 0;
+}
+.form .radio input {
+	margin: 2px 7px 0 0;
+}
+.form .checkbox input {
+	margin: 2px 7px 0 0;
+}
+.jq-infiedllabel label {
+	cursor: text;
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+}
+.jq-infiedllabel.focus label {
+	opacity: 0.5;
+}
+.no-js .jq-infiedllabel label {
+	display: none;
+}
+.rk-superpoints-stamp {
+	font-size: 12px;
+	font-family: Arial;
+	color: #363636;
+	background: url("../images/ico_sp.png") no-repeat;
+	padding: 12px 0 9px 34px;
+}
+.rk-superpoints-stamp .rk-points, .rk-superpoints-stamp #lblSP {
+	color: #bf0000;
+	font-weight: bold;
+	font-family: Arial;
+}
+#waiting {
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat 0 center;
+	float: right;
+	height: 25px;
+	padding-left: 30px;
+	width: auto;
+}
+#waiting span {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix, .ie8 .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.loading-progress {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
+.loading-progress div {
+	border: 1px solid #b1b1b1;
+	color: #484848;
+	font-size: 12px;
+	font-weight: bold;
+	height: 44px;
+	margin: -60px 0 0 -60px;
+	padding-top: 77px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	width: 122px;
+	background: #ffffff url("http://resources.rakuten.com.br/images/loading.gif") no-repeat center 26px;
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat center 26px, -moz-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat center 26px, -webkit-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat center 26px, -o-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat center 26px, -ms-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat center 26px, linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+}
+#body .rk-buttons, #body .rk-buttons:visited, #cssStoreBody .rk-buttons, #cssStoreBody .rk-buttons:visited, #store .rk-buttons, #store .rk-buttons:visited {
+	display: inline-block;
+	padding: 3px 10px 4px;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+#body .rk-buttons:hover, #cssStoreBody .rk-buttons:hover, #store .rk-buttons:hover {
+	background-color: #111;
+	color: #fff;
+	text-decoration: none;
+}
+#body .rk-small.rk-buttons, #body .rk-small.rk-buttons:visited, #cssStoreBody .rk-small.rk-buttons, #cssStoreBody .rk-small.rk-buttons:visited, #store .rk-small.rk-buttons, #store .rk-small.rk-buttons:visited {
+	font-size: 11px;
+}
+#body .rk-buttons, #body .rk-buttons:visited, #body .rk-medium.rk-buttons, #body .rk-medium.rk-buttons:visited, #cssStoreBody .rk-buttons, #cssStoreBody .rk-buttons:visited, #cssStoreBody .rk-medium.rk-buttons, #cssStoreBody .rk-medium.rk-buttons:visited, #store .rk-buttons, #store .rk-buttons:visited, #store .rk-medium.rk-buttons, #store .rk-medium.rk-buttons:visited {
+	font-size: 13px;
+	font-weight: bold;
+	line-height: normal;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+#body .rk-large.rk-buttons, #body .rk-large.rk-buttons:visited, #cssStoreBody .rk-large.rk-buttons, #cssStoreBody .rk-large.rk-buttons:visited, #store .rk-large.rk-buttons, #store .rk-large.rk-buttons:visited {
+	font-size: 14px;
+	padding: 8px 14px 9px;
+}
+#popup_ok, #body .rk-blue.rk-buttons, #body .rk-blue.rk-buttons:visited, #cssStoreBody .rk-blue.rk-buttons, #cssStoreBody .rk-blue.rk-buttons:visited, #store .rk-blue.rk-buttons, #store .rk-blue.rk-buttons:visited {
+	background: #95bd48;
+	background: -moz-linear-gradient(top, #95bd48 0%, #6f9722 100%);
+	background: -webkit-linear-gradient(top, #95bd48 0%, #6f9722 100%);
+	background: -o-linear-gradient(top, #95bd48 0%, #6f9722 100%);
+	background: -ms-linear-gradient(top, #95bd48 0%, #6f9722 100%);
+	background: linear-gradient(top, #95bd48 0%, #6f9722 100%);
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	line-height: 20px;
+	height: 20px;
+	padding: 5px 20px;
+	color: #FFF;
+	text-decoration: none;
+}
+#body .rk-blue.rk-buttons:hover {
+	text-decoration: underline;
+}
+.wrapper .rk-mini-banner {
+	height: 50px;
+	margin: 0px;
+}
+.wrapper .rk-mini-banner a {
+	background: url("https://www.rakuten.com.br/SD/sd/banner/categoria/bg_banner_product_store.jpg") repeat-x 0 0;
+	display: block;
+}
+.wrapper .rk-mini-banner a img {
+	margin: 0 auto;
+}
+.rk-sections .rk-box-visited {
+	margin-top: 15px;
+}
+.rk-sections .rk-box-history {
+	background: url("http://resources.rakuten.com.br/images/bg_history_product.png") repeat-y 190px 0;
+	border: 1px solid #CECECE;
+	border-top: none;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.rk-sections .rk-box-history .rk-box {
+	background: none;
+	border: none;
+	overflow: hidden;
+	margin-top: 0;
+}
+.rk-sections .rk-box-history .rk-product-visited {
+	background: #FCFCFC;
+	border-right: none;
+	float: left;
+	margin-right: 1px;
+	width: 190px;
+}
+.rk-sections .rk-box-history .rk-fix-products {
+	display: none;
+}
+.rk-sections .rk-box-history .rk-carousel-interest {
+	border-left: none;
+}
+.search .rk-autocomplete, .search.store .rk-autocomplete, .search.contactUs .rk-autocomplete {
+	background-color: white;
+	border: 4px solid #EBEBEB;
+	border-top: none;
+	display: none;
+	left: 0;
+	position: absolute;
+	z-index: 1000;
+	top: 37px;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.search.store .rk-autocomplete {
+	background-color: white;
+	border: 4px solid #EBEBEB;
+	border-top: none;
+	display: none;
+	left: 0px;
+	position: absolute;
+	z-index: 1000;
+	top: 34px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.search.contactUs .rk-autocomplete {
+	border: 1px solid #CECECE;
+	left: 251px;
+	top: 29px;
+	width: 405px;
+}
+.search .rk-autocomplete li {
+	line-height: 30px;
+}
+.search .rk-autocomplete li a {
+	display: block;
+	padding-left: 10px;
+	width: 99%;
+	text-decoration: none;
+}
+.search .rk-autocomplete .rk-hover {
+	background-color: #E7E7E7;
+}
+#cssStoreBody .html-search-result, .storefront .html-search-result {
+	display: none;
+}
+.rk-category .rk-container-carousel {
+	min-height: 165px;
+}
+.rk-category .rk-container-carousel .rk-loading-showcase {
+	background: url("http://resources.rakuten.com.br/images/loading.gif") no-repeat scroll 0px 0px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 60px;
+}
+.aside {
+	margin-right: 10px;
+}
+.rk-aside .category a {
+	font-size: 12px;
+}
+.block:first-child {
+	margin-top: 0;
+}
+.block {
+	margin-top: -1px;
+}
+.block li a {
+	line-height: 20px;
+}
+.block .title.collapsed {
+	background-color: #6D6D6D;
+}
+.block .title {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.block li span.seeMore {
+	padding-top: 10px;
+}
+.block ul > li > .child {
+	background: none;
+	padding: 7px 10px 7px 10px;
+}
+.block ul > li .quantity {
+	color: #928e8e;
+	font-weight: lighter;
+}
+.category ul > li > a, .category ul > li:first-child > a {
+	background: #dfdfdf;
+	font-weight: bold;
+	border: 0 none;
+	position: relative;
+	padding: 6px 12px;
+	display: block;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.store .category ul > li:first-child > a {
+}
+.category ul > li > a:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+.category ul > li > a:after {
+	border-color: rgba(194, 194, 194, 0);
+	border-top-color: #dfdfdf;
+	border-width: 10px;
+	left: 25px;
+	margin-left: -10px;
+	z-index: 1;
+}
+.inner-store .block ul > li > a:hover {
+	color: #be0000;
+	text-decoration: none;
+}
+.block ul > li > .child {
+	background: none;
+	border: none;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-left: 17px;
+}
+.block ul li a.selected {
+	background: #C13636;
+	color: #fff;
+}
+.block a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.block a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+.category.block ul {
+	padding-top: 0;
+}
+.inner-store .block .child-1, .inner-store .block .child-2, .inner-store .block .child-3, .inner-store .block .child-4, .block .child-1, .block .child-2, .block .child-3, .block .child-4 {
+	border: 0 none;
+	color: #333;
+	font-weight: lighter;
+	margin-top: 0;
+	padding-bottom: 0px;
+	padding-top: 0;
+	position: static;
+	line-height: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.inner-store .block .separator, .block .separator {
+	margin-top: 10px;
+}
+.inner-store .block .child-2.separator, .inner-store .block .child-3.separator, .block .child-2.separator, .block .child-3.separator {
+	padding-bottom: 10px;
+	margin-top: 0;
+}
+.inner-store .block .child-1, .block .child-1 {
+	padding-left: 15px;
+	background: none;
+	font-weight: bold !important;
+	border-top: 1px dotted #CCC !important;
+	padding-top: 15px;
+}
+.inner-store .block > li + li .child-1, .block > li + li .child-1 {
+	border: 0 none !important;
+}
+.inner-store .block .child-2, .block .child-2 {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat scroll 25px -1258px transparent !important;
+	font-size: 11px;
+	padding-left: 35px;
+	font-weight: bold;
+}
+.inner-store .block .child-3, .block .child-3 {
+	padding-left: 40px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/rk_icons.png") no-repeat scroll 30px -1261px transparent;
+	font-size: 11px;
+	background: none;
+}
+.inner-store .block .child-4, .block .child-4 {
+	padding-left: 50px;
+	background: url("http://resources.rakuten.com.br/images/global/sprites/bullet_tree.gif") no-repeat scroll 39px 3px transparent;
+	font-size: 11px;
+}
+.container-product li .stars, .container-product li .count {
+	padding-top: 0;
+}
+.container-product .reviewaggregate a, .container-product .reviewaggregate .rating, .container-product .hreview .rating, .container-product .hreview .rating .value {
+	background: url("http://resources.rakuten.com.br/images/star_product.png") repeat-x 0 0;
+	float: left;
+	height: 18px;
+	margin-right: 7px;
+	text-indent: -9999px;
+	width: 122px;
+}
+.reviewaggregate {
+	display: none !important;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5px 0;
+}
+.store .product-grid-2 .reviewaggregate {
+	float: left;
+	width: auto;
+}
+.store .product-grid-2 .reviewaggregate {
+	margin: 0;
+}
+.reviewaggregate .stars, .reviewaggregate .rating, .hreview .rating, .hreview .rating .value {
+	background: url("http://resources.rakuten.com.br/images/star_product.png") repeat-x 0 0;
+	float: left;
+	height: 10px;
+	text-indent: -9999px;
+	width: 60px;
+}
+.reviewaggregate .stars .rating, .hreview .rating .value {
+	background-position: 0 -10px;
+	float: left;
+	height: 10px;
+	margin: 0;
+	width: auto;
+}
+.reviewaggregate .count {
+	float: left;
+	line-height: 10px;
+	margin-left: 5px;
+}
+.reviewaggregate .count span {
+	float: none;
+}
+.reviewaggregate .count a {
+	color: #a31111;
+	background: none;
+	float: none;
+	margin-right: 0;
+	text-indent: 0;
+}
+.reviewaggregate {
+	padding: 10px 0 0;
+	overflow: hidden;
+	margin: 0;
+	display: none !important;
+}
+.reviewaggregate .rating, .hreview .rating .value {
+	background-position: 0 -10px;
+	margin: 0;
+	width: auto;
+}
+.reviewaggregate .count {
+	color: #333;
+	display: block;
+	background: url("../images/sprite_ico2.png") no-repeat scroll right -914px;
+	height: 16px;
+	padding-right: 46px;
+	line-height: 12px;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+}
+.reviewaggregate .count a {
+	color: #a31111;
+	background: none;
+	float: none;
+	margin-right: 0;
+	text-indent: 0;
+}
+.rk-sp-logged-price {
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	display: block;
+	margin-bottom: 5px;
+	color: #000 !important;
+	text-shadow: none !important;
+}
+.rk-sp-logged-price .info {
+	padding: 26px 5px 10px;
+	display: block;
+	width: 130px;
+	font-weight: bold;
+}
+.rk-sp-logged-price .info b {
+	color: #efb939;
+	font-size: 18px;
+	font-family: Tahoma;
+	display: none;
+}
+.rk-sp-logged-price .rk-check-this {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sp-logged-sprite.png") repeat-x -151px -272px;
+	font-weight: lighter;
+	padding: 8px 20px 4px 4px;
+	margin-top: -4px;
+	width: 119px;
+}
+.rk-sp-logged-price > strong {
+	display: block;
+	color: #000;
+	padding: 0 0 0 6px;
+	margin-top: 5px;
+}
+.rk-sp-logged-price.sp-free {
+	background: url("http://resources.rakuten.com.br/images/global/sprites/sp-logged-sprite.png") repeat-x -147px -179px;
+}
+.store.search-page .list-products .rk-sp-logged-price.sp-free {
+	display: none;
+}
+iframe[name=google_conversion_frame] {
+	float: left;
+	margin-top: -100px;
+}
+.page-product #rk-productpage #htmlRelatedProducts .rk-box-related .rk-item-box .hproductseo .details .rk-sp-logged-price.sp- free, .page-product #rk-productpage #htmlRelatedProducts .rk-box-related .rk-item-box .hproductseo .details .rk-sp-logged-price.sp- with-superpoints {
+	display: none;
+}
+#quickview #info-product .rk-product-payment .rk-sp-logged-price.sp-free {
+	display: none;
+}
+#fancybox-content {
+	background-color: #FFF;
+	border: 5px solid #333;
+	padding: 20px 0 !important;
+}
+.fancybox-modal-border:first-child, .fancybox-modal-border {
+	border: none !important;
+	background-color: transparent !important;
+}
+.fancybox-modal-border #fancybox-frame {
+	background-color: transparent !important;
+}
+.fancybox-modal-communityupload {
+	background-color: #FFF !important;
+	border: 5px solid #333 !important;
+	padding: 20px 0 !important;
+	min-width: 800px;
+	min-height: 490px;
+}
+.fancybox-close-border {
+	display: none !important;
+}
+.fancybox-close-communityupload {
+	display: block !important;
+}
+#fancybox-content, #fancybox-content > div, #quickview .details {
+	overflow: visible !important;
+}
+#quickview {
+	padding: 10px;
+	width: auto !important;
+	height: auto !important;
+}
+#quickview #info-product {
+	border: 0;
+}
+#quickview #info-product #image {
+	max-width: 400px;
+}
+#quickview #info-product .photo, #quickview .rk-social, #quickview #thumbsPanel {
+	border: 1px solid #ccc;
+	border-top: 3px solid #333;
+}
+#quickview #info-product #details {
+	float: right !important;
+	width: 390px;
+	left: 10px;
+}
+#quickview .fab-cod {
+	clear: both;
+}
+#quickview .fab-cod li {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 11px;
+}
+#quickview .fab-cod #lblBrand {
+	color: #900;
+	text-decoration: underline;
+}
+#quickview .reviewaggregate {
+	clear: both;
+	display: block;
+}
+#quickview .rk-social {
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 10px;
+}
+#quickview .rk-social span {
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 5px;
+}
+#quickview #thumbsPanel {
+	padding: 10px;
+	margin-top: 10px;
+	float: left;
+	width: 379px;
+}
+#quickview .parcel {
+	float: left;
+	padding-bottom: 22px;
+	width: 200px;
+}
+#quickview .action {
+	border-top: 1px dotted #777;
+	clear: both;
+	overflow: visible;
+}
+#quickview .action #btnGoToProduct {
+	background: #111;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+	font-size: 11px;
+	padding: 5px 15px;
+	float: left;
+	margin-top: 42px;
+	text-decoration: none;
+}
+#quickview .action .btn {
+	background: url("http://resources.rakuten.com.br/images/ico_quick_view.png") no-repeat right 8px;
+	float: right;
+	height: 95px;
+	position: relative;
+	right: -54px;
+	width: 220px;
+}
+#quickview .action #btnAddToBasket {
+	overflow: visible;
+}
+#quickview #details #pnlLetMeKnow {
+	top: 20px;
+	padding: 10px;
+	width: 360px;
+}
+#quickview .cDiscount {
+	background: #E2E2E2;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	font-size: 11px;
+	padding: 5px;
+}
+#rk-productpage #ifmYouTube {
+	padding-bottom: 15px;
+}
+#fancybox-frame {
+	background-color: #FFF;
+	padding-bottom: 10px;
+}
+#store div.store #footer {
+	display: block;
+}
+#quickview #info-product .photo, #quickview #info-product .photo a, #quickview #info-product .photo img {
+	width: 400px;
+	height: 400px;
+}
+#quickview #thumbsPanel a {
+	margin-left: 10px;
+	border: 1px solid #ddd;
+	width: 60px;
+	height: 60px;
+	float: left;
+	position: relative;
+}
+#quickview #thumbsPanel a:hover {
+	border: 1px solid #333;
+}
+#quickview #thumbsPanel a:first-child {
+	margin-left: 0;
+}
+#quickview #thumbsPanel img {
+	width: 64.5px;
+}
+#fancybox-close {
+	right: 2px;
+}
+#quickview .fab-cod li {
+	font-size: 12px;
+}
+.skus-quantity .rk-variation {
+	clear: both;
+	padding: 10px 15px 5px 0;
+}
+.skus-quantity h4 {
+	display: none;
+}
+.skus-quantity .variation-name {
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+.skus-quantity .rk-variation li {
+	float: left;
+	margin-left: 5px;
+}
+.skus-quantity .rk-variation li:first-child {
+	margin-left: 0;
+}
+.skus-quantity .rk-variation li a {
+	text-decoration: none;
+	border: 1px solid #ddd;
+	font-size: 11px;
+	padding: 4px 7px;
+	background: #eee;
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+}
+.skus-quantity .rk-variation li a:hover, .skus-quantity .rk-variation li a.selected {
+	text-decoration: none !important;
+	color: #fff;
+	background: #900;
+	border-color: #900;
+}
+.skus-quantity .rk-variation li a:hover {
+	color: #FFF;
+}
+.storefront #cssStoreWrapper #cssMainContent .aside .nav li .child-2 {
+	background-image: none !important;
+}
+#quickview #product-personalization .drop-down .personalization-label {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	line-height: 4px;
+}
+#quickview #product-personalization .drop-down {
+	display: table;
+}
+#quickview #product-personalization .drop-down, #quickview .skus-product .drop-down {
+	overflow: visible;
+	position: relative;
+}
+#quickview #product-personalization .drop-down a.data-option-list .preview-img, #quickview .skus-product .drop-down a.data-option-list .preview-img {
+	display: none;
+}
+#quickview #product-personalization .drop-down .personalization-drop, #quickview .skus-product .drop-down .sku-drop {
+	background: url("http://resources.rakuten.com.br/images/bg_select_button2.png") no-repeat right 0;
+	cursor: pointer;
+	clear: left;
+	float: left;
+	height: 26px;
+	margin-top: 10px;
+	padding: 0;
+	padding-right: 22px;
+	position: relative;
+	z-index: 2;
+}
+#quickview #product-personalization .drop-down .personalization-drop span, #quickview .skus-product .drop-down .sku-drop span {
+	background: url("http://resources.rakuten.com.br/images/bg_select_left.png") no-repeat 0 0;
+	color: #333;
+	display: inline;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+	padding: 0 10px;
+	position: relative;
+	z-index: 1;
+	width: auto;
+}
+#quickview #product-personalization .drop-down ul, #quickview .skus-product .drop-down ul {
+	background: #fff;
+	position: absolute;
+	top: 66px;
+	left: 0;
+	border: solid 1px #CCC;
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 150px;
+	overflow: auto;
+	overflow-y: auto;
+	z-index: 10;
+	width: 194px;
+}
+#quickview #product-personalization .drop-down ul {
+	top: 50px;
+}
+#quickview #product-personalization .drop-down ul li, #quickview .skus-product .drop-down ul li {
+	padding: 0;
+	float: none;
+	float: left;
+	display: block;
+	width: 100%;
+	line-height: 25px;
+	margin-left: 0px;
+	border-bottom: 1px dotted #CECECE;
+}
+#quickview #product-personalization .drop-down ul li a, #quickview .skus-product .drop-down ul li a {
+	border: none;
+	display: block;
+	float: none;
+	text-decoration: none;
+	color: #333;
+	background: #FFF;
+	padding: 3px;
+	text-align: left;
+	font-size: 12px;
+}
+#quickview #product-personalization .drop-down ul a.selected, #quickview .skus-product .drop-down ul a.selected {
+	background: #F5F5F5;
+	color: #418EC9;
+}
+#quickview #product-personalization .drop-down ul a:hover, #quickview #product-personalization .drop-down ul a.selected:hover, #quickview .skus-product .drop-down ul a:hover, #quickview .skus-product .drop-down ul a.selected:hover {
+	background: #F5F5F5;
+	color: #418EC9;
+}
+#quickview #product-personalization .warn .btn #quickview .skus-product .warn .btn {
+	right: 0;
+}
+#quickview #product-personalization .drop-down ul li .selected, #quickview .skus-product .selected.warn {
+	background: #E4DCDC;
+	color: #418EC9;
+	opacity: 1;
+}
+#quickview #product-personalization .drop-down:hover ul, #quickview .skus-quantity .drop-down:hover ul {
+	display: block;
+}
+#quickview #btnAddToBasket .rk-warning {
+	float: left;
+	background: #fff !important;
+	display: none;
+	border: 2px solid #B0B0B0 !important;
+	-moz-box-shadow: 1px 1px 6px #B0B0B0 !important;
+	-webkit-box-shadow: 1px 1px 6px #B0B0B0 !important;
+	box-shadow: 1px 1px 6px #B0B0B0 !important;
+	font-size: 11px !important;
+	line-height: 18px !important;
+	left: -37px !important;
+	padding: 10px !important;
+	position: absolute !important;
+	text-indent: 0 !important;
+	top: -51px !important;
+	width: auto !important;
+}
+#quickview .action .choose-to-buy:hover .rk-warning {
+	opacity: 1;
+	display: block !important;
+}
+.rk-home .rk-sp-logged-price.rk-sp-logged-price.sp-free .info {
+	left: -10px;
+	position: relative;
+}
+.mobile-tag {
+	display: none;
+}
+#header.fixed {
+	position: fixed;
+}
+#header.fixed .nav {
+	display: none;
+}
+#header.fixed .helpers {
+	display: none;
+}
+.box-token {
+	width: 510px;
+	margin: 29px auto 10px;
+}
+.box-token .validation {
+	width: 165px !important;
+}
+.box-token label > span:first-child {
+	min-width: 130px;
+}
+.box-token .btn.save {
+	background: #77a224;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	float: left;
+	font-weight: bold;
+	height: auto;
+	margin-left: 163px;
+	padding: 8px 10px;
+	text-align: center;
+	text-indent: 0;
+	width: 91px;
+}
+.box-token .h2 {
+	font-size: 16px;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+.box-token .box {
+	border: 0;
+	display: none;
+}
+#tokenContainer {
+	padding-bottom: 20px;
+}
+#tokenContainer .box-token h2 {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+#tokenContainer label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #2E5676;
+	font-size: 15px;
+	float: none;
+	text-align: left;
+	margin: 15px 0;
+}
+#tokenContainer .shell #tokenContainer .shell input {
+	border: 0;
+	background: #fff;
+}
+#tokenContainer a.save, #tokenContainer a.remember {
+	background: #77A224;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: block;
+	padding: 8px 10px;
+	text-indent: 0;
+	width: auto;
+	color: #fff;
+	height: auto;
+	font-weight: bold;
+	margin: 10px 15px 0 0;
+	float: left;
+}
+#tokenContainer .half-input {
+	float: left;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+#tokenContainer a.save:hover, #tokenContainer a.remember:hover {
+	text-decoration: none !important;
+	background-color: #598309;
+}
+.list-products .rk-superpoints {
+	background: #f7f7f7 !important;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100% !important;
+	text-align: center;
+	line-height: 23px;
+	font-size: 11px;
+}
+.rk-search .list-products .rk-superpoints {
+	height: 35px;
+	text-align: left;
+	line-height: 32px;
+	font-size: 12px;
+}
+.store ul.list-products div.rk-superpoints > span {
+	display: inline-block;
+	vertical-align: top;
+	color: #000 !important;
+	font-family: Arial !important;
+}
+.list-products .rk-superpoints > span:first-child {
+	background: url("../images/ico_sp-small.png") no-repeat 6px 0 !important;
+	padding: 0 0 0 32px;
+}
+.rk-search .list-products .rk-superpoints > span:first-child {
+	background: url("http://resources.rakuten.com.br/images/ico_sp.png") no-repeat 4px 0 !important;
+	padding: 0 0 0 36px;
+	height: 35px;
+}
+.list-products .rk-superpoints strong {
+	color: #bf0000;
+	font-weight: bold;
+}
+.list-products .rk-superpoints span.rk-points {
+	display: inline-block !important;
+	color: #bf0000 !important;
+	padding-left: 2px;
+}
+.list-products .rk-superpoints b, .list-products .rk-superpoints u {
+	text-decoration: none;
+	font-weight: normal;
+}
+.page-product .list-products .rk-superpoints b {
+	display: none;
+}
+.user-basket * {
+	margin: 0;
+	padding: 0;
+	text-align: left
+}
+.user-basket {
+	position: absolute;
+	right: 0;
+	top: 23px;
+	z-index: 150;
+}
+.rk-supermall-wrapper .user-basket {
+	top: 13px;
+	z-index: 9999!important;
+	right: 10px;
+}
+.user-basket .btn {
+	background: none;
+	line-height: 42px;
+	width: 97px;
+	height: 41px;
+	color: #fff;
+}
+.user-basket .btn:hover {
+	text-decoration: none !important;
+}
+.store .user-basket .btn.selected {
+	text-shadow: -1px -1px 0 #c9c9c9;
+}
+.store .user-basket .empty strong {
+	width: 43px;
+}
+.user-basket .btn b {
+	display: block;
+	text-align: center;
+	width: 34px;
+	text-decoration: none;
+}
+.user-basket .selected {
+	background-position: -254px -53px;
+	color: #000;
+}
+.store .rk-home .user-basket .selected {
+	color: #FFF;
+}
+.user-basket .selected > span {
+	color: #000;
+}
+.user-basket span {
+	display: block;
+	padding-left: 22px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+	text-indent: 0
+}
+.user-basket .itens {
+	background: #FFF;
+	border: 5px solid #dfdfdf;
+	border-radius: 6px;
+	box-shadow: 0 0 8px #999;
+	overflow: visible;
+	padding: 5px 0 0;
+	position: absolute;
+	right: 0;
+	top: 41px;
+	width: 307px;
+}
+.user-basket .itens:after {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.small-header .user-basket .itens:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #FFF;
+	border-width: 10px;
+	left: 290px;
+	margin-left: 13px;
+}
+.small-header .user-basket .itens {
+	top: 42px;
+}
+.user-basket .title {
+	background: none;
+	border-bottom: 1px solid #f1f1f1;
+	color: #333;
+	font-weight: bold;
+	height: 32px;
+	line-height: 29px;
+	margin-bottom: 1px;
+	padding: 0;
+	margin: 0 10px;
+}
+#simple-user-basket .title {
+	margin-bottom: -1px
+}
+.user-basket .products-or-stores {
+	padding: 0 5px;
+	position: relative
+}
+.user-basket .itens .products-or-stores {
+	overflow-y: scroll;
+	max-height: 380px;
+}
+.user-basket table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%
+}
+#simple-user-basket .products-or-stores th {
+	background: #f7f7f7;
+	border-bottom: 1px solid #ccc;
+	display: table-cell;
+	font-family: Arial;
+	font-size: 12px;
+	padding: 5px 8px;
+	text-align: center;
+	box-shadow: inset 0px 1px 1px #DDD;
+}
+.user-basket .products-or-stores td {
+	background: none;
+	border-top: 1px solid #f7f7f7;
+	vertical-align: middle;
+	border-top: 0 none;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+.user-basket .products-or-stores td:first-child {
+	width: 60px
+}
+.rk-supermall-wrapper .user-basket .products-or-stores td:first-child > a {
+	text-decoration: none;
+	font-weight: bold;
+}
+.user-basket .products-or-stores td:first-child img {
+	height: 50px;
+	width: 50px
+}
+#simple-user-basket .products-or-stores td:first-child img {
+	height: auto;
+	width: 80px;
+}
+.user-basket .itens .products-or-stores .name-brand {
+	text-align: center;
+	width: 130px;
+	border-right: 1px solid #f1f1f1;
+}
+.rk-supermall-wrapper .user-basket .itens .products-or-stores .name-brand {
+	text-align: left!important;
+	font-weight: bold!important;
+}
+.rk-supermall-wrapper .user-basket .itens .products-or-stores .name-brand .quantity {
+	display: block;
+	text-align: center;
+}
+.user-basket .products-or-stores .name-brand a {
+	text-align: left;
+	text-decoration: none
+}
+.user-basket .itens .products-or-stores .subtotal {
+	background: none;
+	border-top: none;
+	text-align: center;
+	min-width: 92px;
+}
+.user-basket .itens .products-or-stores span {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0;
+	text-align: left
+}
+.user-basket .products-or-stores .name-brand span {
+	font-weight: normal
+}
+.user-basket .products-or-stores .brand {
+	font-weight: normal
+}
+.user-basket .products-or-stores .quantity, .user-basket .products-or-stores .sale {
+	display: inline
+}
+.user-basket .products-or-stores .delete, .user-basket .products-or-stores .delete:hover {
+	background-position: -211px -107px;
+	height: 14px;
+	margin: 0 auto;
+	padding: 0;
+	width: 14px
+}
+.user-basket .itens .products-or-stores .empty {
+	padding: 10px
+}
+.user-basket .subtotal {
+	position: relative;
+	border-top: 0 none;
+	background: #f1f1f1;
+	height: 115px;
+}
+.user-basket .value {
+	color: #c73a40;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	right: 15px;
+	top: 17px
+}
+.store .user-basket .subtotal .rk-superpoints-stamp, .user-basket .subtotal .rk-superpoints-stamp {
+	background: none;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	float: none;
+	color: #454545 !important;
+	font: bold 12px/25px Arial, Helvetica, Tahoma, sans-serif !important;
+	min-height: 22px;
+	text-indent: 0;
+	text-transform: capitalize;
+	padding: 0 15px 0 0;
+	display: block;
+	width: 100%;
+}
+.user-basket .rk-superpoints-stamp span {
+}
+.store .user-basket .subtotal .rk-superpoints-stamp span + span, .user-basket .subtotal .rk-superpoints-stamp span + span {
+}
+.user-basket .rk-superpoints-stamp span, .user-basket .value {
+	height: auto !important;
+	line-height: normal !important;
+}
+.user-basket .rk-superpoints-stamp span:first-child {
+	text-indent: 0
+}
+.user-basket .subtotal .btn {
+	position: absolute;
+	background: url(../images/layout/rk_pay.png) no-repeat 137px 8px #FFF;
+	width: 100%;
+	height: 49px;
+	right: 0;
+	bottom: 0;
+}
+.rk-supermall-wrapper .user-basket .subtotal .btn {
+	text-indent: -9999px!important;
+}
+.rk-superpoints-stamp {
+}
+.rk-superpoints-stamp span {
+}
+.rk-superpoints-stamp span:first-child {
+}
+.user-basket .itens {
+	background: #FFF;
+	border: 5px solid #dfdfdf;
+	border-radius: 6px;
+	box-shadow: 0 0 8px #999;
+	overflow: visible;
+	padding: 5px 0 0;
+	position: absolute;
+	right: 0;
+	top: 33px;
+	width: 307px;
+}
+.user-basket .itens:after {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.user-basket .itens:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #FFF;
+	border-width: 10px;
+	left: 285px;
+	margin-left: -10px;
+}
+.user-basket .title {
+	background: none;
+	border-bottom: 1px solid #f1f1f1;
+	color: #333;
+	font-weight: bold;
+	height: 32px;
+	line-height: 29px;
+	margin-bottom: 1px;
+	padding: 0;
+	margin: 0 10px;
+}
+.user-basket .products-or-stores td {
+	border-top: 0 none;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+.user-basket .products-or-stores .name-brand {
+	border-right: 1px solid #f1f1f1;
+}
+.user-basket .products-or-stores .empty {
+	background: none;
+}
+.user-basket .subtotal .btn {
+	background: url(http://resources.rakuten.com.br/Assets/rakuten.com.br/images/layout/rk_pay.png) no-repeat 137px 8px #FFF;
+	width: 100%;
+	height: 49px;
+	right: 0;
+	bottom: 0;
+}
+.user-basket .subtotal {
+	border-top: 0 none;
+	background: #f1f1f1;
+	height: 115px;
+}
+.user-basket .rk-superpoints-stamp {
+	background: none;
+	margin: 0;
+	position: absolute;
+	left: 113px;
+	top: 40px;
+	padding-left: 0;
+}
+.user-basket .rk-superpoints-stamp span + span {
+}
+.user-basket .empty {
+	cursor: default;
+}
+.user-basket .empty strong {
+	width: 43px;
+}
+.user-basket strong {
+	display: block;
+	text-align: center;
+	width: 34px;
+}
+.user-basket > a > span > strong {
+	color: #fff;
+}
+.small-header .user-basket #box-itens {
+	width: 350px;
+	display: none;
+	background-image: linear-gradient(to bottom, #FFFFFF 95%, #c7cfc4);
+	z-index: 99992
+}
+.small-header .user-basket .title {
+	display: none;
+}
+.small-header .user-basket.products-or-stores {
+	border-width: medium medium 1px;
+	border-style: none none dotted;
+	border-color: -moz-use-text-color -moz-use-text-color rgb(204, 204, 204);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+}
+.small-header .user-basket td .subtotal {
+	position: relative;
+	background-color: #FFF;
+}
+.small-header .user-basket .products-or-stores tbody tr {
+	border-width: medium medium 1px;
+	border-style: none none dotted;
+	border-color: -moz-use-text-color -moz-use-text-color rgb(204, 204, 204);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+}
+.small-header .user-basket .products-or-stores td {
+	height: 70px;
+	border: medium none;
+}
+.small-header .user-basket .subtotal {
+	position: relative;
+	background: transparent;
+	height: 87px;
+}
+.small-header .user-basket .subtotal .value {
+	position: absolute;
+	top: 5px;
+}
+.small-header .user-basket .subtotal #ctl00_hypGoBasket {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	top: 40px;
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons2.png) no-repeat scroll 0px -453px transparent;
+	width: 120px;
+	height: 27px;
+	line-height: 27px;
+	padding-left: 15px;
+	font-size: 13px;
+	text-indent: 99999px;
+}
+.small-header .user-basket .subtotal .rk-superpoints-stamp {
+	float: left;
+	width: 170px;
+	position: relative;
+	top: 0px;
+}
+.small-header .user-basket .subtotal .rk-superpoints-stamp span {
+	float: right;
+	position: absolute;
+	width: 80px;
+	font-weight: normal;
+}
+.small-header .user-basket .subtotal .rk-superpoints-stamp #ctl00_lblQuantitySuperPoints {
+	position: relative;
+	left: 92px;
+	width: auto;
+	min-width: 30px;
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons1.png) no-repeat scroll -5px -180px transparent;
+	padding-left: 23px;
+	float: left;
+	color: #caa014 !important;
+}
+.small-header .user-basket .products-or-stores .name-brand {
+	width: 180px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.small-header .user-basket .subtotal .rk-superpoints-stamp #ctl00_lblQuantitySuperPoints {
+	position: relative;
+	left: 92px;
+	width: auto;
+	min-width: 30px;
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons1.png) no-repeat scroll -5px -180px transparent;
+	padding-left: 23px;
+	float: left;
+	color: rgb(202, 160, 20) !important;
+}
+.small-header .user-basket.subtotal .value {
+	position: absolute;
+	top: 5px;
+}
+#simple-user-basket {
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons2.png) no-repeat scroll -543px -5px transparent;
+	border: 1px solid transparent;
+	box-shadow: none;
+	float: right;
+	height: 42px;
+	padding: 0;
+	position: relative;
+	top: 2px;
+	width: 98px;
+}
+#simple-user-basket a.btn span {
+	padding-left: 35px;
+}
+#simple-user-basket .itens {
+	border: 5px solid #78a226;
+	border-radius: 10px;
+	box-shadow: none;
+	display: block;
+}
+#simple-user-basket .itens .rk-loading {
+	background: url(http://resources.rakuten.com.br/images/ajax_loader_white.gif) no-repeat;
+	width: 88px;
+	height: 88px;
+	text-indent: -9000px;
+	margin: 15px auto;
+}
+#simple-user-basket .itens .title {
+	display: none;
+}
+#simple-user-basket .itens .products-or-stores {
+	border: 0;
+	border-bottom: 1px dotted #ccc;
+}
+#simple-user-basket .itens .products-or-stores tbody tr {
+	border: 0;
+	border-bottom: 1px dotted #ccc;
+}
+#simple-user-basket .itens .products-or-stores td {
+	border: 0;
+	height: 70px;
+}
+#simple-user-basket .itens .products-or-stores .empty {
+	padding: 100px 39px 39px 39px;
+	display: block;
+	text-align: center;
+	background: url(http://resources.rakuten.com.br/images/basket/bg_cart.png) no-repeat scroll 127px 20px transparent;
+	color: #000;
+}
+#simple-user-basket .itens .products-or-stores span {
+	font-size: 13px;
+	display: inline;
+}
+#simple-user-basket .empty {
+	background: 0;
+}
+#simple-user-basket .empty strong {
+	width: 30px;
+}
+#box-itens {
+	background-image: linear-gradient(to bottom, #fff 95%, #c7cfc4);
+	display: none;
+	width: 350px;
+	z-index: 99992;
+}
+#simple-user-basket .active {
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons2.png) no-repeat scroll -543px -63px transparent;
+}
+#simple-user-basket .itens td .subtotal {
+	background-color: #FFF;
+	position: relative;
+}
+#simple-user-basket .itens .subtotal {
+	background: transparent;
+	height: 87px;
+	position: relative;
+}
+#simple-user-basket .itens .subtotal .value {
+	float: right;
+	padding: 0;
+	position: static;
+	top: 5px;
+	width: 158px;
+	line-height: 24px !Important;
+}
+#simple-user-basket .itens .subtotal .value span {
+	display: inline;
+	padding: 0 0 0 5px;
+	font-size: 14px;
+}
+#simple-user-basket div.subtotal > a {
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons2.png) no-repeat scroll 0 -453px transparent;
+	border-radius: 30px 30px 30px 30px;
+	float: right;
+	font-size: 13px;
+	height: 27px;
+	line-height: 27px;
+	margin-right: 10px;
+	padding-left: 15px;
+	position: absolute;
+	text-indent: 99999px;
+	top: 22px;
+	width: 120px;
+	text-indent: -9000px;
+}
+#simple-user-basket .itens .subtotal .rk-superpoints-stamp {
+	float: left;
+	position: relative;
+	top: 0;
+	width: 170px;
+}
+#simple-user-basket .itens .subtotal .rk-superpoints-stamp span {
+	line-height: 25px !important;
+}
+#simple-user-basket .itens .subtotal .rk-superpoints-stamp span:first-child {
+	background: url(http://resources.rakuten.com.br/images/rk-new-icons1.png) no-repeat scroll -5px -180px transparent;
+	color: #caa014!important;
+	float: left;
+	min-width: 30px;
+	padding: 0 0 0 23px;
+	width: auto;
+	float: right;
+}
+#simple-user-basket .rk-superpoints-stamp span:last-child {
+	float: left;
+	color: #454545 !important;
+	padding: 0 0 0 6px;
+}
+#simple-user-basket .itens .products-or-stores .name-brand {
+	padding-bottom: 15px;
+	padding-top: 10px;
+	width: 180px;
+}
+.form {
+	overflow: hidden
+}
+.form .field {
+	height: auto;
+	margin-top: 10px;
+	position: relative
+}
+.price .form .field {
+	margin-top: 0
+}
+.form .first {
+	clear: left
+}
+.ie7 .form .first {
+	clear: none
+}
+.form .even.last {
+	border-bottom: 1px solid #D4D4D4
+}
+.form .field:first-child {
+	margin-top: 0
+}
+.form fieldset {
+	position: relative
+}
+.form .atention {
+	color: #FF8A00;
+	display: block;
+	padding: 0 0 15px 50px !important;
+}
+.form .brief-drescription {
+	padding: 0 15px
+}
+.form .field span, .form .field input {
+	clear: none;
+	float: left;
+	margin-bottom: 0
+}
+.form .field input {
+	margin: 0
+}
+.form .field input, .form .field textarea {
+	color: #333;
+	font: 12px Arial, Helvetica, Tahoma, sans-serif;
+	overflow: auto
+}
+.form .field span {
+	color: #333;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 11px;
+	text-align: right;
+	width: auto;
+}
+#pnlStore .form-resume .inner .field span {
+	width: auto;
+	height: auto;
+}
+#pnlStore .form-resume .inner .field #body_btnSubmitDocuments {
+	margin-left: 250px;
+}
+#pnlStore .form-resume .inner .field #body_btnPrintContract {
+	margin-left: 100px;
+}
+#pnlStore .form-resume .inner .data .field span {
+	width: 250px;
+	padding-top: 5px;
+}
+#pnlStore .form-resume .inner .data .field #date-resume span {
+	width: auto;
+	padding-top: 0px;
+}
+#pnlStore .form-resume .inner .data .field #date-resume {
+	width: 450px;
+	padding-left: 0px;
+	margin-left: -5px;
+}
+.form .field .shell {
+	margin-right: 0;
+	width: auto
+}
+.form .shell input, .form .field textarea, .dk_container, .dk_toggle {
+	background: url(http://resources.rakuten.com.br/images/global/forms/bg_input_gradient.png) repeat-x 0 0;
+	background: -moz-linear-gradient(top, #cecfcf 0%, #fff 6px);
+	background: -webkit-linear-gradient(top, #cecfcf 0%, #fff 6px);
+	background: -o-linear-gradient(top, #cecfcf 0%, #fff 6px);
+	background: -ms-linear-gradient(top, #cecfcf 0%, #fff 6px);
+	background: linear-gradient(top, #cecfcf 0%, #fff 6px);
+	border: 1px solid #CECECE;
+	border-radius: 3px;
+	font-size: 12px;
+	height: auto;
+	padding: 5px
+}
+.form .shell input {
+	height: 16px;
+	overflow: hidden
+}
+.form .shell em {
+	clear: left;
+	display: block;
+	line-height: normal;
+	padding-top: 2px;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left
+}
+.form .shell input:focus, .form .field textarea:focus {
+	border-color: #418EC9;
+	box-shadow: 1px 0 2px #418EC9
+}
+.form .title {
+	display: block;
+	color: #959595;
+	font-size: 24px;
+	margin: 0;
+	position: relative
+}
+.form label {
+	display: block;
+	position: relative
+}
+.form .radio label {
+	display: inline;
+	float: left;
+	margin-left: 10px
+}
+.form .jq-transform.radio label {
+	height: 16px;
+	line-height: 16px
+}
+.form .radio label:first-child {
+	margin-left: 0
+}
+.form label span {
+	color: #010101;
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px
+}
+.form span .req {
+	color: #E60303;
+	display: inline;
+	float: none;
+	margin: 0
+}
+.form .field .validation {
+	background: url(http://resources.rakuten.com.br/images/ico_alert.png) no-repeat 0 5px;
+	color: #C1272D;
+	display: inline;
+	float: none;
+	font-weight: normal;
+	font-size: 11px;
+	height: 16px;
+	line-height: 16px;
+	padding: 5px 0 0 20px;
+	position: absolute;
+	text-align: left;
+	text-indent: 0;
+	margin-left: 5px;
+	top: 0;
+	width: 135px;
+	border: 0;
+}
+.form .field .validation.correct {
+	background: url(http://resources.rakuten.com.br/images/ico_sucess.png) no-repeat 0 5px;
+	clear: none;
+	margin-right: 0;
+	width: auto
+}
+.remember .field .validation {
+	position: relative;
+	top: 5px
+}
+.form .big {
+	width: 250px
+}
+.form .cpf {
+	width: 119px
+}
+.form .date {
+	height: 27px;
+	width: 65px
+}
+.form .date, .form .phone {
+	overflow: hidden
+}
+.form .radio .date {
+	float: left
+}
+.form .date input[type="text"], .form .phone input[type="text"] {
+	display: inline;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+	width: 40px
+}
+.form .date input[type="text"], .form .radio .date input[type="text"] {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 0;
+	text-align: left;
+	width: 65px
+}
+.form .date .year[type="text"], .form .radio .date .year[type="text"] {
+	width: 50px
+}
+.form .phone .number[type="text"] {
+	width: 84px
+}
+.form .date input[type="text"]:first-child, .form .phone input[type="text"]:first-child {
+	margin-left: 0px
+}
+.form .radio .date input[type="text"]:first-child {
+	margin-left: 10px
+}
+.form .date span {
+	float: left;
+	margin: 0 0 0 5px
+}
+.form .date .validacao {
+	margin-left: 0;
+	margin-top: 0
+}
+.form .radio span, .form .radio input, .form .checkbox span, .form .checkbox input {
+	display: inline;
+	float: left;
+	height: auto;
+	line-height: normal;
+	width: auto
+}
+.form .radio span {
+	margin-bottom: 0
+}
+.form .radio input {
+	margin: 2px 7px 0 0
+}
+.form .checkbox input {
+	margin: 0 7px 0 0
+}
+.form .btn {
+	display: inline;
+	float: right;
+	margin-top: 10px
+}
+.form .save {
+	background-position: -468px -149px;
+	height: 24px;
+	width: 69px
+}
+.field .error, .field .error[type="text"], .field .error[type="password"] {
+	border: 1px solid #D61717;
+	margin-bottom: 0;
+	margin-top: 0
+}
+.atention {
+	color: #9D0010;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0
+}
+.message {
+	background: #FCF0F0 !important;
+	border: 1px solid #D61717;
+	color: #CD4250;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	height: 43px;
+	line-height: 45px;
+	padding: 0 32px;
+	margin-bottom: 15px
+}
+.sucess2 {
+	background: #D3F8C9 !important;
+	border: 1px solid #04B10E;
+	color: #348914;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+	padding: 5px 10px;
+	margin-bottom: 15px
+}
+.form .field .loading {
+	background: url(http://resources.rakuten.com.br/images/loading.gif) no-repeat 0 0;
+	position: relative;
+	float: left;
+	height: 26px;
+	margin-left: 5px;
+	text-align: left;
+	text-indent: -9999px;
+	top: auto;
+	width: 26px
+}
+.action {
+	margin-top: 10px;
+	overflow: hidden
+}
+#lblMessageModal {
+	color: #CD4250;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	left: 32px;
+	position: absolute;
+	top: 53px;
+}
+.form .subcribe-info {
+	margin: -10px 0 10px;
+	clear: both;
+}
+.form .subcribe-info .info {
+	width: 320px;
+	display: inline-block;
+	color: #777;
+	font-style: italic;
+}
+.store .box-cancel .form label {
+	text-align: left;
+}
+.form.change-pass {
+	margin: 20px auto 30px;
+	width: 223px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	box-shadow: 0 1px 1px 0 #959595;
+}
+.form.change-pass h2 {
+	font-size: 18px;
+	color: #c1272d;
+}
+.form.change-pass .field span {
+	display: block;
+	float: none;
+	text-align: left;
+}
+.form.change-pass .field input[type="password"] {
+	width: 210px;
+}
+.form.change-pass .rk-buttons {
+	margin-top: 20px;
+}
+.form.change-pass #spanMsgError {
+	color: #c1272d;
+	font-size: 12px;
+	padding: 2px 0;
+	text-align: center;
+	margin-bottom: -10px;
+	margin-top: 5px;
+}
+p.rk-error-msg {
+	color: #c73a40;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	padding: 37px 0 !important;
+}
+#popup_container, #popup_container.big {
+	min-width: 366px;
+	max-width: 366px;
+	color: #000;
+	padding-bottom: 20px;
+	background: #E3E3E3 url(http://resources.rakuten.com.br/images/global/alerts/bg_alert_mid.png) repeat-x 0 top;
+	background: -moz-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: -webkit-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: -o-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: -ms-linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+	background: linear-gradient(top, #ffffff 20%, #e0e0e0 100%);
+}
+#popup_container.big {
+	min-width: 700px;
+	max-width: 700px
+}
+#popup_container.medium {
+	min-width: 500px;
+	max-width: 500px
+}
+#popup_content, .big #popup_content {
+	margin: 0
+}
+#popup_content .content {
+	min-height: 90px;
+	padding: 30px 20px 20px 126px
+}
+#popup_title {
+	background: none;
+	color: #2e5676;
+	display: block;
+	float: none;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	padding: 0 0 10px 0;
+	text-align: left !important;
+	text-indent: 0;
+	margin: 0 !important
+}
+#popup_content .alert {
+	background: url(http://resources.rakuten.com.br/images/global/alerts/ico_message_alert.png) no-repeat 27px 20px
+}
+#popup_content .confirm, #popup_content .question {
+	background: url(http://resources.rakuten.com.br/images/global/alerts/ico_message_confirm.png) no-repeat 27px 20px
+}
+#popup_content .sucess {
+	background: url(http://resources.rakuten.com.br/images/global/alerts/ico_message_sucess.png) no-repeat 27px 20px
+}
+#popup_content .error {
+	background: url(http://resources.rakuten.com.br/images/global/alerts/ico_message_error.png) no-repeat 27px 20px
+}
+.alert #popup_title {
+	color: #D89900
+}
+.sucess #popup_title {
+	color: #0a9c10
+}
+#popup_message {
+	line-height: 18px;
+	text-align: left
+}
+#popup_panel #popup_ok {
+	font-size: 11px;
+	margin: 0 0 10px 5px;
+	text-align: center;
+}
+#popup_panel {
+	overflow: hidden;
+	margin-top: 15px;
+	text-align: left;
+	padding: 5px 0px;
+}
+#popup_panel a {
+	margin-left: 10px
+}
+#popup_panel a:first-child {
+	margin-left: 0
+}
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -43px
+}
+.main .container {
+	width: auto
+}
+.bottom, .push {
+	height: 43px
+}
+.main .push {
+	display: none
+}
+#aspnetForm, #frmGlobal {
+	border: 0 none;
+}
+.header {
+	margin: 0 auto;
+	width: 990px;
+	position: relative;
+}
+header .container-full {
+	height: 93px;
+	font: 12px Arial, Helvetica, Tahoma, sans-serif!important;
+}
+header .own-domain {
+	height: 28px !important
+}
+header .logo {
+	position: absolute;
+	left: 5px;
+	top: 38px;
+}
+#cssStoreBody .logo, .page-product .logo {
+	top: 36px;
+}
+header .user-info {
+	top: 0;
+}
+header .search {
+	padding-top: 0;
+	top: 41px;
+	margin-left: 425px;
+	margin-right: 130px;
+}
+header .search .rk-select-category {
+}
+
+@media screen and (max-width: 1190px) {
+header .search select, header .search .rk-select-category {
+	display: none
+}
+header .search .field-input {
+	padding-left: 0 !important
+}
+.jq-infiedllabel.focus label {
+	display: none !important
+}
+}
+header .search label {
+	display: none !important;
+	font: normal 11px Arial, Helvetica !important;
+	left: 37px;
+	top: 8px;
+	width: 98%
+}
+header .search input, .oldie header .search input {
+}
+.oldie header .search input {
+	padding-top: 7px
+}
+header .search .btn {
+}
+.wrapper header .basket {
+	top: 42px !important
+}
+header nav, #search-stores, header .highlights {
+	display: none
+}
+.main .content {
+	margin-bottom: 20px
+}
+.main .container {
+	width: auto;
+	padding-top: 0
+}
+.main .breadcrumb {
+	padding-top: 10px
+}
+.footer {
+	margin-top: 0;
+	padding-bottom: 0;
+	overflow: hidden;
+	clear: both;
+	background: #282828;
+}
+.footer .container {
+	height: 80px;
+	padding-top: 10px;
+}
+.footer .institutional {
+	margin: 11px 0 0 0;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+	display: inline;
+	width: auto;
+	margin-top: 15px;
+}
+.footer .institutional li {
+	
+	display: inline-block;
+	margin-left: 2px;
+	padding-left: 7px
+}
+.footer .institutional li:first-child {
+	background: none;
+	margin-left: 0;
+	padding-left: 0
+}
+.footer .institutional a {
+	color: #FFF;
+	display: block;
+	font: 11px/20px Arial, Helvetica !important;
+	height: 20px;
+	padding: 0 5px;
+	text-decoration: none
+}
+.footer .institutional a:hover {
+	color: #85a231;
+	text-decoration: underline
+}
+.footer .logo-footer {
+	background: url(../images/product-footer.gif) no-repeat 0 0;
+	float: right;
+	display: inline-block;
+	width: 290px;
+	height: 70px;
+	margin: 11px 0 0;
+	overflow: hidden;
+	text-indent: -99999px
+}
+#ctl00_content_footerInstitutional_pnlFooterInstitutional {
+	margin-top: 15px
+}
+.client-footer {
+	clear: left;
+	padding-bottom: 20px
+}
+.ui-autocomplete {
+	cursor: default;
+	left: 126px !important;
+	padding-bottom: 11px;
+	position: absolute;
+	top: 33px !important;
+	width: 571px !important
+}
+.user-basket {
+	right: 8px!important;
+}
+.user-basket .empty strong {
+	width: 43px;
+	color: #000;
+}
+.user-basket strong {
+	display: block;
+	text-align: center;
+	width: 34px;
+}
+#header {
+	margin: 0;
+	padding: 0;
+	position: static;
+	z-index: 0;
+}
+#store div.store {
+	width: 100%
+}
+.rk-preview {
+	background: #333;
+	box-shadow: 3px 1px 5px 5px #787878;
+	height: 27px;
+	position: fixed;
+	width: 100%;
+	z-index: 500000;
+	left: 0;
+}
+.rk-preview .rk-logo-preview {
+	background: url('http://resources.rakuten.com.br/images/logo_preview.png') no-repeat 0 0;
+	left: 7px;
+	height: 13px;
+	position: absolute;
+	top: 6px;
+	text-indent: -9999px;
+	width: 184px;
+}
+.rk-preview .rk-remove-preview {
+	right: 0;
+	height: 13px;
+	position: absolute;
+	top: 6px;
+	width: 155px;
+}
+.rk-preview .rk-remove-preview a {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.store .nav {
+	max-width: 100%;
+	width: auto;
+}
+.store .nav a {
+	color: #333;
+	display: block;
+	font-size: 12px;
+}
+.store .nav ul ul {
+	background: #fff;
+	display: none;
+	position: absolute;
+}
+.store .nav ul ul a {
+	font-size: 11px;
+}
+.store .nav ul .slide-group li {
+	border: none;
+}
+.store .nav .slide li ul {
+	display: none;
+	position: relative;
+	visibility: visible;
+}
+.store .nav .no-slide {
+	width: 500px;
+}
+.store .nav .no-slide li {
+	display: inline-block;
+}
+.store .nav a:hover {
+	text-decoration: none;
+}
+.store .nav-horizontal {
+	width: auto;
+}
+.store .nav-horizontal ul > li {
+	border-left: none;
+	float: left;
+	position: relative;
+	width: auto;
+}
+.store .nav-horizontal ul .no-slide {
+	left: -1px;
+}
+.store .nav-horizontal li > ul li {
+	border-top: none;
+	float: none;
+}
+.store .nav-horizontal li > ul ul {
+	top: -1px !important;
+}
+.store .nav-vertical ul li {
+	border-top: none;
+	position: relative;
+}
+.store .nav-vertical ul .no-slide {
+	top: -1px;
+}
+.store .nav-vertical .rk-vnav li ul {
+	display: none;
+	position: absolute;
+}
+.store #header .container .nav-horizontal ul li ul {
+	display: none;
+}
+.store .nav-vertical.open-menu .rk-vnav li ul {
+	display: block;
+	position: relative;
+}
+.store .nav-vertical.fade-menu .rk-vnav li {
+	position: relative;
+	z-index: 99999;
+}
+.store .nav-vertical.fade-menu .rk-vnav li ul {
+	background: #f7f7f7;
+	border: 1px solid #dbdada;
+	margin-top: 0;
+}
+.store .nav-vertical.fade-menu .rk-vnav li ul li:not(:last-child) {
+	border-bottom: 1px solid #dbdada;
+}
+.store .nav-vertical.fade-menu .rk-vnav li ul li {
+	border-top: 0;
+	padding: 5px 0;
+	padding: 11px 0;
+	margin-bottom: 0;
+}
+.store .nav-vertical.fade-menu .rk-vnav li ul li a {
+	padding-top: 0;
+}
+.store .banner {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.store .banner a {
+	display: block;
+	margin-top: 10px;
+}
+.store .banner a:first-child {
+	margin-top: 0;
+}
+.store .banner li .nivo-controlNav {
+	display: none;
+}
+.store .banner li:first-child .nivo-controlNav {
+	background: url('http://resources.rakuten.com.br/locales/global/img/bg_nivoslider_pag.gif') no-repeat;
+	border-left: 3px solid #ccc;
+	border-top: 3px solid #ccc;
+	display: block;
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	bottom: 8px;
+	z-index: 1000;
+}
+.store .banner .nivo-controlNav {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.store .banner .nivo-controlNav a {
+	border: 1px solid #333;
+	color: #333;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	font-size: 13px;
+	margin-left: 10px;
+	margin-top: 0;
+	padding: 2px 9px;
+	position: relative;
+	z-index: 9;
+}
+.store .banner .nivo-controlNav a.active {
+	font-weight: bold;
+}
+.store .banner-slider div a {
+	display: none
+}
+.store .banner-slider div a:first-child {
+	display: block
+}
+.store .banner-horizontal div {
+	margin-left: -10px
+}
+store .banner-slider div a {
+	display: none;
+}
+.store .banner-slider div a:first-child {
+	display: block;
+}
+.store .banner-horizontal div {
+	margin-left: -10px;
+}
+.store .banner-vertical div a {
+	margin-top: 10px;
+	width: auto;
+}
+.store .banner-vertical div a:first-child {
+	margin-top: 0;
+}
+.store .nivoSlider {
+	position: relative;
+}
+.store .nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.store .nivoSlider a.nivo-imageLink {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+	display: none;
+}
+.store .nivo-slice {
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+}
+.store .nivo-box {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+.store .nivo-directionNav a {
+	position: absolute;
+	top: 45%;
+	z-index: 9;
+	cursor: pointer;
+}
+.store .nivo-prevNav {
+	left: 0px;
+}
+.store .nivo-nextNav {
+	right: 0px;
+}
+.store .container-product .title {
+	color: #333;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0 0 5px;
+	position: relative;
+	z-index: 1;
+}
+.store .container-product ul {
+	clear: left;
+	text-align: justify;
+	margin: 0;
+	width: 100%;
+}
+.store .container-product li {
+	border-top: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: auto;
+}
+.store .container-product li .hproductseo {
+	padding: 0 17px;
+}
+.store .container-product li .hproductseo .details {
+	text-align: left;
+	overflow: hidden;
+	float: left;
+}
+.store .container-product li span {
+	display: block;
+}
+.store .container-product li a {
+	color: #333;
+}
+.store .container-product .rk-fix-products {
+	border: 0 none;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+	width: 0;
+}
+.store .container-product .show-one li {
+	border-top: 1px solid #CCCCCC;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+.store .container-product .show-one .figure {
+	margin-right: 15px;
+}
+.store .container-product .show-one .box-price {
+	border-left: 1px solid #CCCCCC;
+	min-height: 150px;
+	padding-left: 15px !important;
+	top: 15px;
+}
+.store .container-product .show-one .stamp a {
+	clear: left;
+	float: left;
+	width: auto;
+}
+.store .container-product .figure {
+	display: block;
+	height: 142px;
+	margin-bottom: 0;
+	padding-top: 25px;
+	width: 142px;
+}
+.store .container-product .figure img {
+	border: 1px solid #CECECE !important;
+}
+.store .container-product .box-price {
+	border-top: 1px dotted #999;
+	padding: 5px 10px 0;
+	text-align: right;
+}
+.store .container-product .offers {
+	padding-bottom: 2px;
+}
+.store .container-product .offers .regular {
+	color: #999;
+}
+.store .container-product .offers span {
+	color: #000;
+	display: block;
+	float: right;
+	margin-left: 15px;
+}
+.store .container-product .name {
+	font-weight: bold;
+	line-height: 16px;
+	padding-top: 5px;
+}
+.store .container-product .description {
+	display: none;
+	line-height: 16px;
+}
+.store .container-product .list-products .description span {
+	color: #9C0000;
+	text-decoration: underline;
+}
+.store .container-product .regular {
+	color: #8d8c8c;
+	font-size: 11px;
+	padding: 1px 0 0;
+}
+.store .container-product .sale {
+	color: #000;
+	font-size: 12px;
+	overflow: visible;
+	padding: 0 0 3px;
+}
+.store .container-product .parcel {
+	color: #9C0000 !important;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 13px;
+	padding: 4px 0 2px 0;
+}
+.store .container-product .unavailable {
+	color: #9C0000;
+	font-weight: bold;
+}
+.store .container-product .stamp a {
+	display: block;
+	padding: 3px 0 0;
+}
+.store .container-product .stamp a:first-child {
+	padding-top: 0;
+}
+.store .container-product .details .promo-stamp img {
+	max-width: 142px;
+}
+.store .container-product .product-image400 .hproductseo {
+	width: 212px;
+}
+.store .list-products li span.rk-position {
+	display: none;
+}
+.store .product-grid-4 li {
+	width: 24.5%;
+}
+.store .product-grid-4 .no-results ul {
+	text-align: left;
+}
+.store .product-grid-4 .no-results li {
+	display: block;
+	width: auto;
+}
+.store .product-grid-3 li {
+	width: 32.5%;
+}
+.store .product-grid-2 li {
+	width: 49.5%;
+}
+.store .show-one li:first-child {
+	border-top: none;
+}
+.store .product-grid-1 .hproductseo {
+	padding: 0 10px;
+	width: auto;
+}
+.store .product-grid-1 .figure {
+	float: left;
+	height: auto;
+	margin-right: 10px;
+	width: auto;
+}
+.store .product-grid-1 .link {
+	display: block;
+	overflow: hidden;
+	width: auto;
+}
+.store .breadcrumb {
+	padding: 0;
+}
+.store .breadcrumb h1 {
+	font-size: 13px;
+}
+.store .block .title {
+	color: inherit;
+}
+.store .pagination.bottom {
+	border-top: 1px solid #CCCCCC;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 10px 0 0;
+}
+.store .pagination.bottom ul {
+	margin-top: 0;
+	text-align: center;
+}
+.store .pagination.bottom li {
+	margin-top: 0;
+	width: auto;
+}
+.store .pagination.bottom a {
+	margin-left: 0;
+	text-decoration: none;
+}
+.store .pagination.bottom .selected {
+	font-weight: bold;
+}
+.store .pagination.bottom .selected:hover {
+	cursor: default;
+}
+.store .rk-sidebar .rk-ranking-products {
+	margin-top: 0;
+}
+.store .rk-ranking-products .container-product ul.list-products li {
+	background: #e9eaea;
+	border-top: 1px solid #d2d4d3;
+	overflow: hidden;
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+.store .rk-ranking-products .container-product ul.list-products li .rk-position {
+	color: #585858;
+	float: left;
+	font-weight: bold;
+	line-height: 70px;
+	margin: 0 0 0 -15px;
+	min-height: 70px;
+	text-align: center;
+	width: 15px;
+}
+.store .rk-ranking-products .container-product ul.list-products li .hproductseo {
+	background: none repeat scroll 0 0 #FFFFFF;
+	float: left;
+	margin-left: 15px;
+	min-height: 70px;
+	width: 159px;
+	padding: 0;
+}
+.store .rk-ranking-products .container-product ul.list-products li .figure {
+	float: left;
+	margin: 0 5px;
+	padding-top: 5px;
+	width: auto;
+	height: auto;
+	min-height: 0;
+}
+.store .rk-ranking-products .container-product ul.list-products li .figure img {
+	height: 60px;
+	width: 60px;
+	border: none !important;
+}
+.store .rk-ranking-products .container-product ul.list-products li .name {
+	color: #333333;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.store .rk-ranking-products .container-product ul.list-products li .reviewaggregate {
+	display: none;
+}
+.store .rk-ranking-products .container-product ul.list-products li .name:hover {
+	color: #418EC9;
+}
+.store .rk-ranking-products .container-product ul.list-products li .rk-superpoints {
+	display: none;
+}
+.store .rk-ranking-products .container-product ul.list-products li span.box-price {
+	display: none;
+}
+.store .rk-ranking-products .container-product ul.list-products li:first-child {
+	border-top: none;
+}
+.store .rk-ranking-products .container-product .product-grid-4 li {
+	width: 100%;
+}
+.store .aside .container-product .hproductseo .url:hover {
+	text-decoration: none;
+}
+.store .rk-container-carousel .rk-carousel .rk-next {
+	background-position: right top;
+	left: auto;
+	right: 0;
+}
+.store .newsletter .btn {
+	float: none;
+}
+.store .look-quick-view {
+	display: none;
+}
+.banner-horizontal div a {
+	float: left;
+	margin-left: 10px;
+	width: auto;
+}
+.store .product-grid-1 li, .store .show-one li {
+	width: 98%;
+	overflow: hidden;
+}
+.store .container-product .hproductseo, .store .container-product .figure {
+	margin: 0 auto;
+	position: relative;
+	width: 142px;
+}
+.store .container-product .details .url, .store .container-product .details .name {
+	color: #4E4E4E;
+	cursor: pointer;
+	text-align: left;
+	text-decoration: none !important;
+}
+.product .description span:hover {
+	text-decoration: none;
+}
+.store .container-product .regular span, .store .container-product .sale span {
+	display: inline;
+}
+.store .container-product .price strong, .store .container-product .price strong span {
+	color: #000;
+}
+.search-page .container-product .stamp {
+	float: left;
+}
+.search-page .look-quick-view {
+	display: none !important;
+}
+.rk-configuration, .rk-message {
+	display: none !important;
+}
+#rk-body .rk-configuration, #rk-body .rk-message {
+	display: block;
+}
+.main .container-full, .container-full {
+	min-width: 0;
+	padding: 0;
+}
+.rk-product-price-range .pagination.bottom {
+	display: none;
+}
+.store .pagination.bottom li, .store .pagination.bottom a {
+	color: #333;
+	display: inline-block;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 8px;
+	padding-left: 0;
+}
+.store .pagination.bottom .first a, .store .pagination.bottom .last a {
+	background: none;
+	height: 20px;
+	line-height: 16px;
+	text-indent: 0;
+	width: 12px;
+}
+.store .pagination.bottom .first .selected, .store .pagination.bottom .prev .selected {
+	background: #fff !important;
+	color: #ccc !important;
+	font-weight: normal;
+	border: 1px solid #CCCCCC;
+	text-decoration: none;
+	margin: 0 1px;
+}
+.store .pagination.bottom .selected, .store .pagination.bottom a:hover {
+	color: #333;
+}
+.pagination .rk-area-lazy-load {
+	height: 300px;
+	text-align: center;
+}
+.pagination .rk-loading {
+	background: url('http://resources.rakuten.com.br/images/ico_loading.gif') no-repeat;
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 60px;
+}
+.rk-area-lazy-load p {
+	font-weight: bold;
+}
+.banners.search {
+	display: none;
+}
+.rk-store-front .html-search-result, .storefront .html-search-result, .page-product .html-search-result, #cssStoreBody .html-search-result, .store #store .html-search-result, #store .html-search-result {
+	display: none;
+}
+.rk-photo {
+	width: 140px;
+	height: 140px;
+}
+.container .product-aside {
+	margin-right: 10px;
+}
+.rk-list-carousel-simple {
+	position: relative;
+}
+.rk-carousel .rk-prev:hover, .store .rk-carousel .rk-next:hover {
+	opacity: 1;
+}
+.rk-carousel .rk-prev.disabled, .rk-carousel .rk-prev.disabled:hover, .rk-carousel .rk-next.disabled, .store .rk-carousel .rk-next.disabled:hover {
+	cursor: default;
+	opacity: 0.3;
+}
+.rk-carousel .rk-prev:active, .store .rk-carousel .rk-next:active {
+	margin-top: -73px;
+}
+.rk-carousel .rk-prev.disabled:active, .store .rk-carousel .rk-next.disabled:active {
+	margin-top: -72px;
+}
+.rk-carousel .rk-prev, .store .rk-carousel .rk-next {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: url(../images/nav2.png) no-repeat left top;
+	width: 14px;
+	height: 145px;
+	margin-top: -72px;
+	text-indent: -9999px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+#rk-list-carousel-simple-2 .hproductseo .details {
+	float: none !important;
+}
+.cm-ico {
+	position: absolute;
+}
+.cm-ico a {
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(../images/rk-community-icons.png) no-repeat;
+	padding: 4px 6px;
+	display: block;
+	height: 17px;
+	width: 25px;
+	background-size: 25px;
+}
+.cm-ico > a {
+	opacity: 0.6;
+}
+.cm-ico > a:hover, .aside .cm-ico:hover, .aside .cm-ico.actived a {
+	opacity: 1;
+}
+.cm-ico-post a {
+	background-position: 0px 2px;
+}
+.cm-ico-private-post a {
+	background-position: 0px -26px;
+}
+.cm-ico-home a {
+	background-position: 8px -90px;
+}
+.cm-ico-search-big a {
+	background-position: 8px -139px
+}
+.cm-ico-product a {
+	background-position: 8px -164px
+}
+.cm-ico-confirm a {
+	background-position: 9px -211px
+}
+.cm-ico-photo a {
+	background-position: 10px -381px
+}
+.cm-ico-adhesive a {
+	background-position: 12px -440px
+}
+.cm-ico-add-product a {
+	background-position: 11px -348px
+}
+.aside .cm-ico.actived {
+	background: #fff;
+	opacity: 1;
+}
+.cm-ico-msg-private a {
+	background-position: 8px -580px;
+}
+.cm-ico-category a {
+	background-position: 8px -113px;
+}
+#blocked-profilelist-control a {
+	background-position: 8px -725px;
+}
+.cm-ico-basket a {
+	background-position: 8px -652px
+}
+#recents-private-post .cm-ico-basket a {
+	background-position: 8px -189px
+}
+.cm-ico-private-post.actived a {
+	opacity: 1;
+}
+.aside .cm-ico-msg-private.actived a, .aside .cm-ico-msg-private.actived a:hover {
+}
+.aside .cm-ico-basket.actived a, .aside .cm-ico-basket.actived a:hover {
+}
+.aside .cm-ico-category.actived a, .aside .cm-ico-category.actived a:hover {
+}
+.aside .info, #feed-control .info {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-icons.png) no-repeat 10px -307px;
+	padding: 17px 0 7px 43px;
+	font-weight: bold;
+	width: 300px;
+	color: #000;
+}
+.info-news a {
+	border: 0;
+	color: inherit;
+	height: 13px !important;
+	width: auto !important;
+	padding-top: 0px;
+}
+.no-comment {
+	margin-top: 10px;
+	color: #aa0900;
+	font-size: 9px;
+	display: none;
+}
+.post > li:first-child .no-comment {
+	display: block;
+}
+#container-community-login {
+	position: absolute;
+	background: url(http://resources.rakuten.com.br/community/images/rk-comunity-gradient-login.png) repeat-x 0 bottom;
+	background-color: #FFF;
+	z-index: 999;
+	width: 600px;
+	height: 270px;
+	margin-top: 21px;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 6px -2px rgb(51, 51, 51);
+	padding-top: 15px;
+}
+#container-community-login #waiting {
+	float: left;
+	margin: 110px 0 0 220px;
+	font-size: 18px;
+}
+#container-community-login .iframe-login {
+	overflow: hidden;
+	width: 615px;
+	height: 100%;
+}
+#rkCommunityLogin .field span {
+	color: #333;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 11px;
+	text-align: right;
+	width: auto;
+	clear: none;
+	float: left;
+	margin-bottom: 0;
+	padding: 0;
+}
+#rkCommunityLogin .field .shell {
+	margin-right: 0;
+	width: auto;
+	font-size: 12px;
+}
+#rkCommunityLogin .errorLoginCommunity, #rkCommunityLogin #errorRegisterCommunity {
+	font-size: 11px;
+	position: absolute;
+	margin-top: 170px;
+	color: #a00;
+}
+#rkCommunityLogin .registred fieldset .action-login-community {
+	height: 64px;
+	margin: 10px 0 0;
+}
+#rkCommunityLogin .not-registred fieldset .action-register-community {
+	height: 55px;
+	margin: 0;
+	overflow: visible;
+}
+#rkCommunityLogin .not-registred fieldset #waiting, #rkCommunityLogin .registred fieldset #waiting {
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 100px;
+}
+#rkCommunityLogin .not-registred fieldset #waiting {
+	margin-top: 5px;
+}
+#rkCommunityLogin #errorRegisterCommunity {
+	margin-top: 240px;
+}
+#rkCommunityLogin #btnCloseModalLoginCommunity {
+	display: none;
+	float: right;
+	padding: 5px;
+	position: relative;
+	text-decoration: underline;
+	margin-right: 7px;
+}
+#rkCommunityLogin .box {
+	border: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	max-width: 240px;
+	float: left;
+	padding: 0 44px 0 23px;
+	margin-left: 0px;
+	background: transparent;
+}
+#rkCommunityLogin .box fieldset legend {
+	display: block;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+#rkCommunityLogin .box fieldset .field label {
+	width: 230px;
+}
+#container-community-login .advertisement, #rkCommunityLogin .advertisement {
+	height: 85px;
+	margin: 7px;
+	background-color: #d3d3d3;
+	display: none;
+}
+#rkCommunityLogin .registred {
+	border-right: 1px dotted #CCC;
+	max-width: 239px;
+}
+.page-login-com {
+	min-width: 0px !Important;
+}
+#rkCommunityLogin .box fieldset .field #nameRegisterCommunity, #rkCommunityLogin .box fieldset .field #emailRegisterCommunity, #rkCommunityLogin .box fieldset .field #loginEmailCommunity {
+	width: 155px;
+}
+#rkCommunityLogin .not-registred {
+	max-width: 222px !Important;
+}
+#rkCommunityLogin .not-registred fieldset legend {
+	padding-left: 15px;
+}
+#rkCommunityLogin .box fieldset .btn {
+	float: left;
+	color: transparent;
+	height: 44px;
+	width: 155px;
+	margin-top: 10px;
+	margin-left: 35px;
+}
+#rkCommunityLogin .registred fieldset .btnLoginCommunity {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-btn.png) no-repeat;
+	background-position: right -90px;
+}
+#rkCommunityLogin .registred fieldset .btnLoginCommunity:hover {
+	background-position: right -135px;
+}
+#rkCommunityLogin .not-registred fieldset #btnRegisterCommunity {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-btn.png) no-repeat;
+	background-position: 0px 0px;
+	margin-top: 0px;
+	margin-left: 57px;
+}
+#rkCommunityLogin .not-registred fieldset #btnRegisterCommunity:hover {
+	background-position: 0px -45px;
+}
+#rkCommunityLogin .registred fieldset .btnLoginFacebookCommunity {
+	margin-top: 25px;
+	float: left;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+#rkCommunityLogin .not-registred fieldset .field label span {
+	width: 60px;
+}
+#rkCommunityLogin .not-registred fieldset .field .confirmPsw span {
+	position: relative;
+	height: 40px;
+	top: -4px;
+	text-align: right;
+	line-height: 17px;
+}
+#rkCommunityLogin .not-registred fieldset .field .confirmPsw .shell {
+	top: 0px;
+}
+#rkCommunityLogin #lblOrDivBox {
+	position: absolute;
+	float: right;
+	display: block;
+	background: #FFF;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: -140px;
+	margin-left: 266px;
+	z-index: 99;
+	padding: 7px;
+}
+#rkCommunityLogin .terms {
+	display: block;
+	clear: both;
+	font-size: 11px;
+	padding: 2px 0 0;
+}
+div.box-termos {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 7px;
+	height: 266px;
+	left: 18px;
+	padding: 20px;
+	position: absolute;
+	top: 23px;
+	width: 920px;
+	z-index: 100;
+	font-size: 13px;
+	color: #555555;
+	display: none;
+}
+#rkCommunityLogin div.box-termos {
+	top: 3px;
+	width: 543px;
+	height: 200px;
+	left: 10px;
+	padding: 15px;
+	font-size: 11px;
+}
+#rkCommunityLogin div.box-termos iframe {
+	width: 100%;
+	height: 200px;
+}
+.page-product #main-store div.box-termos {
+	height: 260px;
+	left: 130px;
+	top: 70px;
+	width: 650px;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(198, 198, 198, 0.65);
+	-moz-box-shadow: 7px 7px 5px 0px rgba(198, 198, 198, 0.65);
+	box-shadow: 7px 7px 5px 0px rgba(198, 198, 198, 0.65);
+}
+div.box-termos iframe {
+	width: 100%;
+	height: 260px;
+}
+div.box-termos p {
+	text-align: justify;
+	padding-bottom: 5px;
+	line-height: 15px;
+}
+#rkCommunityLogin div.box-termos p {
+	line-height: 12px;
+}
+div.box-termos h2 {
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+div.box-termos .close-terms {
+	height: 20px;
+	position: absolute;
+	right: -12px;
+	text-indent: -9000px;
+	top: -6px;
+	width: 20px;
+}
+div.box-termos ul {
+	list-style: disc;
+	padding-left: 13px;
+}
+div.box-termos li {
+	padding-bottom: 5px;
+}
+div.text-term {
+	overflow: auto;
+	height: 270px;
+	padding: 0 10px 0 0;
+}
+#rkCommunityLogin div.text-term {
+	height: 200px;
+}
+div.box-termos .close-terms {
+	width: 30px;
+	height: 30px;
+	background: url("http://resources.rakuten.com.br/community/images/fancy_close.png") 0 0;
+}
+.header .user-info .rk-opencommunity {
+}
+.header .user-info .rk-opencommunity:before {
+}
+header .user-info .islogged .community-controls {
+}
+header .user-info .community-controls li {
+	float: left;
+	background: transparent;
+}
+header .user-info .community-controls li, header .user-info .community-controls li a {
+	width: 30px;
+	height: 24px;
+	padding: 0;
+	position: relative;
+}
+header .user-info .community-controls li a {
+	background-size: 22px;
+	opacity: 0.7;
+	filter: alpha(opacity=70)
+}
+header .user-info .community-controls li a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100)
+}
+.user-info .cm-ico-private-post a {
+	background-position: 0px -22px;
+}
+.ie8 .user-info .cm-ico-private-post a {
+	background-position: 0px -37px;
+}
+.header .islogged #container-community-login, .header .islogged #rkCommunityLogin {
+	display: none !important;
+}
+.header .islogged .rk-opencommunity {
+	border-color: transparent !important;
+}
+.header .islogged .rk-opencommunity:before {
+	display: none;
+}
+.header .islogged .identification img {
+	float: left;
+	height: 25px;
+	margin-left: 6px;
+	z-index: 9;
+	margin-right: 5px;
+	top: -2px;
+	position: relative;
+}
+.small-header .header .col_busca, .small-header .header .col.helpers, .small-header .header .community-controls {
+	float: left;
+	position: relative;
+	left: 3px;
+}
+.small-header .header .community-controls {
+	left: 10px;
+}
+.small-header .header .user-info #container-community-login, .small-header .header .user-info #rkCommunityLogin {
+	margin-top: 29px;
+}
+.small-header .header .user-info .rk-opencommunity:before {
+	bottom: 2px;
+	left: 57px;
+	width: 167px;
+}
+.small-header .header .user-info .community-controls li, .small-header .header .user-info .community-controls li a {
+	width: 24px;
+}
+.small-header .header .user-info .identification {
+	width: auto;
+	padding-right: 0px;
+	margin-left: 20px;
+	min-width: 0px !important;
+}
+.small-header .header .rk-area-banner .rk-message {
+	display: none;
+}
+.store .header .identification .welcome-span {
+	right: 8px;
+}
+.store .header .helpers {
+	width: 750px;
+}
+.header .user-info .identification {
+	float: left;
+	border: 1px solid transparent;
+	padding: 0px;
+	padding-right: 5px;
+	margin-top: 1px;
+}
+.header .islogged .identification {
+	width: 460px;
+}
+.store .header .user-info .identification #ctl00_hypLogin {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-icons.png) no-repeat;
+	background-position: 5px -530px !important;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+.store .header .user-info .user-name {
+	margin-left: 75px;
+	max-width: 240px;
+	float: left;
+	height: 16px;
+	padding-top: 0px;
+}
+.post-control .rk-login .rk-post-login-panel .registred div {
+	float: left;
+}
+.post-control .rk-login .rk-post-login-panel .terms {
+	position: absolute;
+	right: 70px;
+	top: 69px;
+}
+.post-control .rk-login .rk-post-login-panel .terms a {
+	text-decoration: underline;
+}
+.web-community .post-control .rk-login .rk-post-login-panel .terms {
+	top: 74px;
+	right: 64px;
+}
+.post-control .rk-login .rk-post-login-panel > a {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-btn.png) no-repeat;
+	background-size: 99%;
+	background-position: left 0px;
+	margin-top: -75px;
+	margin-left: 550px;
+	height: 40px;
+	width: 139px;
+	position: absolute;
+	text-indent: -9999px;
+}
+.post-control .rk-login .rk-post-login-panel .registred .shell {
+	padding-left: 4px;
+}
+.post-control .rk-login .rk-post-login-panel .registred .field {
+	width: 340px;
+	margin: 10px 10px 10px 15%;
+}
+.post-control .rk-login .rk-post-login-panel .registred .action-login-community {
+	margin: -22px 0 0 -141px;
+}
+.post-control .action-login-community #waiting {
+	background-color: #FFFFFF;
+	height: 30px;
+	left: auto;
+	padding-top: 13px;
+	position: absolute;
+	right: 36%;
+	top: 18px;
+	width: 118px;
+}
+.post-control .rk-login .rk-post-login-panel .registred .btnLoginCommunity {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-btn.png) no-repeat;
+	background-position: left -81px;
+	background-size: 100%;
+	margin: 0;
+	height: 40px;
+	width: 140px;
+	position: relative;
+}
+.post-control .rk-login .rk-post-login-panel .registred .btnLoginFacebookCommunity {
+	background: none;
+	float: left;
+	margin-left: -150px;
+	margin-top: 22px;
+	width: 250px;
+	text-indent: 0px;
+}
+div.public .btnLoginFacebookCommunity, div.public #lblOrDivBox, div.public .rk-post-login-panel > a {
+	display: none;
+}
+.post-control .rk-login .rk-post-login-panel .registred #lblOrDivBox {
+	float: right;
+	margin-top: -50px;
+	margin-right: 220px;
+}
+.post-control .rk-login .rk-post-login-panel .errorLoginCommunity {
+	line-height: 21px;
+	position: absolute;
+	color: #FF0000;
+	left: 131px;
+	bottom: 0;
+}
+.page-product .post-control .rk-login .registred {
+	padding: 0 0 15px;
+}
+.community-controls a {
+	float: left;
+	margin-right: 5px;
+}
+.community-controls .content-aside {
+	background: #fff;
+	position: absolute;
+	border: 1px solid #ddd;
+	top: 32px;
+	left: 30px;
+	width: 230px;
+}
+.community-controls .content-aside a {
+	margin: 0;
+}
+.community-controls .content-aside li {
+	overflow: hidden;
+}
+.count {
+	text-indent: 0;
+	background-color: #dc0d17;
+	background-image: -moz-linear-gradient(top, #fa3c45 0%, #dc0d17 100%);
+	position: absolute;
+	padding: 0 4px 1px;
+	text-align: center;
+	top: 0;
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 10px;
+	color: #FFF;
+	line-height: 14px;
+	margin-left: 7px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+}
+#community-bullet-control .cm-ico a {
+	overflow: initial;
+}
+#community-bullet-control .count {
+	top: -5px;
+	left: 5px;
+}
+.rk-post-login-panel {
+	position: relative;
+}
+.page-product #rk-productpage #info-product .post-control .rk-login .rk-post-login-panel .registred .field {
+	width: 450px;
+}
+.page-product #rk-productpage #info-product .post-control .rk-login .rk-post-login-panel a {
+	left: 77%;
+	margin: 0;
+	top: 21px;
+}
+.page-product #rk-productpage .registred > a[name='loginpanel'] {
+	display: none;
+}
+.page-product #rk-productpage #info-product .post-control .rk-login .rk-post-login-panel .registred #lblOrDivBox {
+	float: left;
+	margin-left: 69%;
+	margin-top: -73px;
+}
+.page-product .store-aside + .product #lblOrDivBox {
+	margin: -74px 0 0 524px !important;
+}
+.page-product .store-aside + .product .btnLoginFacebookCommunity {
+	margin: 0 0 0 421px !important;
+}
+.page-product #rk-productpage #info-product .post-control .rk-login .rk-post-login-panel .registred .btnLoginCommunity {
+	margin: 0;
+	width: 140px;
+	background-size: 100%;
+	background-position: left -81px;
+	position: absolute;
+	top: 20px;
+	left: 48%;
+}
+.page-product #rk-productpage #info-product .post-control .rk-login .rk-post-login-panel .registred .btnLoginFacebookCommunity {
+	margin-left: -20%;
+	margin-top: 47px;
+}
+#info-product {
+	display: block;
+	float: none;
+}
+.page-product #rk-productpage #info-product .post-control .post-tools {
+	margin-top: 3px;
+}
+.page-product #rk-productpage #info-product .post-control .post-tools > li {
+	float: left;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item, .page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item .add-comment, .page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control .textarea, .page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .section {
+	float: none;
+	display: block;
+	width: auto;
+	padding-right: 10px;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item .add-comment {
+	display: none;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item .add-comment.rk-show, .rk-show.add-comment {
+	display: inline-block;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .section {
+	padding-right: 0;
+	overflow: visible;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control .post-tools .cm-ico a {
+	color: #000;
+	text-decoration: none;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item .add-comment {
+	width: 94%;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item {
+	margin-right: 20px;
+	border-bottom: 1px solid #EAEAEA;
+	position: relative;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .month {
+	display: none;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .rk-Feed .rk-profile-not-found, .page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .rk-Feed .rk-loading {
+	margin-top: 15px;
+	position: relative;
+	padding-bottom: 10px;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item .msg {
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .comment-list .item {
+	margin-right: 0px;
+	display: inline-block;
+	width: 100%;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity #feed-control .post .item .add-comment .textarea {
+	width: 76%;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control {
+	min-height: initial;
+	padding: 0;
+	border: none;
+	display: inline-block;
+	width: 100%;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control div div img {
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control div div a {
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control div div a span {
+	font-size: 16px;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .post-control .rk-post-panel {
+	height: 122px;
+	padding: 10px;
+}
+.page-product #rk-productpage #info-product #ctl00_body_pnlRakutenCommunity .section #feed-control .rk-Feed {
+	height: auto;
+}
+.rk-pane-content .section {
+	float: left;
+	width: 699px;
+	position: relative;
+}
+.rk-pane-content .section #visitant-summary-control {
+	border-top: 1px solid #CCC;
+}
+.rk-pane-content .section .clients {
+	right: 10px;
+}
+.rk-community-modal {
+	width: 395px;
+	float: left;
+	position: fixed;
+	z-index: 3;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -250px;
+	background-color: #F8F8F8;
+	border: 1px solid #cecece;
+	padding: 10px;
+	border-radius: 5px;
+	background: #f4f4f4;
+	background: -moz-linear-gradient(top, #ffffff 0%, #e3e3e3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e3e3e3));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e3e3e3 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #e3e3e3 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #e3e3e3 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #e3e3e3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e3e3e3', GradientType=0 );
+}
+#rk-modal-bg {
+	background: url(http://resources.rakuten.com.br/community/images/bg-modal.png);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99998;
+	display: none;
+}
+.rk-bgmodal {
+	background: url(http://resources.rakuten.com.br/community/images/bg_modal-denuncia.gif) no-repeat 0 40px;
+	overflow: hidden;
+	padding-left: 85px;
+}
+a.lnk-denounce {
+}
+.rk-community-modal a.close-modal {
+	background: #78A224;
+	float: right;
+	cursor: pointer;
+	padding: 5px 20px !important;
+	font-weight: bold;
+	box-shadow: 1px 1px 2px -1px #999999;
+	border-radius: 2px;
+	color: #fff;
+}
+.rk-community-modal a.btn-green {
+	cursor: pointer;
+	float: right;
+	border: 0;
+	margin-left: 10px;
+}
+.rk-community-modal .rk-buttons {
+	margin-left: 95px;
+}
+.rk-community-modal #btnSaveDenouncement {
+	margin-left: 6px;
+}
+.rk-community-modal .reason, .rk-community-modal .comment {
+	margin-bottom: 7px;
+}
+.rk-community-modal .reason label {
+	font-weight: bold;
+	font-size: 13px;
+	color: #365c7b;
+}
+.rk-community-modal .comment label {
+	font-size: 13px;
+	padding-bottom: 4px;
+	display: block;
+	margin-top: 5px;
+	font-weight: bold;
+	color: #365C7B;
+}
+.rk-community-modal select {
+	width: 100px;
+	margin-left: 6px;
+	display: block;
+	margin: 5px 0 0;
+}
+.rk-community-modal textarea {
+	width: 287px;
+	border: 1px solid #ccc;
+}
+#recents-private .content-aside {
+	height: 327px;
+	width: 300px;
+	overflow: visible;
+	left: -18px;
+	top: 34px;
+	border-radius: 4px;
+	border-width: 2px;
+	z-index: 9999;
+}
+#recents-private .content-aside a {
+	text-indent: 0px;
+}
+#recents-private .content-aside:after {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #CCC;
+	border-width: 10px;
+	left: 18px;
+}
+#recents-private .content-aside .month {
+	background: url(http://resources.rakuten.com.br/community/images/rk-community-icons.png) repeat-x 0 bottom;
+	text-align: center;
+	margin: 0px 0 12px !important;
+	clear: both;
+	height: 10px;
+	border-bottom: none;
+	overflow: visible;
+}
+#recents-private .content-aside .month strong {
+	top: 6px;
+}
+#recents-private .content-aside .month:hover {
+	background-color: transparent;
+}
+#recents-private .content-aside li {
+	display: block;
+	float: none;
+	height: auto;
+	width: 290px;
+	padding: 5px;
+	border-bottom: 1px solid #CCC;
+	overflow: hidden;
+}
+#recents-private .content-aside li .block-coment {
+	display: inline-block;
+}
+#recents-private .content-aside .rk-view-all:hover, #recents-private .content-aside li:hover {
+	background-color: #8e9faf;
+	color: #FFF;
+}
+#recents-private .content-aside li:hover .name-profile, #recents-private .content-aside li:hover .msg, #recents-private .content-aside li:hover .time {
+	color: #FFF;
+}
+#recents-private .content-aside .rk-view-all, #recents-private .content-aside .info.info-news {
+	float: none;
+	padding: 10px;
+	background: none;
+	width: 281px;
+	text-align: center;
+	font-weight: bold;
+	color: #478ca2;
+}
+#recents-private .content-aside .rk-view-all {
+	height: 16px;
+}
+#recents-private .content-aside .info {
+	border-bottom: 1px solid #CCC;
+	padding: 7px;
+	font-weight: bold;
+}
+#recents-private .content-aside .rk-view-all a, #recents-private .content-aside .info.info-news a {
+	background: none;
+	text-align: center;
+	width: 100% !important;
+	color: #478ca2;
+}
+#recents-private .content-aside li a {
+	height: auto;
+	width: 100%;
+	text-decoration: none !important;
+	display: block;
+	background: none;
+}
+#recents-private .content-aside li a img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 0 5px 0 0;
+}
+#recents-private .name-profile {
+	padding: 0 !important;
+}
+#recents-private .content-aside li .msg {
+	width: 235px;
+	word-wrap: break-word;
+}
+.pres-background {
+	background-color: #000000;
+	height: 100%;
+	left: 0;
+	opacity: 0.75;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999999;
+}
+div.overlay {
+	color: #FFFFFF;
+	display: none;
+	height: 100%;
+	left: 0;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100000000;
+}
+div.overlay .fade-in {
+	color: #FFFFFF;
+	height: 100%;
+	left: 0;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100000000;
+}
+div.overlay .text {
+	margin: 0 auto;
+	width: 990px;
+	position: relative;
+}
+div.overlay p, div.overlay span {
+	font-family: "Open Sans";
+	font-size: 14px;
+	text-align: center;
+}
+div.overlay span.title {
+	font-size: 48px;
+	display: block;
+	text-align: center;
+}
+div.overlay .txt-main p {
+	font-size: 24px;
+}
+div.overlay .txt-aside, div.overlay .txt-bside {
+	position: absolute;
+	top: 99px;
+	left: -2px;
+	padding: 85px 0 0;
+	width: 270px;
+}
+div.overlay .txt-aside {
+	background: url(http://resources.rakuten.com.br/community/images/ico_community-overlay.png) no-repeat;
+}
+div.overlay .txt-bside {
+	background: url(http://resources.rakuten.com.br/community/images/ico_community-overlay2.png) no-repeat;
+	top: 5px;
+	left: 169px;
+}
+div.overlay .txt-main {
+	position: absolute;
+	left: 230px;
+	position: absolute;
+	top: 230px;
+}
+div.overlay .bt-over, div.overlay .bt-over {
+	background: url(http://resources.rakuten.com.br/community/images/bg_button-over.png) no-repeat;
+	position: absolute;
+	top: 340px;
+	left: 430px;
+	width: 200px;
+	height: 55px;
+	text-align: center;
+	display: block;
+	padding-top: 54px;
+	font-size: 18px;
+	cursor: pointer;
+}
+div.overlay .bt-over:hover {
+	background-position: 0 -114px;
+}
+div.overlay .bt-over.seemore {
+	left: 553px;
+}
+.mCSB_container {
+	width: auto;
+	overflow: hidden;
+}
+.mCSB_container.mCS_no_scrollbar {
+	margin-right: 0;
+}
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar, .mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar {
+	margin-right: 30px;
+}
+.mCustomScrollBox>.mCSB_scrollTools {
+	width: 20px;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: auto;
+}
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+	margin: 20px 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+	width: 10px;
+	height: 100%;
+	margin: 0 auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.mCSB_scrollTools .mCSB_dragger {
+	cursor: pointer;
+	width: 100%;
+	height: 30px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 10px;
+	height: 100%;
+	margin: 0 auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown {
+	display: block;
+	position: relative;
+	height: 20px;
+	overflow: hidden;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+	top: 100%;
+	margin-top: -40px;
+}
+.mCSB_horizontal>.mCSB_container {
+	height: auto;
+	margin-right: 0;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar {
+	margin-bottom: 0;
+}
+.mCS_disabled>.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar, .mCS_destroyed>.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar {
+	margin-right: 0;
+	margin-bottom: 30px;
+}
+.mCSB_horizontal.mCustomScrollBox>.mCSB_scrollTools {
+	width: 100%;
+	height: 16px;
+	top: auto;
+	right: auto;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.mCSB_horizontal>.mCSB_scrollTools a+.mCSB_draggerContainer {
+	margin: 0 20px;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_draggerRail {
+	width: 100%;
+	height: 2px;
+	margin: 7px 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger {
+	width: 30px;
+	height: 100%;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 100%;
+	height: 4px;
+	margin: 6px auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonLeft, .mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonRight {
+	display: block;
+	position: relative;
+	width: 20px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	cursor: pointer;
+	float: left;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonRight {
+	margin-left: -40px;
+	float: right;
+}
+.mCustomScrollBox {
+	-ms-touch-action: none;
+}
+.mCustomScrollBox>.mCSB_scrollTools {
+	opacity: 0;
+	filter: "alpha(opacity=0)";
+	-ms-filter: "alpha(opacity=0)";
+}
+.mCustomScrollBox:hover>.mCSB_scrollTools {
+	opacity: 1;
+	filter: "alpha(opacity=100)";
+	-ms-filter: "alpha(opacity=100)";
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+	background: #000;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px #999999 inset;
+	filter: "alpha(opacity=10)";
+	-ms-filter: "alpha(opacity=10)";
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: red;
+	background: rgba(70, 100, 135,0.55);
+	filter: "alpha(opacity=75)";
+	-ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background: rgba(70, 100, 135,0.90);
+	filter: "alpha(opacity=90)";
+	-ms-filter: "alpha(opacity=90)";
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background: rgba(70, 100, 135,0.9);
+	filter: "alpha(opacity=90)";
+	-ms-filter: "alpha(opacity=90)";
+}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+	background-image: url(../mCSB_buttons.png);
+	background-repeat: no-repeat;
+	opacity: 0.4;
+	filter: "alpha(opacity=40)";
+	-ms-filter: "alpha(opacity=40)";
+}
+.mCSB_scrollTools .mCSB_buttonUp {
+	background-position: 0 0;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+	background-position: 0 -20px;
+}
+.mCSB_scrollTools .mCSB_buttonLeft {
+	background-position: 0 -40px;
+}
+.mCSB_scrollTools .mCSB_buttonRight {
+	background-position: 0 -56px;
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover, .mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover {
+	opacity: 0;
+	filter: "alpha(opacity=0)";
+	-ms-filter: "alpha(opacity=0)";
+}
+.mCSB_scrollTools .mCSB_buttonUp:active, .mCSB_scrollTools .mCSB_buttonDown:active, .mCSB_scrollTools .mCSB_buttonLeft:active, .mCSB_scrollTools .mCSB_buttonRight:active {
+	opacity: 0.9;
+	filter: "alpha(opacity=90)";
+	-ms-filter: "alpha(opacity=90)";
+}
+.content_1>.mCustomScrollBox>.mCSB_scrollTools {
+	height: 96%;
+	top: 2%;
+}
+.content_2 .mCSB_scrollTools .mCSB_draggerRail {
+	width: 6px;
+	box-shadow: 1px 1px 1px rgba(255,255,255,0.1);
+}
+.content_2 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: rgba(255,255,255,0.4);
+	filter: "alpha(opacity=40)";
+	-ms-filter: "alpha(opacity=40)";
+}
+.content_2 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background: rgba(255,255,255,0.5);
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+.content_2 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .content_2 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background: rgba(255,255,255,0.6);
+	filter: "alpha(opacity=60)";
+	-ms-filter: "alpha(opacity=60)";
+}
+.content_3>.mCustomScrollBox>.mCSB_scrollTools {
+	height: 94%;
+	top: 3%;
+}
+.content_3 .mCSB_scrollTools .mCSB_draggerRail {
+	width: 0;
+	border-right: 1px dashed #09C;
+}
+.content_3 .mCSB_scrollTools .mCSB_dragger {
+	height: 11px;
+}
+.content_3 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 11px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	background: #09C;
+}
+.content_4>.mCustomScrollBox>.mCSB_scrollTools {
+	height: 94%;
+	top: 3%;
+}
+.content_4 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 8px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #d0b9a0;
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.content_4 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .content_4 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background: #dfcdb9;
+}
+.content_4 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .content_4 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.content_5>.mCustomScrollBox>.mCSB_scrollTools {
+	width: 98%;
+	margin: 0 1%;
+}
+.content_6>.mCustomScrollBox>.mCSB_scrollTools {
+	width: 88%;
+	margin: 0 6%;
+}
+.content_8 .mCSB_scrollTools .mCSB_draggerRail {
+	width: 0px;
+	border-left: 1px solid rgba(0,0,0,0.8);
+	border-right: 1px solid rgba(255,255,255,0.2);
+}

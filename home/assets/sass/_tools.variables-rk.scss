@@ -1,0 +1,7 @@
+$base-url: "http://resources.rakuten.com.br";
+$base-urls: "//resources-ssl.rakuten.com.br";
+$assets-path: "/Assets/rakuten.com.br/images/layout";
+$font-path: "/sd/fonts";
+$resources-url: $base-url + $assets-path;
+$resources-urls: $base-urls + $assets-path;
+$font-urls: $base-urls + $font-path;

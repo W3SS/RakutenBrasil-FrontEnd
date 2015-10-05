@@ -1,0 +1,1406 @@
+.store {
+	line-height: 1;
+	a {
+		text-decoration: none;
+		color: #333;
+	}
+}
+/* inicio - Busca */
+	.main-search {
+		height: 46px;
+		*,
+		& { @include box-sizing(border-box);}
+		background: #bf0000;
+		.community-controls,
+		.user-offline,
+		.colhelp {
+			display: none !important;
+		}
+		.content {
+			display: table;
+			margin: 0 auto;
+			width: 1000px;
+			position: relative;
+		}
+		.top-category {
+			.rk-home & {
+				display: none;
+			}
+			display: table-cell;
+			padding: 8px 0 0;
+			vertical-align: top;
+			position: relative;
+			width: 232px;
+			&:hover span + ul {
+				display: block;
+				background: #fff;
+				padding: 5px;
+			}
+			ul {
+				display: none;
+				background: #fff;
+				position: relative;
+				top: 10px;
+				left: 0;
+				width: 232px;
+				z-index: 3;
+				border: 4px solid #eeeeee;
+				padding: 10px;
+				box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+				&::after,
+				&::before {
+					bottom: 100%;
+					left: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+				}
+				&::after {
+					border-color: rgba(136, 183, 213, 0);
+					border-bottom-color: #fff;
+					border-width: 6px;
+					margin-left: -6px;
+				}
+				&::before {
+					border-color: rgba(194, 225, 245, 0);
+					border-bottom-color: #eeeeee;
+					border-width: 11px;
+					margin-left: -11px;
+				}
+				li {
+					background: none;
+					margin: 0 0 10px;
+					a {
+						padding: 8px 0;
+						&:hover {
+							color: #be0000;
+						}
+					}
+				}
+			}
+			> span {
+				background: #fff;
+				height: 30px;
+				display: block;
+				color: #2b2b2b;
+				line-height: 29px;
+				padding-left: 12px;
+				position: relative;
+				cursor: pointer;
+				width: 232px;
+				&::before {
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 5px 5px 0 5px;
+					border-color: #5c5c5c transparent transparent;
+					content: " ";
+					display: block;
+					float: right;
+					margin: 14px 8px 0 4px;
+				}
+				&:hover::before {
+					border-color: #bf0000 transparent transparent;
+				}
+			}
+		}
+		.search {
+			margin: 0 0 0 0;
+			display: table-cell;
+			padding: 8px 0 0 1px;
+			vertical-align: top;
+			width: 100%;
+		}
+		#drpCategoryList { 
+			display: none !important;
+			.rk-home & {
+				~.field-input {
+					width: calc(100% - 232px);
+				}
+			}
+		}
+		.user-info {
+			display: table-cell;
+			height: 46px;
+			margin: 0 10px;
+			vertical-align: top;
+			width: 230px;
+			&.islogged {
+				width: 315px;
+				.identification {
+					min-width: 310px;
+				}
+			}
+
+		}
+		#drpCategoryList {
+			float: left;
+			border: 0;
+			height: 30px;
+			margin-right: 1px;
+			width: 231px;
+			.rk-home & {
+				display: block !important;
+			}
+			option[value="farmacia"],
+			option[value="suplementos-e-vitaminas"], {
+				display: none;
+				visibility: hidden;
+			}
+		}
+		.field-input {
+			float: left;
+			position: relative;
+			background: #fff;
+			width:100%;
+			height: 30px;
+			padding: 6px 15px;
+			label {
+				color: #b7b7b7;
+				left: 12px;
+				top: 10px;
+				display: none !important;
+			}
+			input[type="text"] {
+				border: 0;
+				padding: 0;
+				width: 100%;
+			}
+			#AutoCompleteSearch {
+				top: 30px;
+			}
+		}
+		.btn-search {
+			display: block;
+			height: 29px;
+			right: 0;
+			position: absolute;
+			top: 0;
+			width: 33px;
+			z-index: 10;
+			&::after {
+				font-family: FontAwesome;
+				font-size: inherit;
+				content: "\f002";
+				display: block;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				top: 4px;
+				left: 8px;
+				text-indent: 0;
+				font-size: 18px;
+			}
+			&:hover::after {
+				color: #bf0000;
+			}
+		}
+		.identification {
+			text-align: center;
+			min-width: 230px;
+			.photo-customer,
+			.welcome-span,
+			.welcome-span + span {
+				display: none !important;
+			}
+			> a {
+				color:#fff;
+				text-decoration: none;
+				font-size: 12px;
+				line-height: 46px;
+				font-weight: bold;
+				display: inline-block;
+				padding: 0 10px;
+				margin-left: 8px;
+				&:hover {
+					background-color: #df3636;
+					background-image: linear-gradient(center top , #e74141, #d42525);
+					background-repeat: repeat-x;
+					border-color: #bf0000;
+					box-shadow: 0 0 0 1px rgba(255, 127, 127, 0.4) inset;
+					text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+				}
+			}
+			.user-name {
+				display: inline-block;
+				position: relative;
+				min-height: 30px;
+				cursor: pointer;
+				vertical-align: top;
+				padding: 0 7px;
+				text-align: center;
+				&:hover {
+					background-color: #df3636;
+					background-image: linear-gradient(center top , #e74141, #d42525);
+					background-repeat: repeat-x;
+					border-color: #bf0000;
+					box-shadow: 0 0 0 1px rgba(255, 127, 127, 0.4) inset;
+					text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+					.uluser {
+						display: block;
+					}
+					&::before {
+						transform: rotate(180deg);
+					}
+				}
+				&::before {
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 5px 5px 0 5px;
+					border-color: #ffffff transparent transparent;
+					content: " ";
+					display: block;
+					margin: 21px 0 0 5px;
+					float: right;
+				}
+				> a {
+					line-height: 46px;
+					height: 44px;
+					display: inline-block;
+					max-width: 120px;
+					overflow: hidden;
+					color: #fff;
+					strong { 
+						overflow: hidden;
+						height: 46px;
+						display: inline;
+					}
+				}
+				.uluser {
+					display: none;
+					position: absolute;
+					top: 46px;
+					right: 0;
+					background: #fff;
+					border: 1px solid #ccc;
+					width: 126px;
+					padding: 5px 0 5px;
+					text-align: left;
+
+					.my-points { display: none;}
+					li {
+						padding: 5px 0 5px;
+						a { 
+							margin: 0 10px 0; 
+							display: block;
+							&:hover {
+								color: #bf0000;
+							}
+						}
+						&.logout {
+							border-top: 1px solid #ccc;
+							margin: 0;
+						}
+						#hypLogOut { 
+							display: block;
+							text-transform: capitalize;
+						}
+					}
+				}
+
+			}
+			.superpoints-total {
+				position: relative;
+				padding: 0 !important;
+				overflow: hidden;
+				max-width: 157px;
+				height: 46px;
+				&::before {
+					background: url("#{$resources-urls}/sprite-home.png") -94px -165px;
+					display: inline-block;
+					width: 15px;
+					height: 15px;
+					content: " ";
+					top: 2px;
+					position: relative;
+					margin: 0 3px 0;
+				}
+				b { 
+					padding-right: 5px; 
+					font-weight: normal;
+					&::after {
+						content: "Super Points";
+						font-weight: bold;
+						padding-left: 5px;
+					}
+				}
+				i { font-style: normal; display: none;}
+			}
+			#hypLogOut {
+				display: none;
+			}
+		}
+		#simple-user-basket {
+			display: table-cell;
+			float: none;
+			background: none !important;/*reset*/
+			position: relative;
+			width: 38px !important;
+			top: 0;
+			vertical-align: top;
+			a.btn {
+				display: block;
+				height: 45px;
+	   			width: 37px;
+				&:hover {
+					background-color: #df3636;
+					background-image: linear-gradient(center top , #e74141, #d42525);
+					background-repeat: repeat-x;
+					border-color: #bf0000;
+					box-shadow: 0 0 0 1px rgba(255, 127, 127, 0.4) inset;
+					text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+				}
+				&::after {
+					width: 20px;
+					height: 20px;
+					font-family: FontAwesome;
+					content: "\f07a";
+					display: block;
+					position: absolute;
+					top: 2px;
+					left: 5px;
+					text-indent: 0;
+					font-size: 23px;
+
+				}
+				span {
+					padding: 0;
+				}
+				b {
+					position: absolute;
+					top: 8px;
+					left: 19px;
+					background-color: #333;
+					border-radius: 3px;
+					font-size: 11px;
+					color: #fff;
+					display: inline-block;
+					font-size: 11px;
+					font-weight: bold;
+					line-height: 1;
+					margin-top: -2px;
+					min-width: 1.3em;
+					padding: 1px 2px;
+					text-align: center;
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+					vertical-align: middle;
+					white-space: nowrap;
+					z-index: 2;
+					width: auto;
+				}
+			}
+		}
+		#box-itens {
+			top: 45px;
+			left: auto;
+			right: -26px;
+			border: 5px solid #9f0000;
+			&::after {
+				left: 299px;
+			}
+			.subtotal {
+				a {
+					width: 135px !important;
+				}
+			}
+		}
+	}
+/* fim    - Busca */
+.main {
+	width: 1000px;
+}
+
+
+/* inicio - Bloco top Main */
+	section.top-main {
+		float: left;
+		margin-left: 25px;
+		width: 744px;
+		.lp-links {
+			width: 100%;
+			display: inline-block;
+			padding-bottom: 10px;
+			line-height: 22px;
+			*,
+			& { @include box-sizing(border-box);}
+			ul {
+				margin-top: 10px;
+				display: inline-block;
+				li {
+					display: inline-block;
+					text-align: center;
+					border-left: 1px solid #3f3f3f;
+					padding: 0 18px;
+					font-weight: bold;
+					&:first-child { border-left: 0;}
+					a {
+						&:hover {
+							color: #be0000;
+						}
+					}
+				}
+			}
+		}	
+	}
+/* fim    - Bloco top Main */
+
+/* inicio - Menu */
+	.main-menu {
+		float: left;
+		width: 231px;
+		*,
+		& { @include box-sizing(border-box);}
+		> .title {
+			background: #2b2b2b;
+			display: block;
+			padding: 12px 0 0 10px;
+			color: #fff;
+			font-size: 14px;
+			height: 41px;
+		}
+		> ul {
+			> li {
+				background: #f7f7f7;
+				border-bottom: 1px solid #fff;
+				line-height: 19.5px;
+				&:hover {
+					.sub-menu {
+						visibility: visible;
+					}
+					> a {
+						background: #be0000;
+						color: #fff;
+					}
+				}
+				> a {
+					padding: 8px 5px 8px 38px;
+					text-decoration: none;
+					display: block;
+					position: relative;
+					&::after {
+						content: "\203A";
+						display: block;
+						font-size: 18px;
+						font-weight: bold;
+						opacity: 0.8;
+						position: absolute;
+						right: 7px;
+						top: 7px;
+					}
+					&::before {
+						display: block;
+						content: " ";
+						width: 28px;
+						height: 28px;
+						background: url("#{$resources-urls}/sprite-icons-menu.png");
+						position: absolute;
+						top: 4px;
+						left: 4px;
+					}
+					b {
+							display: inline-block;
+							background: #c50300;
+							padding: 1px 4px;
+							color: #fff;
+							font-size: 11px;
+							margin-left: 10px;
+							font-weight: normal;
+					}
+				}
+				&.no-ico {
+					> a {
+						color: #be0000;
+						padding-left: 10px;
+						
+					}
+					&:hover > a {
+						color: #fff;
+					}
+				}
+				&.no-ico a::before { display: none; }
+				&.ic-calcados a::before { background-position: 0px 4px; }
+				&.ic-moda a::before { background-position: 0px -33px; }
+				&.ic-smarth a::before { background-position: 0px -70px; }
+				&.ic-eletrod a::before { background-position: 0px -105px; }
+				&.ic-eletroe a::before { background-position: 0px -142px; }
+				&.ic-info a::before { background-position: 0px -177px; }
+				&.ic-home a::before { background-position: 0px -212px; }
+				&.ic-fashion a::before { background-position: 0px -249px; }
+				&.ic-pet a::before { background-position: 0px -286px; }
+				&.ic-book a::before { background-position: 0px -321px; }
+				&.ic-sport a::before { background-position: 0 -351px; }
+
+	            
+	            &.ic-calcados:hover a::before { background-position: -30px 4px; }
+				&.ic-moda:hover a::before { background-position: -30px -33px; }
+				&.ic-smarth:hover a::before { background-position: -30px -70px; }
+				&.ic-eletrod:hover a::before { background-position: -30px -105px; }
+				&.ic-eletroe:hover a::before { background-position: -30px -142px; }
+				&.ic-info:hover a::before { background-position: -30px -177px; }
+				&.ic-home:hover a::before { background-position: -30px -212px; }
+				&.ic-fashion:hover a::before { background-position: -30px -249px; }
+				&.ic-pet:hover a::before { background-position: -30px -286px; }
+				&.ic-sport:hover a::before { background-position: -30px -350px	; }	
+			}
+		}
+		.sub-menu {
+			position: absolute;
+			width: 590px;
+			border: 5px solid #be0000;
+			min-height: 435px;
+			left: 231px;
+			top: 40px;
+			padding: 0 0 0 20px;
+			box-shadow: 2px 2px 13px rgba(0,0,0,0.35);
+			visibility: hidden;
+			z-index: 10;
+			background: #fff;
+			overflow: hidden;
+			.seemore {
+				a {
+					color: #be0000;
+					text-decoration: underline;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+			.sub-block {
+				display: table-cell;
+				vertical-align: top;
+				&.first {
+					width: 100%;
+					padding: 20px 0 0 0;
+				}
+				&.image {
+					width: 230px;
+					background: #f5f5f5;
+					a {
+						display: block;
+						width: 230px;
+						height: 430px;
+					}
+				}
+			}
+			.sub {
+				display: inline-block;
+				width: 100%;
+			}
+			.title {
+				font-size: 18px;
+				font-weight: bold;
+				color: #be0000;
+				display: block;
+				border-bottom: 1px solid #d4d4d4;
+				padding-bottom: 6px;
+				margin-bottom: 10px;
+			}
+			ul {
+				margin-bottom: 15px;
+				display: inline-block;
+				vertical-align: top;
+				width: 140px;
+				&:first-child { margin-right: 10px;}
+				li {
+					margin-bottom: 10px;
+					strong {
+						font-weight: bold;
+						color: #be0000;
+						font-size: 14px;
+					}
+					a {
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+/* fim    - Menu */
+
+/* inicio - Bloco conheca rakuten */
+	.know-rakuten {
+		display: inline-block;
+	    width: 100%;
+	    border-top: 1px solid #d4d4d4;
+	    padding-top: 15px;
+	    margin: 10px 0 15px;
+	    border-bottom: 2px solid #e2e2e2;
+	    padding-bottom: 40px;
+	    *,
+		& { @include box-sizing(border-box);}
+
+	    > .title {
+	    	color: #bf0000;
+	    	display: block;
+	    	margin-bottom: 10px;
+	    	font-size: 20px;
+	    	font-family: "rakuten_globalb";
+	    }
+	    .rk-box {
+	    	display: inline-block;
+	    	margin-left: 15px;
+	    	border: 2px solid #dedede;
+	    	background: #f7f7f7;
+	    	vertical-align: top;
+	    	height: 81px;
+	    	position: relative;
+	    	&.first {
+	    		margin-left: 0;
+	    	}
+	    	a {
+				padding: 22px 34px 0 83px;
+				display: block;
+				line-height: 18px;
+				font-size: 13px;
+				height: 78px;
+				&::after {
+					content: " ";
+					display: block;
+					position: absolute;
+					top: 12px;
+					left: 16px;
+					background: url("#{$resources-urls}/sprite-home.png") -71px -221px;
+					width: 62px;
+					height: 62px;
+				}
+				strong { }
+	    	}
+	    	&.who-are {
+	    		a::after {
+	    			background: url("#{$resources-urls}/sprite-home.png") -3px -221px;
+	    		}
+	    	}
+	    	&.news {
+	    		> .title {
+	    			display: block;
+	    			padding: 18px 0 0 76px;
+	    			height: 41px;
+	    			&::after {
+						content: " ";
+						display: block;
+						position: absolute;
+						top: 10px;
+						left: 29px;
+						background: url("#{$resources-urls}/sprite-home.png") -138px -241px;
+						width: 41px;
+						height: 32px;
+	    			}
+	    			strong { color: #be0000}
+	    		}
+	    		.newsletter {
+	    			background: none !important;
+	    			border: 0;
+	    			margin: 0;
+	    			.header,
+	    			.atention { display: none !important;}
+	    			.field,
+	    			fieldset,
+	    			.gradient {
+	    				background: none !important;
+	    			}
+					fieldset {
+						padding: 0 23px 0;
+					}
+	    			a.btn {
+	    				background: #be0000;
+	    				height: 29px;
+	    				width: 86px;
+	    				padding: 0;
+	    				margin: 0;
+	    				line-height: 29px;
+	    				display: inline-block;
+	    				font-size: 0px;
+	    				&::after {
+	    					display: none
+	    				}
+	    				&::before {
+	    					content: "Cadastrar";
+	    					font-size: 13px;
+	    					color: #fff;
+	    				}
+	    				color: #be0000;
+	    				text-indent: 0;
+	    				text-align: center;
+	    			}
+	    			.field {
+	    				float: left;
+	    				margin: 0;
+	    				&.first {
+	    					margin-right: 10px;
+	    					input {
+	    						
+	    					}
+	    				}
+	    				.shell { 
+	    					margin: 0;
+	    					background: #fff;
+	    				}
+	    				input {
+	    					background: none;
+	    					border-radius: 0;
+	    					height: 29px;
+	    					width: 144px;
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+	}
+/* fim    - Bloco conheca rakuten */
+
+/* inicio - Banners */
+	.bnr_three {
+		margin: 10px 0 0;
+		.ads {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 14px 0 0;
+		}
+		> div {
+			display: inline-block;
+			vertical-align: top;
+			a {
+				display: inline-block;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.bnr-logado {
+			background: #bf0000;
+			color: #fff;
+			width: 237px;
+			height: 117px;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			a {
+				color: #fff;
+			}
+			span {
+				display: block;
+				text-align: center;
+				&.bn-user {
+					margin: 15px 0 0;
+					font-family: "rakuten_globalr";
+				}
+				&.bn-sp {
+					margin: 16px 0 0;
+					font-size: 17px;
+					font-family: "rakuten_globalb";
+					font-weight: normal;
+					transform: rotate(-0.0000000001deg);
+					text-shadow: 0 0 1px rgba(0,0,0,0.3);
+					&::before {
+						background: url("#{$resources-urls}/sprite-home.png") no-repeat -118px -163px;
+						width: 20px;
+						height: 20px;
+						content: " ";
+						display: inline-block;
+						position: relative;
+						top: 3px;
+						left: -6px;
+					}
+					b {
+						font-family: "rakuten_globalr";
+						font-weight: normal;
+					}
+				}
+				&.bn-extrato {
+					background: #000;
+					display: inline-block;
+					padding: 7px 18px;
+					font-size: 12px;
+					font-family: "rakuten_globalb";
+					position: absolute;
+					bottom: 9px;
+					left: 44px;
+					b {
+						font-weight: normal;
+					}
+					&::after {
+						content: "\203A";
+						color: #fff;
+						font-size: 15px;
+						font-family: arial;
+						margin: 0 0 0 8px;
+					}
+				}
+			}
+		}
+	}
+/* fim    - Banners */
+
+/* inicio - cxense  banner*/
+	.home-carousel {
+		position: relative;
+		.rk-spaces {
+			.ads {
+				display: none;
+				&:first-child {
+					display: block;
+				}
+			}
+		}
+		.rk-area-cxense {
+				height: 308px;
+			}
+			.nivo-directionNav {
+				a {
+					background: #fff;
+					border-radius: 0 90px 90px 0;
+					display: block;
+					height: 50px;
+					text-indent: -9000px;
+					width: 30px;
+					box-shadow: 2px 0px 4px 0px #bbbbbb;
+					&::after {
+						background: url("#{$resources-urls}/sprite-home.png") -62px -63px;
+						content: " ";
+						width: 11px;
+						height: 19px;
+						display: block;
+						float: left;
+						position: absolute;
+						top: 14px;
+						left: 4px;
+					}
+					&.nivo-nextNav {
+						border-radius: 90px 0 0 90px;
+						box-shadow: -1px 0px 4px 0px #bbbbbb;
+						&::after {
+							left: 11px;
+							background-position: -78px -63px;
+						}
+					}
+				}
+			}
+			.nivoSlider {
+				height: 308px;
+			}
+			.nivo-controlNav {
+				position: absolute;
+				top: 275px;
+				left: 0;
+				width: 100%;
+				display: inline-block;
+				text-align: center;
+				z-index: 9;
+				a {
+					background: #f1f1f1 none repeat scroll 0 0;
+					border-radius: 50%;
+					box-shadow: 0 -2px 0 0 #bbbbbb inset;
+					color: #999999;
+					display: inline-block !important;
+					font-weight: bold;
+					height: 25px;
+					line-height: 25px;
+					text-align: center;
+					text-decoration: none;
+					width: 25px;
+					margin: 0 5px;
+					cursor: pointer;
+					padding: 0 !important;
+					border: 0 !important;
+					float: none !important;
+					&.active {
+						background: #bf0000;
+						color: #fff;
+						box-shadow: 0 2px 0 0 #850404 inset;
+						
+					}
+				}
+			}
+	}	
+/* fim    - cxense  banner*/
+
+/* inicio - Catalogo de produtos */
+	div.container-product {
+		ul.list-products {
+			.store {
+				display: block;
+				font-size: 10px;
+				padding: 3px 0 3px 0;
+				margin: 2px 0 4px 8px;
+				position: relative;
+
+				&::before {
+					background: url("#{$resources-urls}/sprite-home.png") -145px -167px;
+					display: block;
+					float: left;
+					content: " ";
+					width: 9px;
+					height: 11px;
+					margin-right: 5px;
+				}
+			}
+			.store-name {
+				display: inline;
+				font-weight: bold;
+				padding-left: 5px;
+				padding-right: 10px;
+			}
+			.rk-sp-logged-price {
+				background: url("http://resources.rakuten.com.br/Assets/rakuten.com.br/images/layout/bg-points2.png") no-repeat !important;
+				height: 20px !important;
+				width: 230px !important;
+				top: auto !important;
+				bottom: 0 !important;
+				left: auto !important;
+				border: 0 !important;
+				text-align: right;
+				margin: 0 !important;
+
+				.info {
+					font-size: 10.5px !important;
+					padding: 2px 9px 0 !important;
+					text-align: right !important;
+					position: static !important;
+					width: auto;
+					float: right !important;
+
+					b {
+						font-size: 10.5px;
+					}
+				}
+				&.sp-free {
+					.info {
+						color: #f8c932 !important;
+						font-size: 10.5px !important;
+						font-weight: bold !important;
+						padding: 4px 15px 0 !important;
+					}
+				}
+			}
+		}
+	}
+	.rk-area-product {
+		*, & {
+			@include box-sizing(border-box);
+		}
+		.rk-box {
+			.rk-prev, .rk-next {
+				background: #7e9e3b;
+				opacity: 1 !important;
+				width: 30px;
+				height: 60px;
+				top: 242px;
+				transition: background-color 0.5s ease;
+
+				&:hover {
+				}
+				&.disabled {
+					background: #ccc;
+
+					&:hover {
+						background: #dcdcdc;
+					}
+				}
+				&::after {
+					content: "\203A";
+					color: #fff;
+					font-size: 47px;
+					text-indent: 0;
+					display: block;
+					position: absolute;
+					top: 4px;
+					left: 7px;
+				}
+			}
+			.rk-prev {
+				&::after {
+					content: "\2039";
+				}
+			}
+			ul {
+				li {
+					padding: 0;
+					margin: 0;
+				}
+			}
+			.rk-superpoints {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				top: auto;
+				background-color: #fff !important;
+			}
+			.title {
+				color: #bf0000;
+				display: block;
+				font-family: "rakuten_globalb";
+				font-size: 20px;
+				margin-bottom: 10px;
+
+				span {
+					font-weight: normal;
+				}
+			}
+			.product-image400 {
+				.hproductseo {
+					width: 230px;
+					padding: 0;
+					margin: 23px auto;
+				}
+			}
+			.figure {
+				width: 100%;
+				height: auto;
+				padding: 0;
+				position: static;
+
+				img {
+					border: 0 !important;
+					width: auto;
+					max-width: 100%;
+					height: 230px;
+				}
+			}
+			.details {
+				float: none !important;/*reset*/
+				width: 100% !important;
+
+				.box-price {
+					text-align: left;
+					border: 0;/*reset*/
+					padding: 0; /*reset*/
+				}
+				.name {
+					font-size: 12px;
+					color: #2b2b2b;
+					font-weight: normal;
+					line-height: 21px;
+					margin-top: 11px;
+				}
+				.store {
+					font-size: 10px;
+
+					span {
+						display: inline;
+						padding-left: 5px;
+					}
+				}
+				.regular, .sale, .parcel {
+					float: none;
+					margin: 0;
+				}
+				.regular {
+					font-size: 13px;
+				}
+				.sale {
+					color: #bf0000;
+					font-size: 13px;
+					margin-top: 7px;
+
+					strong {
+						color: #bf0000;
+						font-size: 12px;
+					}
+				}
+				.parcel {
+					font-size: 12px;
+					color: #656565 !important;
+					font-weight: normal;
+
+					strong {
+						font-weight: normal;
+					}
+					span {
+						float: none;
+						margin: 0;
+					}
+					.cJuros {
+						color: #656565;
+					}
+				}
+			}
+		}
+	}
+	.rk-container-carousel {
+		ul.list-products {
+			li {
+				width: 248px;
+				.store {
+					margin-left: 0 !important;
+				}
+			}
+		}
+	}
+/* fim    - Catalogo de produtos */
+
+/* inicio - Vitrine Geral */
+	.produ-catalog {
+		overflow: hidden;
+		border-bottom: 2px solid #e2e2e2;
+		margin-bottom: 25px;
+		padding-bottom: 40px;
+		.rk-area-cxense {
+			float: right;
+			margin-top: 62px;
+			~ .container-product .rk-container-carousel {
+				width: 743px;
+				overflow: hidden;
+			}
+		}
+		.banner-full {
+			text-align: center;
+			clear: both;
+			margin-top: 50px;
+			.rk-area-banner {
+				width: 100%;
+				float: none;
+				overflow: hidden;
+			}
+			.linksharePublicidade {
+				display: block;
+				text-align: right;
+			}
+			a,
+			img,
+			.html {
+				display: inline-block;
+			}
+			a {
+				margin: 20px 10px;
+			}
+		}
+		.rk-container-carousel {
+			li {
+				width: 248px;
+				min-height: 431px;
+				background: url("#{$resources-urls}/current-sp-points.png") bottom left no-repeat !important;
+				.name {
+					max-height: 68px;
+				}
+				.store {
+					margin-left: 0 !important;
+				}
+			}
+		}
+		.title {
+			h2 {
+				color: #bf0000;
+				display: block;
+				font-family: "rakuten_globalr";
+				font-size: 20px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				span { font-weight: normal;}
+				display: inline-block;
+			}
+			ul {
+				display: inline-block;
+				padding-left: 10px;
+				li {
+					display: inline-block;
+					padding: 0 10px 0 0;
+					border-right: 1px solid #a3a3a3;
+					margin: 0 10px 0 0;
+					font-size: 14px;
+					&:last-child {
+						border-right: 0;
+					}
+					a {
+						&:hover {
+							color: #bf0000;
+						}
+					}
+				}
+			}
+		}
+	}
+/* fim    - Vitrine Geral */
+
+/* inicio - Vitrine Super Ofertas*/
+	.store {
+		section.top {
+			overflow: hidden;
+			border-bottom: 1px solid #dfdfdf;
+			margin-bottom: 15px;
+
+			*, & {
+				@include box-sizing(border-box);
+			}
+			.pagination {
+				display: none;
+			}
+			.hproductseo {
+				width: auto !important;
+				margin: 0 !important;
+				height: 131px;
+
+				.details {
+					float: left;
+					width: 109px !important;
+					padding-top: 40px;
+				}
+			}
+			.list-products {
+				float: left;
+				width: 760px;
+				clear: none;
+
+				&.highligh {
+					width: 240px;
+
+					li {
+						width: 100%;
+						border-bottom: 0;
+						min-height: 402px;
+
+						&:first-child::after {
+							content: "1\00ba";
+						}
+					}
+					.discount {
+						bottom: 0;
+						top: auto;
+						left: 77px;
+					}
+					.details {
+						width: 98% !important;
+						padding: 5px 0 30px;
+					}
+					.figure {
+						float: none;
+						width: 100%;
+						height: auto;
+						margin: 0;
+					}
+					img.rk-photo {
+						width: 225px;
+						height: 225px;
+						margin: 5px;
+					}
+					h3 {
+						display: block;
+
+						span {
+							font-weight: normal;
+							text-align: center;
+							display: block;
+						}
+					}
+					.box-price {
+						.offers {
+							text-align: center;
+
+							.regular, .price {
+								display: inline-block;
+								vertical-align: bottom;
+								padding: 0 5px 0 0;
+							}
+						}
+					}
+				}
+				li {
+					position: relative;
+					margin: 0;
+					border-right: 1px solid #dfdfdf;
+					border-bottom: 1px solid #dfdfdf;
+					width: 33.3%;
+
+					&:nth-child(3n) {
+						border-right: 0;
+					}
+					&:nth-child(7), &:nth-child(8), &:nth-child(9) {
+						border-bottom: 0;
+					}
+					&::after {
+						display: block;
+						position: absolute;
+						background: #bfbfbf;
+						height: 35px;
+						position: absolute;
+						top: 9px;
+						left: 20px;
+						width: 35px;
+						text-align: center;
+						color: #fff;
+						content: "1\00ba";
+						font-family: "rakuten_globalb";
+						font-size: 15px;
+						line-height: 32px;
+					}
+					&:nth-child(1)::after { content: "2\00ba"; }
+					&:nth-child(2)::after { content: "3\00ba"; }
+					&:nth-child(3)::after { content: "4\00ba"; }
+					&:nth-child(4)::after { content: "5\00ba"; }
+					&:nth-child(5)::after { content: "6\00ba"; }
+					&:nth-child(6)::after { content: "7\00ba"; }
+					&:nth-child(7)::after { content: "8\00ba"; }
+					&:nth-child(8)::after { content: "9\00ba"; }
+					&:nth-child(9)::after { content: "10\00ba"; }
+					&:nth-child(10)::after { content: "11\00ba"; }
+					&:nth-child(11)::after { content: "12\00ba"; }	
+				}
+			}
+			h3, .parcel, .rk-superpoints, span.store, .stamp {
+				display: none
+			}
+			.figure {
+				float: left;
+				width: 115px;
+				height: 115px;
+				padding: 0;
+				margin: 9px 14px;
+			}
+			img.rk-photo {
+				width: 115px;
+				height: 115px;
+				border: 0 !important;
+			}
+			.box-price {
+				border: 0;
+				padding: 0;
+
+				.offers {
+					text-align: left;
+
+					span {
+						float: none;
+						margin: 0;
+						font-size: 0px;
+						color: #fff;
+
+						del {
+							color: #2b2b2b;
+							font-size: 12px;
+						}
+						strong {
+							color: #bf0000;
+							font-weight: bold;
+							font-size: 17px;
+						}
+					}
+				}
+			}
+			.discount {
+				background: #bf0000;
+				font-weight: bold;
+				text-align: center;
+				color: #fff;
+				padding: 5px 0 0;
+				height: 25px;
+				position: absolute;
+				top: 13px;
+				left: 0;
+				width: 73px;
+				line-height: 15px;
+			}
+		}
+	}
+	.rk-home {
+		.chaordic {
+			iframe {
+				min-height: 417px;
+			}
+		}
+	}
+/* fim    - Vitrine Super Ofertas*/

@@ -1,0 +1,160 @@
+/* inicio - Endereco de Entrega - Registration/MyAddressNew.aspx */
+	.adress-register .save {
+		background: url("#{$resources-urls}/rk-new-icons2.png") no-repeat -265px 0 !important;
+	}
+/* fim    - Endereco de Entrega - Registration/MyAddressNew.aspx */	
+
+/* inicio - Minhas Preferencias - registration/PreferenceCenter.aspx */
+	.cadaster-newsletter {
+	    padding-bottom: 10px;
+	    .newsletter {
+	        .header {
+	            .title {
+	                display: none;
+	            }
+	        }
+	        .radio {
+	            label {
+	                font-size: 11px;
+	                line-height: 20px;
+	                margin-left: 20px !important;
+	                margin-top: -17px;
+	                padding-top: 0;
+	                text-align: left;
+	            }
+	        }
+	        .field {
+	            min-height: 68px;
+	        }
+	        span {
+	            text-align: left;
+	            width: 100%;
+	        }
+	    }
+	    .save {
+	        background-position: -150px -90px !important;
+	        width: 155px !important;
+	        margin: 20px 0 0 !important;
+	        &:hover {
+	        	background-position: -150px -135px !important;
+	        }
+	    }
+	}
+/* fim    - Minhas Preferencias - registration/PreferenceCenter.aspx */
+
+/* inicio - Paginacao tela Superponits - Orders/Superpoints/SP.aspx */
+	div.store {
+		.container-full .pagination.bottom {
+			border: 0;
+			background: #eee;
+			padding: 5px;
+		}
+		.pagination.bottom li {
+			width: auto !important;
+			margin: 0;
+			height: auto;
+		}
+		.pagination.bottom a {
+			padding: 5px;
+			color: #900;
+			background: #fff !important;
+			line-height: 21px !important;
+			border: 1px solid #ccc;
+			padding: 1px 8px;
+		}
+		.pagination.bottom a:hover {
+			text-decoration: none !important;
+			border: 1px solid;
+		}
+		.pagination.bottom .selected {
+			background: #567c17 !important;
+			color: #fff !important;
+			border: 1px solid #567c17;
+		}
+		.pagination.bottom .selected:hover {
+			border: 1px solid #567c17;
+		}
+	}
+/* fim    - Paginacao tela Superponits - Orders/Superpoints/SP.aspx */
+
+/* inicio - Registration/New/Register.aspx */
+	.form-register {
+		.box {
+			margin: 0 0 20px;
+		}
+		.adress-type {
+			padding: 7px 0 7px 40px !important;
+		}
+	}
+/* fim    - Registration/New/Register.aspx */
+
+/* inicio - Landing Pages */
+	.rk-lp {
+		.main {
+			width: 100%;
+		}
+		.nivo-controlNav {
+			bottom: 15px;
+			cursor: pointer;
+			position: absolute;
+			right: 10px;
+			z-index: 1000;
+			a {
+				&.novo-control {
+					background: #BEBEBE;
+					border: 1px solid #FFFFFF;
+					border-radius: 15px;
+					display: inline-block;
+					height: 10px;
+					padding: 1px 4px !important;
+					text-indent: -9999px;
+					width: 5px;
+					margin-left: 3px;
+					color: #333333;
+					text-decoration: none;
+				}
+				&.active {
+					background: #000;
+				}
+			}
+		}
+		.rk-area-cxense.cxense  {
+			padding: 10px;
+			background: #fff;
+			margin-bottom: 10px;
+		}
+	}
+/* fim    - Landing Pages */
+
+/* inicio - Catalogo de produtos */
+	.store {
+		.rk-search {
+			.list-products {
+				.name {
+					height: 34px;
+					font-size: 13px;
+					margin: 2px 5px 0 !important;
+				}
+				.figure {
+					margin-bottom: 5px !important;
+				}
+				.details {
+					height: 147px !important;
+				}
+			}
+		}
+		
+	}
+/* fim    - Catalogo de produtos */
+
+/* inicio - Quick Login*/
+	@import "login.scss";
+/* fim - Quick Login*/
+
+/* inicio - Fix issues (Corigir no projeto) */
+	.dk_fouc select {
+		position: static !important;
+		visibility: visible !important;
+	}
+/* fim    - Fix issues (Corigir no projeto) */	
+
