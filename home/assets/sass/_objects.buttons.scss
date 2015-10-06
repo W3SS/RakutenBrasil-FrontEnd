@@ -1,25 +1,18 @@
-/*inicio - Buttons */ 
-	@mixin btn {
-		text-decoration: none;
-		text-align: center;
-		transition: background-color 150ms ease 0s;
-		border-radius: 0 !important;
-		padding: 6px 15px;
-		display: block;
-		color: #fff;
-		width: auto !important;
-		height: auto !important;
-		text-indent: 0 !important;
-		color: #fff !important;
-		font-family: "rakuten_globalb";
-		font-size: 17px;
-	}
-	@mixin btn-success {
+/*inicio - Buttons */
+
+	/*.btn {
 		@include btn;
-		border-bottom: 4px solid #509e3a;
-		background: #60bb46 !important;
-		&:hover {
-			background-color: #509e3a !important;
-		}
-	}
+	}*/
+	
+	.btn-default{@include btn-default;}
+	.btn-primary{@include btn-primary;}
+	.btn-success{@include btn-success;}
+	.btn-info{@include btn-info;}
+	.btn-warning{@include btn-warning;}
+	.btn-danger{@include btn-danger;}
+
+	.btn-lg{@include btn-lg}
+	.btn-sm{@include btn-sm}
+	.btn-xs{@include btn-xs}
+
 /*fim - Buttons */

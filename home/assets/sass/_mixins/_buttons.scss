@@ -66,3 +66,58 @@
   line-height: $line-height;
   border-radius: $border-radius;
 }
+
+@mixin btn {
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 150ms ease 0s;
+    font-family: "rakuten_globalb";
+    display: block;
+    color: #fff;
+    width: auto !important;
+    height: auto !important;
+    text-indent: 0 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+  }
+  @mixin btn-class($bgcolor) {
+    @include btn;
+    border-bottom: 4px solid darken($bgcolor, 10%);
+    background: $bgcolor !important;
+    &:hover {
+      background-color: darken($bgcolor, 10%) !important;
+    }
+  }
+  @mixin btn-default {
+    @include btn-class(#60bb46);
+  }
+  @mixin btn-primary {
+    @include btn-class(#337ab7);
+  }
+  @mixin btn-success {
+    @include btn-class(#60bb46);
+  }
+  @mixin btn-info {
+    @include btn-class(#5bc0de);
+  }
+  @mixin btn-warning {
+    @include btn-class(#f0ad4e);
+  }
+  @mixin btn-danger {
+    @include btn-class(#d02130);
+  }
+
+  // Button Sizes
+  // --------------------------------------------------
+
+  @mixin btn-lg {
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+  }
+  @mixin btn-sm {
+    // line-height: ensure proper height of button next to small input
+    @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  }
+  @mixin btn-xs {
+    @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  }
