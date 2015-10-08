@@ -6,7 +6,7 @@
 // Core CSS
 @import "objects.buttons"; 
 
-@import "login";
+@import "quick-login";
 
 .small-header {
 	background: #fff;
@@ -414,7 +414,7 @@
 				span {
 					position: absolute;
 					background-color: #bf0000;
-					border-radius: 8;
+					border-radius: 8px;
 					font-weight: normal;
 					margin-top: 2px;
 					padding: 2px 4px;

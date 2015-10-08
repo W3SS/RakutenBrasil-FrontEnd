@@ -1,3 +1,7 @@
+/* inicio - Quick Login*/
+	@import "quick-login";
+/* fim - Quick Login*/
+
 /* inicio - Endereco de Entrega - Registration/MyAddressNew.aspx */
 	.adress-register .save {
 		background: url("#{$resources-urls}/rk-new-icons2.png") no-repeat -265px 0 !important;
@@ -146,10 +150,6 @@
 		
 	}
 /* fim    - Catalogo de produtos */
-
-/* inicio - Quick Login*/
-	@import "login.scss";
-/* fim - Quick Login*/
 
 /* inicio - Fix issues (Corigir no projeto) */
 	.dk_fouc select {
