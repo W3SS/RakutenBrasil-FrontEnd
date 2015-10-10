@@ -1,4 +1,10 @@
 module.exports = function(grunt) {
+	 
+	  // Plugins do Grunt
+	 grunt.loadNpmTasks('grunt-contrib-uglify');
+	 grunt.loadNpmTasks('grunt-contrib-sass');
+	 grunt.loadNpmTasks('grunt-contrib-watch');
+
 	 grunt.initConfig({
 	 	uglify: {
 	        'home/assets/js-min/rakuten-global.min.js': 'home/assets/js/rakuten-global.js',
@@ -14,20 +20,6 @@ module.exports = function(grunt) {
 			}
 		  }
 		}, // sass
-		csslint: {
-			options: {
-			    formatters: [
-			      {id: 'junit-xml', dest: 'report/csslint_junit.xml'},
-			      {id: 'csslint-xml', dest: 'report/csslint.xml'}
-			    ]
-		    },	
-			  strict: {
-			    options: {
-			      import: 2
-			    },
-			    src: ['home/assets/css/**/*.css']
-			  }
-		},
 
 		watch : {
 	      	css: {
@@ -41,12 +33,6 @@ module.exports = function(grunt) {
 	    } // watch		
 		
 	 });
-	 
-	  // Plugins do Grunt
-	 grunt.loadNpmTasks('grunt-contrib-uglify');
-	 grunt.loadNpmTasks('grunt-contrib-sass');
-	 grunt.loadNpmTasks('grunt-contrib-watch');
-	 grunt.loadNpmTasks('grunt-contrib-csslint');
 	 
 	 // Tarefas que serão executadas
 	 grunt.registerTask( 'default', ['uglify','sass'] );

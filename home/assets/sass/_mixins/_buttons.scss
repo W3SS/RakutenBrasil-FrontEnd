@@ -72,13 +72,17 @@
     text-align: center;
     transition: background-color 150ms ease 0s;
     font-family: "rakuten_globalb";
-    display: block;
+    display: inline-block;
     color: #fff;
     width: auto !important;
     height: auto !important;
     text-indent: 0 !important;
     color: #fff !important;
     border-radius: 0 !important;
+    white-space: nowrap;
+    touch-action: manipulation;
+    vertical-align: middle;
+    @include box-sizing(border-box);
   }
   @mixin btn-class($bgcolor) {
     @include btn;
@@ -89,7 +93,7 @@
     }
   }
   @mixin btn-default {
-    @include btn-class(#60bb46);
+    @include btn-class(#bcbcbc);
   }
   @mixin btn-primary {
     @include btn-class(#337ab7);

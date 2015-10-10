@@ -4,7 +4,7 @@
 		@include btn;
 	}*/
 	
-	.btn-default{@include btn-default;}
+	.btn-default{@include btn-default; text-shadow: 1px 1px 1px #777;}
 	.btn-primary{@include btn-primary;}
 	.btn-success{@include btn-success;}
 	.btn-info{@include btn-info;}

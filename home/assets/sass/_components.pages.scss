@@ -3,8 +3,39 @@
 /* fim - Quick Login*/
 
 /* inicio - Endereco de Entrega - Registration/MyAddressNew.aspx */
-	.adress-register .save {
-		background: url("#{$resources-urls}/rk-new-icons2.png") no-repeat -265px 0 !important;
+	div.my_address {
+		.actions {
+			.save {
+				@extend .btn-success;
+				@extend .btn-lg;
+				text-indent: -9000px !important;
+				width: 185px !important;
+				font-weight: normal;
+				margin: 0 10px 0 293px;
+				&::before {
+					content: "Salvar Endere\00e7o";
+					float: left;
+					text-indent: 0;
+				}
+			}
+			.cancel {
+				@extend .btn-default;
+				@extend .btn-lg;
+			}
+		}
+		.use-address {
+			@extend .btn-danger;
+			@extend .btn-sm;
+			display: block !important;
+			width: 100% !important;
+			text-indent: -9000px !important;
+			&::before {
+				content: "Entregar aqui";
+				float: left;
+				text-indent: 0;
+				width: 100%;
+			}
+		}
 	}
 /* fim    - Endereco de Entrega - Registration/MyAddressNew.aspx */	
 
@@ -88,6 +119,33 @@
 		}
 		.adress-type {
 			padding: 7px 0 7px 40px !important;
+		}
+		.field.newsl {
+			input {
+				margin-left: 39px !important;
+				position: relative;
+				top: 3px;
+			}
+			span#body_lblNewsletterRakuten,
+			span#body_lblNewsletterSuperPoints {
+				width: auto;
+				line-height: 19px;
+			}
+		}
+		p.info {
+			padding-left: 7px;
+		}
+		.save {
+			@extend .btn-success;
+			@extend .btn-lg;
+			margin: 0 0 20px !important;
+			text-indent: -9000px !important;
+			width: 204px !important;
+			&::before {
+				content: "Finalizar Cadastro";
+				float: left;
+				text-indent: 0;
+			}
 		}
 	}
 /* fim    - Registration/New/Register.aspx */
