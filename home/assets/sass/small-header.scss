@@ -3,8 +3,14 @@
 @import "tools.variables-bs";
 @import "tools.mixins-bs";
 
+// Reset and dependencies
+@import "normalize";
+@import "print";
+
 // Core CSS
-@import "objects.buttons"; 
+@import "reboot";
+@import "objects.buttons";
+@import "objects.forms"; 
 
 @import "quick-login";
 
@@ -13,14 +19,8 @@
 	border-bottom: 1px solid #bf0000;
 	height: 44px;
 	min-width: 1024px;
- 
-	*,
-	::after,
-	::before {
-		@include box-sizing(border-box);
-	}
 
-	#drpCategoryList,#rk-select-category,.top-category,.quick-nav,.ulhelp,.main-links,.social,.colhelp, .welcome-span, .photo-customer {display: none !important;}
+	#drpCategoryList,#rk-select-category,.top-category,.quick-nav,.ulhelp,.main-links,.social,.colhelp, .welcome-span, .photo-customer,.select-text {display: none !important;}
 
 	.main-search,
 	.search,
@@ -110,7 +110,7 @@
 		input[type="text"]#txtGlobalSearch {
 			border: 0 none;
 			border-radius: 0;
-			@include box-sizing(content-box);
+			box-sizing: content-box;
 			@include box-shadow(none);
 			color: #515151;
 			font: 13px Arial;

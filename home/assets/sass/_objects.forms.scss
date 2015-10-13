@@ -1,0 +1,460 @@
+/* --- form --- */
+.form {
+	overflow: hidden
+}
+
+.form .field {
+	height: auto;
+	margin-top: 10px;
+	position: relative
+}
+
+.price .form .field {
+	margin-top: 0
+}
+
+.form .first {
+	clear: left
+}
+
+.form .even.last {
+	border-bottom: 1px solid #D4D4D4
+}
+
+.form .field:first-child {
+	margin-top: 0
+}
+
+.form fieldset {
+	position: relative
+}
+
+/* atention */
+.form .atention {
+	color: #FF8A00;
+	display: block;
+	padding: 0 0 15px 50px !important;
+}
+
+.form .brief-drescription {
+	padding: 0 15px
+}
+
+/* fields */
+.field {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.form .field span,
+.form .field input {
+	clear: none;
+	float: left;
+	margin-bottom: 0
+}
+
+.form .field input {
+	margin: 0
+}
+
+.form .field input,
+.form .field textarea {
+	color: #333;
+	font: 12px Arial, Helvetica, Tahoma, sans-serif;
+	overflow: auto
+}
+
+.form .field span {
+	color: #333;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 11px;
+	text-align: right;
+	width: auto;
+}
+
+#pnlStore .form-resume .inner .field span {
+	width: auto;
+	height: auto;
+}
+
+#pnlStore .form-resume .inner .field #body_btnSubmitDocuments {
+	margin-left: 250px;
+}
+
+#pnlStore .form-resume .inner .field #body_btnPrintContract {
+	margin-left: 100px;
+}
+
+#pnlStore .form-resume .inner .data .field span {
+	width: 250px;
+	padding-top: 5px;
+}
+
+#pnlStore .form-resume .inner .data .field #date-resume span {
+	width: auto;
+	padding-top: 0px;
+}
+
+#pnlStore .form-resume .inner .data .field #date-resume {
+	width: 450px;
+	padding-left: 0px;
+	margin-left: -5px;
+}
+
+.form .field .shell {
+	margin-right: 0;
+	width: auto
+}
+
+.form .shell input,
+.form .field textarea,
+.dk_container,
+.dk_toggle {
+	background: url("#{$base-urls}/images/global/forms/bg_input_gradient.png") repeat-x 0 0;
+	background: -moz-linear-gradient(top, #cecfcf 0%, #fff 6px); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #cecfcf 0%, #fff 6px); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cecfcf 0%, #fff 6px); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cecfcf 0%, #fff 6px); /* IE10+ */
+	background: linear-gradient(top, #cecfcf 0%, #fff 6px); /* W3C */
+	border: 1px solid #CECECE;
+	border-radius: 3px;
+	font-size: 12px;
+	height: auto;
+	padding: 5px
+}
+
+.form .shell input {
+	height: 27px;
+	overflow: hidden
+}
+
+.form .shell em {
+	clear: left;
+	display: block;
+	line-height: normal;
+	padding-top: 2px;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left
+}
+
+/* focus */
+.form .shell input:focus,
+.form .field textarea:focus {
+	border-color: #418EC9;
+	box-shadow: 1px 0 2px #418EC9
+}
+
+.form .title {
+	display: block;
+	color: #959595;
+	font-size: 24px;
+	margin: 0;
+	position: relative
+}
+
+.form label {
+	display: block;
+	position: relative
+}
+
+.form .radio label {
+	display: inline;
+	float: left;
+	margin-left: 10px
+}
+
+.form .jq-transform.radio label {
+	height: 16px;
+	line-height: 16px
+}
+
+.form .radio label:first-child {
+	margin-left: 0
+}
+
+.form label span {
+	color: #010101;
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px
+}
+
+.form span .req {
+	color: #E60303;
+	display: inline;
+	float: none;
+	margin: 0
+}
+
+/* mensagem de erro e validação */
+.form .field .validation {
+	background: url("#{$base-urls}/images/ico_alert.png") no-repeat 0 5px;
+	color: #C1272D;
+	display: inline;
+	float: none;
+	font-weight: normal;
+	font-size: 11px;
+	height: 16px;
+	line-height: 16px;
+	padding: 5px 0 0 20px;
+	position: absolute;
+	text-align: left;
+	text-indent: 0;
+	margin-left: 5px;
+	top: 0;
+	width: 135px;
+	border: 0;
+}
+
+.form .field .validation.correct {
+	background: url("#{$base-urls}/images/ico_sucess.png") no-repeat 0 5px;
+	clear: none;
+	margin-right: 0;
+	width: auto
+}
+
+.remember .field .validation {
+	position: relative;
+	top: 5px
+}
+
+/* geral */
+.form .big {
+	width: 250px
+}
+
+.form .cpf {
+	width: 119px
+}
+
+.form .date {
+	height: 27px;
+	width: 65px
+}
+
+/* date/phone */
+.form .date,
+.form .phone {
+	overflow: hidden
+}
+
+.form .radio .date {
+	float: left
+}
+
+.form .date input[type="text"],
+.form .phone input[type="text"] {
+	display: inline;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+	width: 40px
+}
+
+.form .date input[type="text"],
+.form .radio .date input[type="text"] {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 0;
+	text-align: left;
+	width: 65px
+}
+
+.form .date .year[type="text"],
+.form .radio .date .year[type="text"] {
+	width: 50px
+}
+
+.form .phone .number[type="text"] {
+	width: 84px
+}
+
+.form .date input[type="text"]:first-child,
+.form .phone input[type="text"]:first-child {
+	margin-left: 0px
+}
+
+.form .radio .date input[type="text"]:first-child {
+	margin-left: 10px
+}
+
+.form .date span {
+	float: left;
+	margin: 0 0 0 5px
+}
+
+.form .date .validacao {
+	margin-left: 0;
+	margin-top: 0
+}
+
+/* radio - choice */
+.form .radio span,
+.form .radio input,
+.form .checkbox span,
+.form .checkbox input {
+	display: inline;
+	float: left;
+	height: auto;
+	line-height: normal;
+	width: auto
+}
+
+.form .radio span {
+	margin-bottom: 0
+}
+
+.form .radio input {
+	margin: 2px 7px 0 0
+}
+
+.form .checkbox input {
+	margin: 0 7px 0 0
+}
+
+/* buttons */
+.form .btn {
+	display: inline;
+	float: right;
+	margin-top: 10px
+}
+
+.form .save {
+	background-position: -468px -149px;
+	height: 24px;
+	width: 69px
+}
+
+.field .error,
+.field .error[type="text"],
+.field .error[type="password"] {
+	border: 1px solid #D61717;
+	margin-bottom: 0;
+	margin-top: 0
+}
+
+/* message */
+.atention {
+	color: #9D0010;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0
+}
+
+.message {
+	background: #FCF0F0 !important;
+	border: 1px solid #D61717;
+	color: #CD4250;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	height: 43px;
+	line-height: 45px;
+	padding: 0 32px;
+	margin-bottom: 15px
+}
+
+.sucess2 {
+	background: #D3F8C9 !important;
+	border: 1px solid #04B10E;
+	color: #348914;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+	padding: 5px 10px;
+	margin-bottom: 15px
+}
+
+/* loading */
+.form .field .loading {
+	background: url("#{$base-urls}/images/loading.gif") no-repeat 0 0;
+	position: relative;
+	float: left;
+	height: 26px;
+	margin-left: 5px;
+	text-align: left;
+	text-indent: -9999px;
+	top: auto;
+	width: 26px
+}
+
+/* action */
+.action {
+	margin-top: 10px;
+	overflow: hidden
+}
+
+#lblMessageModal {
+	color: #CD4250;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	left: 32px;
+	position: absolute;
+	top: 53px;
+}
+
+/* subscribe info */
+.form .subcribe-info {
+	margin: -10px 0 10px;
+	clear: both;
+}
+
+.form .subcribe-info .info {
+	width: 320px;
+	display: inline-block;
+	color: #777;
+	font-style: italic;
+}
+
+.store .box-cancel .form label {
+	text-align: left;
+}
+
+.form.change-pass {
+	margin: 20px auto 30px;
+	width: 223px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	box-shadow: 0 1px 1px 0 #959595;
+}
+
+.form.change-pass h2 {
+	font-size: 18px;
+	color: #c1272d;
+}
+
+.form.change-pass .field span {
+	display: block;
+	float: none;
+	text-align: left;
+}
+
+.form.change-pass .field input[type="password"] {
+	width: 210px;
+}
+
+.form.change-pass .rk-buttons {
+	margin-top: 20px;
+}
+
+.form.change-pass #spanMsgError {
+	color: #c1272d;
+	font-size: 12px;
+	padding: 2px 0;
+	text-align: center;
+	margin-bottom: -10px;
+	margin-top: 5px;
+}
+
+p.rk-error-msg {
+	color: #c73a40;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	padding: 37px 0 !important;
+}

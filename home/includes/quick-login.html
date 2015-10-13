@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Rakuten Shopping - Compre tudo, de todas as lojas, em um só lugar. Online.</title>
+<link rel="stylesheet" type="text/css" href="//resources-ssl.rakuten.com.br/Minify.ashx?
+        reset.css
+        |main.css
+        |fancybox.css,fancybox
+        |forms.css,checkout
+        |jquery-alerts.css,plugins&sv=68" />
+<style type="text/css">
+#rkCommunityLogin .field {
+  padding: 0 96px 0 0;
+}
+</style>
+<link rel="Stylesheet" type="text/css" href="../assets/css/rakuten-global.css" />
+<link rel="stylesheet" type="text/css" href="//resources-ssl.rakuten.com.br/community/Minify.ashx?rk-cm-icons.css,community&sv=68" />
+<script type="text/javascript" src="//resources-ssl.rakuten.com.br/Settings.ashx"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-min.js"></script>
+
+<!--[if IE 7]><script type="text/javascript" src="//resources-ssl.rakuten.com.br/Minify.ashx?json2.js"></script><![endif]-->
+
+<script type="text/javascript" src="//resources-ssl.rakuten.com.br/Minify.ashx?
+        ajax-util.js,configuration
+        |jquery-cookie.js,plugins">
+    </script>
+<script type="text/javascript" src="//resources-ssl.rakuten.com.br/community/Minify.ashx?
+        utils.js,global
+        |rk-localStorage.js,plugins
+        |socket.controller.js,controller-community
+        |feeditem.js,controller-community/models">
+    </script>
+</head>
+<body class="page-login-com">
+<form method="post" action="LoginCommunity.aspx" id="form1">
+  <div class="aspNetHidden">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM0MTU3MDIzMmRkbAxZarfv1dlT5bKxUfHrrkxMmGdkxNxo88bYdmFdR1E=" />
+  </div>
+  <div class="aspNetHidden">
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A05F3CBD" />
+  </div>
+  <div id="rkCommunityLogin" class="form login">
+    <div class="collum registred box rk-section"> <a name="loginpanel"></a> <span class="errorLoginCommunity"></span>
+      <fieldset>
+        <legend>Já sou Cadastrado</legend>
+        <div class="field">
+          <label> <span>E-mail: </span> <span class="shell">
+            <input type="text" class="loginEmailCommunity" autocomplete="off" />
+            </span> </label>
+        </div>
+        <div class="field">
+          <label> <span>Senha:</span> <span class="shell">
+            <input type="password" class="loginPasswordCommunity" autocomplete="off" />
+            </span> </label>
+        </div>
+        <div class="action action-login-community"> <a href="javascript:;" class="btn btnLoginCommunity">Entrar</a> </div>
+        <div> <a href="javascript:;" class="btnLoginFacebookCommunity">ou participe com o login do Facebook</a> </div>
+        <span class="terms login-top">Ao fazer o login, voce concorda com os <a href="#">termos de uso.</a></span>
+      </fieldset>
+      <span id="lblOrDivBox">OU</span> </div>
+    <div class="collum not-registred box rk-section"> <span id="errorRegisterCommunity"></span>
+      <fieldset>
+        <legend>Cadastre-se agora!</legend>
+        <div class="field">
+          <label> <span>Nome: </span> <span class="shell">
+            <input type="text" id="nameRegisterCommunity" />
+            </span> </label>
+        </div>
+        <div class="field">
+          <label> <span>E-mail: </span> <span class="shell">
+            <input type="text" id="emailRegisterCommunity" />
+            </span> </label>
+        </div>
+        <div class="field">
+          <label> <span>Senha:</span> <span class="shell">
+            <input type="password" id="passwordRegisterCommunity" autocomplete="off" />
+            </span> </label>
+        </div>
+        <div class="field">
+          <label class="confirmPsw"> <span>Confirmar Senha:</span> <span class="shell">
+            <input type="password" id="confirmPasswordRegisterCommunity" autocomplete="off" />
+            </span> </label>
+        </div>
+        <div class="action action-register-community"> <a href="javascript:;" id="btnRegisterCommunity" class="btn">Participar</a> </div>
+      </fieldset>
+    </div>
+  </div>
+  <script type="text/javascript" src="//resources-ssl.rakuten.com.br/Minify.ashx?
+            core.js
+            |jquery.fancybox.js
+            |useractions.js,controller-global
+            &sv=68">
+        </script> 
+  <script type="text/javascript" src="//resources-ssl.rakuten.com.br/community/Minify.ashx?
+            relationship.controller.js,controller-community
+            |navigation.login.controller.js,controller-community
+            &sv=68">
+        </script>
+</form>
+</body>
+</html>

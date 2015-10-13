@@ -4,11 +4,17 @@
 @import "tools.variables-bs";
 @import "tools.mixins-bs";
 
+// // Reset and dependencies
+@import "normalize";
+@import "print";
+
 //fonts
 @import "fonts";
 
 // Core CSS
+@import "reboot";
 @import "objects.buttons";
+@import "objects.forms"; 
 
 //Components
 @import "components.header";

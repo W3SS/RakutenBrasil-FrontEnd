@@ -7,64 +7,88 @@
   color: $color;
   background-color: $background;
   border-color: $border;
+//  $shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+//  .box-shadow($shadow);
+
+  $active-background: darken($background, 10%);
+  $active-border: darken($border, 12%);
 
   &:focus,
-  &.focus {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
-  }
-  &:hover {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
-  }
+  &.focus,
   &:active,
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
-
-    &:hover,
-    &:focus,
-    &.focus {
-      color: $color;
-      background-color: darken($background, 17%);
-          border-color: darken($border, 25%);
-    }
+    background-color: $active-background;
+        border-color: $active-border;
+  }
+  @include hover {
+    color: $color;
+    background-color: $active-background;
+        border-color: $active-border;
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
+    // Remove the gradient for the pressed/active state
     background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
   }
   &.disabled,
-  &[disabled],
+  &:disabled,
   fieldset[disabled] & {
-    &,
-    &:hover,
     &:focus,
-    &.focus,
-    &:active,
-    &.active {
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+    @include hover {
       background-color: $background;
           border-color: $border;
     }
   }
+}
 
-  .badge {
-    color: $background;
+@mixin button-outline-variant($color) {
+  color: $color;
+  background-image: none;
+  background-color: transparent;
+  border-color: $color;
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: #fff;
     background-color: $color;
+        border-color: $color;
+  }
+  @include hover {
+    color: #fff;
+    background-color: $color;
+        border-color: $color;
+  }
+
+  &.disabled,
+  &:disabled,
+  fieldset[disabled] & {
+    &:focus,
+    &.focus {
+      border-color: lighten($color, 20%);
+    }
+    @include hover {
+      border-color: lighten($color, 20%);
+    }
   }
 }
 
 // Button sizes
-@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
-  padding: $padding-vertical $padding-horizontal;
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  padding: $padding-y $padding-x;
   font-size: $font-size;
   line-height: $line-height;
-  border-radius: $border-radius;
+  @include border-radius($border-radius);
 }
 
 @mixin btn {
@@ -82,7 +106,6 @@
     white-space: nowrap;
     touch-action: manipulation;
     vertical-align: middle;
-    @include box-sizing(border-box);
   }
   @mixin btn-class($bgcolor) {
     @include btn;
@@ -110,18 +133,14 @@
   @mixin btn-danger {
     @include btn-class(#d02130);
   }
-
-  // Button Sizes
-  // --------------------------------------------------
-
-  @mixin btn-lg {
-    // line-height: ensure even-numbered height of button next to large input
-    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
-  }
   @mixin btn-sm {
-    // line-height: ensure proper height of button next to small input
-    @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+     @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
   }
-  @mixin btn-xs {
-    @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @mixin btn-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
   }
+
+  @mixin btn-xlg {
+   @include button-size($btn-padding-y-xlg, $btn-padding-x-xlg, $font-size-xlg, $line-height-xlg, $btn-border-radius-xlg); 
+  }
+
