@@ -1,7 +1,7 @@
 // Dependence small-header.scss rakuten-global.scss
 
 /*inicio - Login Community */
-
+	.btnLoginFacebookCommunity { display: none !important;}
 	#container-community-login {
 		margin: 0;
 		right: 0; 
@@ -20,6 +20,7 @@
 			width: 615px;
 			border: 0;
 		}
+		.inner { padding: 0;}
 		#waiting {
 			float: left;
 			font-size: 18px;
@@ -93,6 +94,7 @@
 	    input {
 	      background: none !important;
 	      border-radius: 0;
+	      height: 16px;
 	    }
 	  }
 	  #lblOrDivBox {
@@ -131,6 +133,36 @@
 	    display: block;
 	    font-size: 11px;
 	    padding: 2px 0 0;
+	    margin: 20px 0 0;
+	  }
+	  .box-termos {
+		background: #fff;
+		border: 1px solid #CCCCCC;
+		border-radius: 7px;
+		position: absolute;
+		top: 23px;
+		z-index: 100;
+		color:#555555;
+		display:none;
+		top: 3px;
+		width: 543px;
+		height: 200px;
+		left: 10px;
+		padding:15px;
+		font-size:11px;
+		iframe {
+			width:100%;
+			height:200px;
+		}
+		.close-terms {
+			background: url("#{$base-urls}/community/images/fancy_close.png") no-repeat;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: -12px;
+			text-indent: -9000px;
+			top: -6px;
+		}
 	  }
 	  
 	}

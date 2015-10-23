@@ -6,11 +6,11 @@
 @font-base: Arial,Helvetica,sans-serif;
 @fontsize-base: 12px;
 @font-custom: 'Open Sans', Arial;
-@color-theme: #cf3427;
-@color-menuHover: #ccc;
-@menu-height: 46px;
+@color-theme: #bf0000;
+@color-menuHover: #9e0000;
+@menu-height: 36px;
 @has-menu-lvl3: false;
-@has-social: true;
+@has-social: false;
 @has-newsletter: true;
 
 /*Nome do produto*/
@@ -54,7 +54,7 @@
 			overflow: visible;
 			position: relative;
 			width: @base-width;
-			height:140px;
+			height:115px;
 			z-index: 2;
 		}
 		.logo {
@@ -144,7 +144,7 @@
 				> a {
 					color: #fff;
 					display: inline-block;
-					font-size: 18px;
+					font-size: 16px;
 					font-family: @font-custom;
 					text-transform: uppercase;;
 					padding: 0 29px 0;
@@ -162,8 +162,30 @@
 				padding: 10px 10px;
 				width: 170px !important;
 				text-align: left;
-				border:3px solid @color-menuHover;
-				
+				border: 4px solid #e2e2e2;
+				&::after,
+				&::before {
+					bottom:100%;
+					left:50%;
+					border:solid transparent;
+					content:" ";
+					height:0;
+					width:0;
+					position:absolute;
+					pointer-events:none
+				}
+				&::after {
+					border-color:rgba(136, 183, 213, 0);
+					border-bottom-color:#fff;
+					border-width:6px;
+					margin-left:-6px
+				}
+				&::before {
+					border-color: rgba(194,225,245,0);
+					border-bottom-color:#e2e2e2;
+					border-width:11px;
+					margin-left:-11px
+				}
 				li:first-child { margin-top:0;}
 				li {					
 					margin-top:5px;
@@ -179,7 +201,13 @@
 			}
 			/* Submenu terceiro nivel */
 			ul ul {
-
+				&::after,
+				&::before {
+					display: none !important;
+				}
+				position: absolute;
+				left: 165px !important;
+				top: -5px !important
 			}
 		}		
 	}
@@ -189,7 +217,7 @@
 	#main-store {
 		width: @base-widthfull;
 		padding: @base-padding;
-		.box-shadow(0 0 15px 0 #ccc);
+		.box-shadow(0 7px 15px 0 #ccc);
 
 		background:#fff;
 		.container {
@@ -311,43 +339,71 @@
 	div.store-aside {
 		float: left;
 		margin-right: 10px;
-		width: 180px;
-		border: 1px solid #cecece;
-		background: #f4f3f3;
+		width: 200px;
+		border: 1px solid #DEDEDE;
+		font-family: tahoma,arial,verdana;
+		margin-top: 4px;
+		padding-bottom: 13px;
+		border-radius: 10px 10px 0 0;
 		.tit {
-			.background-image(@color-theme, lighten(@color-theme, 20%));
+			font-family: @font-custom;
+			font-weight: bold;
+			background: #413c3c;
+			border-bottom: 3px solid #bf0000;
+			border-radius: 3px 3px 0 0;
 			color: #fff;
 			text-align: center;
 			display: block;
-			font-size: 12pt;
-			height: 27px;
+			font-size: 14px;
+			padding: 8px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
 		}
 		.nav-vertical > ul {
-			
-			
 			> li {
-				font-family: @font-base;
+				font-family: @font-custom;
 				padding-left: 10px;
+				line-height: 18px;
 				> a {
-					color: #000;
+					&:hover {
+						color: @color-theme;
+					}
+					color: #4C4646;
 					display: block;
-					font-size: @fontsize-base;
+					font-size: 13px;
 					font-weight: bold;
 					margin-bottom: 5px;
-					padding: 0;
+					padding: 0 0 0 12px;
 					text-decoration: none;
 					position: relative;
 					line-height: 22px;
+					text-transform: uppercase;
+					&::before {
+						width: 3px;
+						height: 18px;
+						border-right: 3px solid #bf0000;
+						content: " ";
+    					display: inline;
+    					vertical-align: top;
+    					position: absolute;
+    					left: 0;
+    					top: 2px;
+					}
 				}
 				> ul {
 					padding-left: 10px;
 					background: transparent;
+					margin-bottom: 30px;
 					> li {
 						margin-bottom:5px;
+						font-family: @font-base;
 						> a  {
 							font-size: @fontsize-base;
 							text-decoration: none;
 							color:#6d6e71;
+							&:hover {
+								color: @color-theme;
+							}
 						}
 					}
 				}
@@ -369,9 +425,6 @@
 			}
 		}
 		ul.list-products.product-image400 {
-			li {
-				width: 25%;
-			}
 			.hproductseo {
 				width: 220px;
 				height: auto;

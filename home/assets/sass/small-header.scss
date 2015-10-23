@@ -3,14 +3,8 @@
 @import "tools.variables-bs";
 @import "tools.mixins-bs";
 
-// Reset and dependencies
-@import "normalize";
-@import "print";
-
 // Core CSS
-@import "reboot";
 @import "objects.buttons";
-@import "objects.forms"; 
 
 @import "quick-login";
 
@@ -19,7 +13,7 @@
 	border-bottom: 1px solid #bf0000;
 	height: 44px;
 	min-width: 1024px;
-
+    *, & { box-sizing: border-box;}
 	#drpCategoryList,#rk-select-category,.top-category,.quick-nav,.ulhelp,.main-links,.social,.colhelp, .welcome-span, .photo-customer,.select-text {display: none !important;}
 
 	.main-search,
@@ -74,6 +68,7 @@
 			width: 25px;
 			height: 25px;
 			background: none;
+			text-indent: -9000px;
 			&::after {
 				background: url("#{$resources-urls}/sprite-small-header.png") no-repeat -55px -45px;
 				width: 17px;
@@ -104,8 +99,12 @@
 		}
 		label {
 			height: 20px;
-			margin: 7px 0 0 8px;
 			display: block;
+			position: absolute;
+			cursor: text;
+			top: 7px;
+			left: 8px;
+			opacity: 0.5;
 		}
 		input[type="text"]#txtGlobalSearch {
 			border: 0 none;
@@ -122,6 +121,31 @@
 			width: 100%;
 			height: 18px;
 		}
+		.rk-autocomplete {
+			background-color: white;
+			border: 4px solid #EBEBEB;
+			border-top: none;
+			display: none;
+			left: 0;
+			position: absolute;
+			z-index: 1000;
+			top: 28px;
+			width: 100%;
+			padding: 0;
+		    li {
+		    	line-height: 30px;
+		    	&.rk-hover {
+		    		background-color: #e7e7e7;
+		    	}
+		    	a {
+					display: block;
+					padding-left: 10px;
+					width: 99%;
+					text-decoration: none;
+					color: #505050;
+		    	}
+		    }
+		}
 	}
 	.community-controls {
 		display: table-cell;
@@ -131,10 +155,15 @@
 			display: table-cell;
 			vertical-align: top;
 			position: relative;
-			a {
+			> a {
 				height: 26px;
 				padding: 0;
 				background: url("#{$resources-urls}/sprite-small-header.png") no-repeat;
+				text-indent: -9000px; 
+				width: 26px;
+				height: 25px;
+				display: block;
+			    opacity: 0.6;
 			}
 			&.cm-ico-post a { background-position: -136px -38px;}
 			&.cm-ico-private-post a { background-position: -136px -64px;}
@@ -154,7 +183,7 @@
 		left: auto;
 	}
 	.islogged .identification {
-	    padding-top: 6px;
+	    padding: 6px 0 0;
 	}
 	.identification {
 		padding-right: 0;

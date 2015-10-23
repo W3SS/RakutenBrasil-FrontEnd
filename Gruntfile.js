@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             img:    'home/assets/images/',
             css:    'home/assets/css/',
             js:     'home/assets/js/',
-            jsmin:  'home/assets/jsmin/'
+            jsmin:  'home/assets/js-min/'
         },
 
         // Uglify: makes javascript ugly. Machines like this way

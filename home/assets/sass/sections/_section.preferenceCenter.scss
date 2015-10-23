@@ -1,0 +1,37 @@
+/* inicio - Minhas Preferencias - registration/PreferenceCenter.aspx */
+	.cadaster-newsletter {
+	    padding-bottom: 10px;
+	    .newsletter {
+	        .header {
+	            .title {
+	                display: none;
+	            }
+	        }
+	        .radio {
+	            label {
+	                font-size: 11px;
+	                line-height: 20px;
+	                margin-left: 20px !important;
+	                margin-top: -17px;
+	                padding-top: 0;
+	                text-align: left;
+	            }
+	        }
+	        .field {
+	            min-height: 68px;
+	        }
+	        span {
+	            text-align: left;
+	            width: 100%;
+	        }
+	    }
+	    .save {
+	        background-position: -150px -90px !important;
+	        width: 155px !important;
+	        margin: 20px 0 0 !important;
+	        &:hover {
+	        	background-position: -150px -135px !important;
+	        }
+	    }
+	}
+/* fim    - Minhas Preferencias - registration/PreferenceCenter.aspx */

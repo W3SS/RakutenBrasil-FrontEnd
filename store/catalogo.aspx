@@ -10,7 +10,7 @@
 <title>Shopping Loja Master</title>
 <link rel="stylesheet" type="text/css" href="rakuten/css/rakuten-main.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-<link href="css/temas/fashiontheme.css" rel="stylesheet" type="text/css" />
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body id="store">
 <form id="aspnetForm" name="aspnetForm" method="post">
@@ -31,6 +31,10 @@
                   <!--#include virtual="inc-banners/banner-top.html"-->
               </div>             
               <div class="conteudo">
+              <div class="store-aside">
+                <span class="tit">Departamentos</span>
+                <!--#include virtual="tags/menu-vertical.html"-->
+              </div>
                   <div class="content">
                       <!--#include virtual="tags/produto_3.html"-->
                   </div>                        
