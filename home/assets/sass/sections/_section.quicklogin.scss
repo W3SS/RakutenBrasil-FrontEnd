@@ -1,0 +1,168 @@
+// Dependence small-header.scss rakuten-global.scss
+
+/*inicio - Login Community */
+	.btnLoginFacebookCommunity { display: none !important;}
+	#container-community-login {
+		margin: 0;
+		right: 0; 
+		background: #fff;
+		border-radius: 0;
+		border-bottom: 5px solid #BF0000;
+		height: 300px;
+		padding: 15px 0;
+		position: absolute;
+		width: 600px;
+		z-index: 999;
+		box-shadow: 0 2px 7px -2px #333;
+		.iframe-login {
+			height: 100%;
+			overflow: hidden;
+			width: 615px;
+			border: 0;
+		}
+		#waiting {
+			float: left;
+			font-size: 18px;
+			margin: 110px 0 0 220px;
+			font-family: "rakuten_globalr";
+			background: url("#{$resources-urls}/loading.gif") no-repeat 0 -8px;
+			span {
+				display: block;
+				height: 25px;
+				line-height: 25px;
+			}
+		}
+	}
+	#container-community-login.active { display: block; }
+
+	#rkCommunityLogin {
+
+	  .collum {
+	    float: left;
+	    border: 0;
+	    padding: 0 18px;
+	    border-radius: 0;
+	    min-height: 264px;
+	  }
+	  .registred {
+	    border-right: 1px dotted #ccc;
+	  }
+	  .not-registred {
+	    fieldset label span:first-child {
+	      width: 60px;
+	    }
+	  }
+	  .btn {
+	    float: left;
+	  }
+	  .confirmPsw span:first-child {
+	    height: 40px;
+	    line-height: 17px;
+	    position: relative;
+	    text-align: right;
+	    top: -4px;
+	    width: 60px;
+	  }
+	  legend {
+	    font-family: "rakuten_globalb";
+	    font-weight: normal !important;
+	    color: #bf0000;
+	    font-size: 18px !important;
+	    display: block;
+	    margin-bottom: 5px;
+	  }
+	  .action-register-community {
+	    margin: 0 0 0 71px;
+	  }
+	  #nameRegisterCommunity, 
+	  #emailRegisterCommunity {
+	    width: 155px;
+	  }
+	  .btnLoginCommunity, 
+	  #btnRegisterCommunity {
+	    @include btn-success;
+	    @include btn-lg;
+	  }
+	  #btnRegisterCommunity {
+	    margin: 0;
+	  }
+	  .btnLoginCommunity {
+	    margin: 0px 0 0 51px !important;
+	  }
+	  .shell {
+	    input {
+	      background: none !important;
+	      border-radius: 0;
+	      height: 16px;
+	    }
+	  }
+	  #lblOrDivBox {
+	    font-size: 12px;
+	    font-weight: bold;
+	    background: #fff;
+	    display: block;
+	    position: absolute;
+	    top: 103px;
+	    left: 289px;
+	    z-index: 2;
+	    padding: 7px;
+	  }
+	  a.btnLoginFacebookCommunity {
+	    float: left;
+	    margin-top: 43px;
+	    padding-bottom: 10px;
+	    text-decoration: underline;
+	  }
+
+	  /* mensagem de erro*/
+	  #errorRegisterCommunity, .errorLoginCommunity {
+	    color: #aa0000;
+	    font-size: 11px;
+	    position: absolute;
+	    bottom: 0;
+	    left: 23px;
+	  }
+	  .errorLoginCommunity {
+	    bottom: auto;
+	    top: 173px;
+	  }
+	   /* Termos */
+	  span.terms {
+	    clear: both;
+	    display: block;
+	    font-size: 11px;
+	    padding: 2px 0 0;
+	    margin: 20px 0 0;
+	  }
+	  .box-termos {
+		background: #fff;
+		border: 1px solid #CCCCCC;
+		border-radius: 7px;
+		position: absolute;
+		top: 23px;
+		z-index: 100;
+		color:#555555;
+		display:none;
+		top: 3px;
+		width: 543px;
+		height: 200px;
+		left: 10px;
+		padding:15px;
+		font-size:11px;
+		iframe {
+			width:100%;
+			height:200px;
+		}
+		.close-terms {
+			background: url("#{$base-urls}/community/images/fancy_close.png") no-repeat;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: -12px;
+			text-indent: -9000px;
+			top: -6px;
+		}
+	  }
+	  
+	}
+/*fim - Login Community */

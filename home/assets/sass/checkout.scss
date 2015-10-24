@@ -3,12 +3,18 @@
 @import "tools.variables-rk";
 @import "tools.variables-bs";
 @import "tools.mixins-bs";
+html { font-size: $font-size-root; }
+// Reset and dependencies
+@import "normalize";
+@import "print";
+fieldset { border: 0}
 
 //fonts
 @import "fonts";
 
 // Core CSS
-@import "objects.buttons";
+@import "trumps";
+@import "objects.buttons"; 
 
 //Components
-@import "components.checkout.pages"; 
+@import "sections.checkout"; 

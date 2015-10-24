@@ -1,6 +1,10 @@
 .main {
 	div.form.login {
 		padding: 25px 0;
+		.chat {
+			right: -2px;
+			top: -4px;
+		}
 		.facebook-login { @extend .rk-hide }
 		.collum {
 			float: left;
@@ -54,6 +58,7 @@
 		}
 		.action {
 			margin: 0 0 0 69px;
+			min-width: 85px;
 		}
 		.btn {
 			@extend .btn;

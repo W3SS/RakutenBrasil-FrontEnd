@@ -33,4 +33,15 @@
 			}
 		}
 	}
+	//modal Escolha de servico
+	#pnlShippingServices {
+		.rk-btn-general {
+			@extend .btn-default;
+			@extend .btn-sm;
+		}
+		.rk-continue {
+			@extend .btn-success;
+			@extend .btn-sm;
+		}
+	}
 /* fim    - Endereco de Entrega - Registration/MyAddressNew.aspx */	

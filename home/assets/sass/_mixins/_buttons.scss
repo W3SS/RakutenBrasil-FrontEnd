@@ -85,17 +85,19 @@
 
 // Button sizes
 @mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
-  padding: $padding-y $padding-x;
+  padding: $padding-y $padding-x !important;
   font-size: $font-size;
   line-height: $line-height;
   @include border-radius($border-radius);
 }
 
 @mixin btn {
+    box-sizing: border-box;
     text-decoration: none;
     text-align: center;
     transition: background-color 150ms ease 0s;
     font-family: "rakuten_globalb";
+    font-weight: normal !important;
     display: inline-block;
     color: #fff;
     width: auto !important;
