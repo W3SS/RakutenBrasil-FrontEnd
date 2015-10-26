@@ -5,7 +5,7 @@
 				@extend .btn-success;
 				@extend .btn-lg;
 				text-indent: -9000px !important;
-				width: 185px !important;
+				width: 160px !important;
 				font-weight: normal;
 				margin: 0 10px 0 293px;
 				&::before {
@@ -19,9 +19,9 @@
 				@extend .btn-lg;
 			}
 		}
+		fieldset { border: 0;}
 		.use-address {
 			@extend .btn-danger;
-			@extend .btn-sm;
 			display: block !important;
 			width: 100% !important;
 			text-indent: -9000px !important;
@@ -37,11 +37,24 @@
 	#pnlShippingServices {
 		.rk-btn-general {
 			@extend .btn-default;
-			@extend .btn-sm;
+			@extend .btn-lg;
+			border-bottom: 4px solid #ccc !important
 		}
 		.rk-continue {
 			@extend .btn-success;
-			@extend .btn-sm;
+			@extend .btn-lg;
+			border-bottom: 4px solid #4d9737 !important;
+		}
+		.rk-warning {
+			font-family: $font-family-base;
+		}
+		.rk-shipping-warning {
+			color: #040404;
+			display: inline-block;
+			font-family: arial;
+			font-size: 12px;
+			line-height: 16px;
+			width: 640px;
 		}
 	}
 /* fim    - Endereco de Entrega - Registration/MyAddressNew.aspx */	

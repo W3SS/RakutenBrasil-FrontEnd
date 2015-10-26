@@ -1,3 +1,4 @@
+.my_address {
 .form {
 	overflow: hidden;
 
@@ -39,6 +40,7 @@
 			padding: 5px;
 			border: 1px solid #cecece;
 			border-radius: 0 !important;
+			box-sizing: content-box;
 		}
 		.dk_toggle {
 			border: 1px solid #CECECE;
@@ -117,4 +119,5 @@
 		top: auto;
 		width: 26px
 	}
+}
 }
