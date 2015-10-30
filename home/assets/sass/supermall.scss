@@ -1,0 +1,12 @@
+* { 
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+.rk-sm-wrapper {
+	background: #fff;
+	border-bottom: 1px solid #bf0000;
+	height: 44px;
+	#drpCategoryList,#rk-select-category,.top-category,.quick-nav,.ulhelp,.main-links,.social,.colhelp, .welcome-span, .photo-customer,.select-text {display: none !important;}
+}

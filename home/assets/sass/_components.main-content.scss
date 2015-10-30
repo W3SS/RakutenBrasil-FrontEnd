@@ -712,6 +712,8 @@
 	    				line-height: 29px;
 	    				display: inline-block;
 	    				font-size: 0px;
+	    				text-indent: 0;
+	    				text-align: center;
 	    				&::after {
 	    					display: none
 	    				}
@@ -720,9 +722,6 @@
 	    					font-size: 13px;
 	    					color: #fff;
 	    				}
-	    				color: #be0000;
-	    				text-indent: 0;
-	    				text-align: center;
 	    			}
 	    			.field {
 	    				float: left;
@@ -756,7 +755,7 @@
 		.ads {
 			display: inline-block;
 			vertical-align: top;
-			margin: 0 14px 0 0;
+			margin: 0 15px 0 0;
 		}
 		> div {
 			display: inline-block;

@@ -38,11 +38,14 @@
 		.rk-btn-general {
 			@extend .btn-default;
 			@extend .btn-lg;
-			border-bottom: 4px solid #ccc !important
+			&:hover{border-bottom: 4px solid #acacac !important;}
+			border-bottom: 4px solid #acacac !important
+			
 		}
 		.rk-continue {
 			@extend .btn-success;
 			@extend .btn-lg;
+			&:hover{border-bottom: 4px solid #4d9737 !important;}
 			border-bottom: 4px solid #4d9737 !important;
 		}
 		.rk-warning {

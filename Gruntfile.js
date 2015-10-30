@@ -44,6 +44,7 @@ module.exports = function(grunt) {
 			  '<%= paths.css %>small-header.css' : '<%= paths.sass %>small-header.scss',
 			  '<%= paths.css %>checkout.min.css' : '<%= paths.sass %>checkout.scss',
 			  '<%= paths.css %>product.min.css' : '<%= paths.sass %>product.scss',
+			  '<%= paths.css %>supermall.min.css' : '<%= paths.sass %>supermall.scss',
 			}
 		  }
 		}, // sass

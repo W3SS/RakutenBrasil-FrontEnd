@@ -1,0 +1,34 @@
+.searchResult {
+	.show-results {
+		h1 {
+			font-size: 12px;
+		}
+	}
+	div.sort {
+		.filters {
+			width: 364px !important;
+		}
+		.jqTransformSelectWrapper {
+			width: 182px !important;
+			div {
+				width: 161px;
+			}
+            ul {
+				width: 190px !important;
+				padding: 0 0 10px;
+            }
+		}
+		.order {
+			width: 364px !important;
+			legend { display: none;}
+			.filter-order-by {
+				width: 182px !important;
+			}
+		}
+	}
+	.priceSearch {
+		input[type="text"] {
+			height: 18px;
+		}
+	}
+}

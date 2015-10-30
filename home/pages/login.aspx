@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <!--#include virtual="../includes/head.html"-->
-  <link rel="stylesheet" type="text/css" href="//resources-ssl.rakuten.com.br/Minify.ashx?register.css,checkout|jquery-transform.css,plugins|jquery-ui-autocomplete.css,plugins|jquery-dropkick.css,plugins|jquery-ui-1.10.3.datepicker.css,plugins" />
+
   <form id="form1">
   <div class="store stick">
       <div id="header">

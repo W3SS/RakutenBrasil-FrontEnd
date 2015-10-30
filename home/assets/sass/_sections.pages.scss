@@ -1,10 +1,13 @@
-	@import "sections/_section.quicklogin.scss";
-	@import "sections/_section.myaddress.scss";
-	@import "sections/_section.preferenceCenter.scss";
-	@import "sections/_section.superpoints.scss";
-	@import "sections/_section.lp.scss";
-	@import "sections/_section.login";
-	@import "sections/_section.catalog.scss";
+	@import "sections/section.basket";
+	@import "sections/section.catalog";
+	@import "sections/section.quicklogin";
+	@import "sections/section.lp";
+	@import "sections/section.login";
+	@import "sections/section.myaddress";
+	@import "sections/section.preferenceCenter";
+	@import "sections/section.register";
+	@import "sections/section.search";
+	@import "sections/section.superpoints";	
 
 /* inicio - Fix issues (Corigir no projeto) */
 	.dk_fouc select {
