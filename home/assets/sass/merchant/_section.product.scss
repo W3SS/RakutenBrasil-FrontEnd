@@ -1,0 +1,24 @@
+.page-product {
+
+    /* Login Comentarios */
+    .rk-login {
+    	.shell input {
+    		box-shadow: 2px 2px 1px #dddddd inset;
+    	}
+		.btnLoginCommunity, 
+		.rk-post-login-panel > a {
+			@include btn-success;
+			@include btn-lg;
+		}
+    }
+
+    /* Produtos Relacionados*/	
+	.rk-box-related {
+		.figure {
+			img {
+				width: auto !important;
+			}
+		}
+	}
+
+}
