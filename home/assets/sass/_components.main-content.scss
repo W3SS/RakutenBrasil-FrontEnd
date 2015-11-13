@@ -762,10 +762,15 @@
 			vertical-align: top;
 			a {
 				display: inline-block;
+				margin-right: 3px;
 			}
 			&:first-child {
-				margin-left: 0;
+				margin:-10px 5px 0 0;
+
 			}
+		}
+		.bnr-superpoints{
+			margin-left: 5px;
 		}
 		.bnr-logado {
 			background: #bf0000;
@@ -1134,7 +1139,7 @@
 		border-bottom: 2px solid #e2e2e2;
 		margin-bottom: 25px;
 		padding-bottom: 40px;
-		.rk-area-cxense {
+		.rk-area-banner {
 			float: right;
 			margin-top: 62px;
 			~ .container-product .rk-container-carousel {
